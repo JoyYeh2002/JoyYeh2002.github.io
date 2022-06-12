@@ -13,7 +13,7 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(255, 152, 17, 0.84),rgba(160, 34, 6, 0.56), rgba(37, 12, 3, 0.7)), url(images/index/banner_antelope_canyon.png);
+    background-image: linear-gradient(rgba(160, 34, 6, 0.56), rgba(37, 12, 3, 0.7)), url(images/index/banner_antelope_canyon.png);
     background-position: center;
     background-size: cover;
     position: relative;
