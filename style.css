@@ -13,7 +13,7 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(179, 69, 5, 0.7),rgba(4, 7, 30, 0.7)), url(images/index/banner_antelope_canyon.png);
+    background-image: linear-gradient(rgba(255, 152, 17, 0.84),rgba(160, 34, 6, 0.56), rgba(37, 12, 3, 0.7)), url(images/index/banner_antelope_canyon.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -27,10 +27,10 @@ nav {
     align-items: center;
 }
 
-/* We change the size of logo in the syle sheet so that it works with all images. */
+/* We change the size of logo in the syle sheet so that it works with all images. 
 nav img {
-    width: 150px;
-}
+    width: 80px;
+}*/
 
 .nav-links {
     flex: 1;
