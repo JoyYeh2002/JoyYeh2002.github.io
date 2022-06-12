@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
     <!-- Import the caret icon style sheet from fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -22,6 +22,7 @@
 </head>
 
 <!-- Everything in the body tag, if it's not a command closed with <>, will display on the webpage -->
+
 <body>
 
     <!-- Make the top navigation bar. Its styles are specified in the "header" class in style.css -->
@@ -32,29 +33,23 @@
             <!-- Don't want small logo on home page
                 <a href="index.html"><img src="images/index/my_logo_gold_round.png"></a>
             -->
-            
-                <div class="nav-links" id="navLinks">
+
+            <div class="nav-links" id="navLinks">
                 <!-- Display the navigation bar titles and link them to the respective .html -->
                 <i class="fa fa-times" onclick="hideMenu()"></i> <!-- the closing icon-->
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><div class="dropdown">
-                        <button class="dropbtn">Projects <i class="fa fa-caret-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="engineering.html">Engineering</a>
-                            <a href="compsci.html">Computer Science</a>
-                            <a href="hopmc.html">HopMC</a>
-                            <a href="art.html">Visual Art</a>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects <i class="fa fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="engineering.html">Engineering</a>
+                                <a href="compsci.html">Computer Science</a>
+                                <a href="hopmc.html">HopMC</a>
+                                <a href="art.html">Visual Art</a>
+                            </div>
                         </div>
-                      </div>
-                      </li>
-                    <!-- Use these under the project drop down
-                    <li><a href="engineering.html">Engineering</a></li>
-                    <li><a href="compsci.html">Computer Science</a></li>
-                    <li><a href="hopmc.html">HopMC</a></li>
-                    <li><a href="art.html">Visual Art</a></li>
-                    -->
-
+                    </li>
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -62,210 +57,20 @@
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
+         <!-- Add the signature logo image -->
+         <img src="images/index/hyeh_signature_orange.png" alt="Joy's Signature Logo" style = "width:65%;">
+
         <div class="text-box">
-            <h1>Huanying Yeh </h1>
-            <p> AstroJays Rocketry is an interdisciplinary high-powered rocketry team of students from the Johns
-                Hopkins University, <br> advised by the JHU Mechanical Engineering Department. </p>
-            <a href="contact.html" class="hero-btn">Contact Us</a>
+            <h1>Welcome!</h1>
+            <p> Hello! My name is Huanying Yeh and I also go by Joy. I am an undergraduate electrical engineering
+                student at Johns Hopkins University, currently a rising junior. <br>
+                <br>
+                I loved creating since I was little - studying engineering is a dream come true!<br>
+                <br>
+                I enjoy learning new technology, making design projects, and helping others. I aspire to be a robotics engineer, industrial designer, traveller,
+                and much more.
+            </p>
         </div>
-
-    </section>
-
-    <!-- What We Do -->
-    <section class="what_we_do">
-        <div class="container">
-            <div class="q-a-text-box">
-                <div class="imageContainerLeft">
-                    <img style="vertical-align:middle" src="images/First_Launch_Best_Shots/rocket_on_rail_cropped.JPG"
-                        alt="Positioning level 1 certificate rocket on launch rail.">
-                </div>
-                <h2>What is high-powered rocketry?</h2>
-                <p> High powered rockets have the capacity to travel miles up into the atmosphere, and must be
-                    engineered and built to survive the harsh aerodynamic, inertial, and internal propulsive loads
-                    required to launch rockets to these extreme altitudes. <br>
-                    It requires complex, well-designed remote operated control systems, radio-based telemetry, reliable
-                    and robust recovery systems, and a great team of rocket scientists and supersonic fluids analysts
-                    to hit our desired flight trajectories. <br>
-                    This is real-world aerospace engineering, designing some of the most advanced amateur
-                    rocket-powered launch vehicles in the world. <br>
-                </p>
-
-                <div class="padding_gap">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-
-                <div class="imageContainerRight">
-                    <img style="vertical-align:middle" src="images/First_Launch_Best_Shots/sasha_lv2_launch.JPG"
-                        alt="Sasha's level 2 rocket launch in November, 2021.">
-                </div>
-                <h2>Our Mission</h2>
-                <p> Our mission is to improve upon an innovative science and engineering community for rocket and space
-                    science enthusiasts at Johns Hopkins, and to provide more opportunities in aerospace and related
-                    disciplines for students of all levels. The diversity of work that we do allows students from all
-                    over campus to participate and learn more about the exciting field of rocketry.
-                </p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Courses we offer-->
-    <section class="course">
-        <h1> Courses We Offer</h1>
-        <p> We offer a lot of courses.Mauris elementum, nisl eu convallis maximus, mauris mauris rhoncus ante, ac
-            volutpat nisi mauris sed risus. Quisque
-            sollicitudin erat vehicula quam tempor. </p>
-
-        <div class="row">
-            <div class="course-col">
-                <h3> Intermediate</h3>
-                <p> rices dui congue mi vestibulum posuere. Sed sit amet sapien facilisis, scelerisque libero non,
-                    tempus
-                    elit. Sed sodales facilisis tortor, a facilisis ex dapibus a. Vivamus vel ex lobortis, dignissim
-                    diam at, congue
-                    quam. Donec porttitor. </p>
-            </div>
-            <div class="course-col">
-                <h3> Degrees</h3>
-                <p> rices dui congue mi vestibulum posuere. Sed sit amet sapien facilisis, scelerisque libero non,
-                    tempus
-                    elit. Sed sodales facilisis tortor, a facilisis ex dapibus a. Vivamus vel ex lobortis, dignissim
-                    diam at, congue
-                    quam. Donec porttitor. </p>
-            </div>
-            <div class="course-col">
-                <h3> Post Graduation</h3>
-                <p> rices dui congue mi vestibulum posuere. Sed sit amet sapien facilisis, scelerisque libero non,
-                    tempus
-                    elit. Sed sodales facilisis tortor, a facilisis ex dapibus a. Vivamus vel ex lobortis, dignissim
-                    diam at, congue
-                    quam. Donec porttitor. </p>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- the Campus section-->
-    <section class="campus">
-        <h1> Our Global Campus</h1>
-        <p> Suspendisse malesuada sem non lacus commodo, sed vehicula justo dictum. Sed vulputate enim nisl. Praesent
-            pretium
-            magna </p>
-
-        <div class="row">
-            <div class="campus-col">
-                <img src="images/sample/london.png">
-                <div class="layer">
-                    <h3> LONDON </h3>
-                </div>
-            </div>
-
-            <div class="campus-col">
-                <img src="images/sample/newyork.png">
-                <div class="layer">
-                    <h3> NEW YORK </h3>
-                </div>
-            </div>
-
-            <div class="campus-col">
-                <img src="images/sample/washington.png">
-                <div class="layer">
-                    <h3> WASHINGTON </h3>
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-
-    <!-- Facilities -->
-    <section class="facilities">
-        <h1> Our Facilities</h1>
-        <p> in ut malesuada magna, eget rhoncus erat. Pellentesque eget scelerisque arcu. Integer ac mollis arcu. Nunc
-            suscipit mi </p>
-
-        <div class="row">
-            <div class="facilities-col">
-                <img src="images/sample/library.png">
-                <h3> World Class library</h3>
-                <p> na. Quisque ornare elit sit amet nisi pellentesque commodo. Sed sagittis sodales
-                    consequat. Suspendisse hendrerit quam ut ligula ornare, in rutrum metus imperdiet. Maecenas lacinia
-                    ante justo, sit
-                    amet aliquam ligula ullamcorper sed. </p>
-            </div>
-
-            <div class="facilities-col">
-                <img src="images/sample/basketball.png">
-                <h3> Largest Playground</h3>
-                <p> Lit sit amet nisi pellentesque commodo. Sed sagittis sodales
-                    consequat. Suspendisse hendrerit quam ut ligula ornare, in rutrum metus imperdiet. Maecenas lacinia
-                    ante justo, sit
-                    amet aliquam ligula ullamcorper sed. </p>
-            </div>
-
-            <div class="facilities-col">
-                <img src="images/sample/cafeteria.png">
-                <h3> Tasty and Healthy Food</h3>
-                <p> Quisque ornare elit sit amet nisi pellentesque commodo. Sed sagittis sodales
-                    consequat. Suspendisse hendrerit quam ut </p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <h1> What Our Students Say</h1>
-        <p> Quis tristique feugiat, felis enim feugiat lectus, eget blandit est nisi in lectus.
-            Nulla facilisi. Curabitur turpis libero, iaculis id risus in, vehicula semper justo. Vestibulum in ex
-            auctor, lobortis leo ac, cursus magna.</p>
-
-        <div class="row">
-            <div class="testimonial-col">
-                <img src="images/sample/user1.jpg">
-                <div>
-                    <p> Quis tristique feugiat, felis enim feugiat lectus, eget blandit est nisi in lectus.
-                        Nulla facilisi. Curabitur turpis libero, iaculis id risus in, vehicula semper justo. Vestibulum
-                        in ex auctor, lobortis leo ac, cursus magna.</p>
-                    <h3> Christine</h3>
-
-                    <!-- These are the star ratings-->
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-
-                </div>
-            </div>
-
-            <div class="testimonial-col">
-                <img src="images/sample/user2.jpg">
-                <div>
-                    <p> Quis tristique feugiat, felis enim feugiat lectus, eget blandit est nisi in lectus.
-                        Nulla facilisi. Curabitur turpis libero, iaculis id risus in, vehicula semper justo. Vestibulum
-                        in ex auctor, lobortis leo ac, cursus magna.</p>
-                    <h3> Leo</h3>
-
-                    <!-- These are the star ratings-->
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call To Action-->
-    <section class="cta">
-        <h1> Enroll in Our Online Courses <br> Anywhere from the world </h1>
-        <a href="" class="hero-btn"> Contact Us</a>
 
     </section>
 
@@ -273,16 +78,17 @@
     <section class="footer">
         <h4> About Us </h4>
         <p> Is efficitur. Morbi suscipit aliquam lorem, vel fringilla mi fringilla non. Donec sit amet
-            commodo nunc, convallis hendrerit est. <br> Fusce egestas lorem ut ligula porttitor elementum sed at nisi. Mauris
+            commodo nunc, convallis hendrerit est. <br> Fusce egestas lorem ut ligula porttitor elementum sed at nisi.
+            Mauris
             eleifend tortor tellus, eu ultricies mi bi.</p>
-            <div class="icons">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </div>
+        <div class="icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
 
-            <p> Made with <i class="fa fa-heart" aria-hidden="true"></i> by Joy Yeh </p>
+        <p> Made with <i class="fa fa-heart" aria-hidden="true"></i> by Joy Yeh </p>
     </section>
 
 
