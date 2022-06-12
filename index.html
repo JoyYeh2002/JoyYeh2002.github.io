@@ -14,6 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!-- Import the caret icon style sheet from fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 
 <!-- Everything in the body tag, if it's not a command closed with <>, will display on the webpage -->
@@ -32,13 +37,26 @@
                 <!-- Display the navigation bar titles and link them to the respective .html -->
                 <i class="fa fa-times" onclick="hideMenu()"></i> <!-- the closing icon-->
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="engineering.html">ENGINEERING</a></li>
-                    <li><a href="compsci.html">COMPUTER SCIENCE</a></li>
-                    <li><a href="hopmc.html">HOPMC</a></li>
-                    <li><a href="art.html">VISUAL ART</a></li>
-                    <li><a href="skills.html">SKILLS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><div class="dropdown">
+                        <button class="dropbtn">Projects <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="engineering.html">Engineering</a>
+                            <a href="compsci.html">Computer Science</a>
+                            <a href="hopmc.html">HopMC</a>
+                            <a href="art.html">Visual Art</a>
+                        </div>
+                      </div>
+                      </li>
+                    <!-- Use these under the project drop down
+                    <li><a href="engineering.html">Engineering</a></li>
+                    <li><a href="compsci.html">Computer Science</a></li>
+                    <li><a href="hopmc.html">HopMC</a></li>
+                    <li><a href="art.html">Visual Art</a></li>
+                    -->
+
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
