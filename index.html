@@ -36,7 +36,8 @@
 
             <div class="nav-links" id="navLinks">
                 <!-- Display the navigation bar titles and link them to the respective .html -->
-                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- the closing icon-->
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div> <!-- the closing icon-->
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li>
@@ -54,13 +55,26 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
-         <!-- Add the signature logo image -->
-         <img src="images/index/hyeh_signature_orange.png" alt="Joy's Signature Logo" style = "width:65%;">
+        <!-- Add the signature logo image -->
+        <img src="images/index/hyeh_signature_orange.png" alt="Joy's Signature Logo" style="width:65%;">
+    </section>
 
-
+    <!-- Self-intro/welcome section -->
+    <section class="welcome">
+        <h1>Welcome!</h1>
+        <p> Hello! My name is Huanying Yeh and I also go by Joy. I am an undergraduate electrical engineering
+            student at Johns Hopkins University, currently a rising junior. <br>
+            <br>
+            I loved creating since I was little - studying engineering is a dream come true!<br>
+            <br>
+            I enjoy learning new technology, making design projects, and helping others. I aspire to be a robotics
+            engineer, industrial designer, traveller,
+            and much more.
+        </p>
     </section>
 
     <!-- Footer -->
@@ -85,11 +99,13 @@
     <!-- JavaScript for toggle menu -->
     <script>
         var navLinks = document.getElementById("navLinks");
+
+        /* These get called on click: <i class = "fa fa-times" onclick = "showMenu()"></i> */
         function showMenu() {
-            navLinks.style.right = "0";
+            navLinks.style.left = "0";
         }
         function hideMenu() {
-            navLinks.style.right = "-200px";
+            navLinks.style.left = "-200px";
         }
     </script>
 

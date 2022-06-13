@@ -1,15 +1,16 @@
 /* The CSS style sheet that supports all sections of the personal website content
-   Updated 06/12/2022
+   Updated 06/13/2022
    Author: Joy Yeh
 */
 
-/* the "*" means that the style applies to all the conetent */
+/* "*" means that the style applies to all the conetent */
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
+/* The large coverpage */
 .header {
     min-height: 100vh;
     width: 100%;
@@ -19,6 +20,7 @@
     position: relative;
 }
 
+/* Top navigation bar */
 nav {
     display: flex;
     padding: 2% 6%;
@@ -40,12 +42,14 @@ nav {
     position: relative;
 }
 
+/* Set font color to white */
 .nav-links ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
 }
 
+/* Animation for the end of hovering underscore effect */
 .nav-links ul li::after {
     content: '';
     /*hide the bar until it's clicked */
@@ -54,31 +58,28 @@ nav {
     background: #fb8500;
     display: block;
     margin: auto;
-    transition: 0.4s;
+    transition: 0.3s;
     z-index: 1;
 }
 
-/* after 0.4s transition, the bar expands fully */
+/* after 0.3s transition, the bar expands fully */
 .nav-links ul li:hover::after {
     width: 100%;
 }
 
-/* the "Projects" dropdown button*/
+/* "Projects" dropdown button*/
 .dropbtn {
     background-color: transparent;
-    /* the button itself is transparent */
     color: #fff;
-    /* the font is also white */
     padding: 0px;
     font-size: 18px;
     border: none;
-    cursor: pointer;
-    /* see here for more cursor types: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor */
+    cursor: pointer; /* More cursor types: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor */
 }
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display:inline;
 }
 
 .dropdown-content {
@@ -88,7 +89,6 @@ nav {
     min-width: 130px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
     z-index: 1;
-    /* z-inxex = 1 means element is at the top. z-index = -1 means it's at the bottom. */
 }
 
 .dropdown-content a {
@@ -108,45 +108,53 @@ nav {
     display: block;
 }
 
+/* When not in small screen mode, the .fa icons don't show. */
 nav .fa {
     display: none;
 }
 
-/* accomodation for small device */
+/* Accomodation for small device */
 @media(max-width: 700px) {
-    .text-box h1 {
-        font-size: 20px;
-    }
 
+    /* Small-screen nav bar design */
     .nav-links ul li {
         display: block;
     }
 
     .nav-links {
         position: fixed;
-        /* Change this for better google map display on small screen! */
         background: rgb(19, 50, 122);
         height: 100vh;
         width: 200px;
         top: 0;
-        right: -200px;
+        left: -200px;
         text-align: left;
         z-index: 2;
-        transition: 0.4s;
+        transition: 0.3s;
     }
-
 
     /* The cross icon for the screen menu */
     nav .fa {
         display: block;
-        color: #fff;
+        color: rgb(255, 255, 255);
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
     }
 
     .nav-links ul {
-        padding: 20px;
+        padding: 30px;
+    }
+
+    /* Make the background image smaller */
+    .header {
+        min-height: 60vh;
+        width:100%;
+        height: 60%;
+        background-image: linear-gradient(rgba(14, 80, 234, 0.58), rgba(47, 13, 1, 0.788)), url(images/index/banner_antelope_canyon.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
     }
 }
 
@@ -179,7 +187,6 @@ body {
     text-align: center;
     z-index: 0.3;
 }
-
 
 .text-box h1 {
     font-size: 68px;
