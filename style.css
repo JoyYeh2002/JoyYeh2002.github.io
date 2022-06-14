@@ -147,20 +147,28 @@ body {
 
 /* Welcome */
 /* Change the welcome page */
-.welcome h1 {
-    padding-top: 32px;
+.title-block h1 {
+    padding-top: 64px;
     font-size: 56px;
     color: rgba(10, 47, 136, 0.85);
     text-align: center;
 }
 
-.welcome p {
-    margin: 20px 60px 60px;
+.title-block p {
+    margin: 10px 60px 60px;
     font-size: 22px;
     line-height: 36px;
     /* https://stackoverflow.com/questions/48370138/how-i-can-set-margin-between-lines-in-one-paragraph */
     padding: 3px;
     color: rgb(9, 28, 72);
+    
+}
+
+/* Another title block for "Projects" */
+.title-block-2 h1 {
+    font-size: 56px;
+    color: rgba(10, 47, 136, 0.85);
+    text-align: center;
 }
 
 
@@ -209,13 +217,18 @@ body {
     }
 
     /* Adjust the welcome page for small page */
-    .welcome h1 {
-        padding-top: 24px;
+    .title-block h1 {
+        padding-top: 64px;
         font-size: 36px;
     }
 
-    .welcome p {
+    .title-block p {
         font-size: 16px;
         line-height: 26px;
     }
+
+    .title-block-2 h1 {
+        font-size: 36px;
+    }
+
 }
