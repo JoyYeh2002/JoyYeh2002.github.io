@@ -161,7 +161,7 @@ body {
     /* https://stackoverflow.com/questions/48370138/how-i-can-set-margin-between-lines-in-one-paragraph */
     padding: 3px;
     color: rgb(9, 28, 72);
-    
+
 }
 
 /* Another title block for "Projects" */
@@ -230,5 +230,70 @@ body {
     .title-block-2 h1 {
         font-size: 36px;
     }
+}
 
+/* Style for row elements */
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Campus */
+.campus {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col {
+    flex-basis: 24%;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.layer:hover {
+    background: #5091c6b7;
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
 }
