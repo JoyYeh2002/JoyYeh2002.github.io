@@ -217,8 +217,6 @@ body {
     .title-block h1 {
         padding-top: 64px;
         font-size: 36px;
-        background-color: aqua;
-       
     }
 
     .title-block p {
@@ -228,7 +226,6 @@ body {
 
     .title-block-2 h1 {
         font-size: 36px;
-        background-color: aqua;
     }
 }
 
@@ -238,7 +235,7 @@ https://codepen.io/alvarotrigo/pen/PoKamZy */
 
 /* Set up row elements */
 .row {
-    margin-top: 5%;
+    margin-top: 30px;; 
     display: flex;
     justify-content: space-between;
 }
@@ -259,7 +256,6 @@ https://codepen.io/alvarotrigo/pen/PoKamZy */
     margin: auto;
     text-align: center;
     padding-top: -10px;
-    background-color: aqua;
 }
 
 .projects-col {
@@ -326,3 +322,4 @@ https://codepen.io/alvarotrigo/pen/PoKamZy */
     bottom: 49%;
     opacity: 1;
 }
+
