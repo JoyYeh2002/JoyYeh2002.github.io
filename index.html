@@ -17,11 +17,9 @@
 
     <!-- Import the caret icon style sheet from fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 </head>
 
-<!-- Everything in the body tag, if it's not a command closed with <>, will display on the webpage -->
+<!-- Everything in the body tag will display on the webpage -->
 
 <body>
 
@@ -75,85 +73,83 @@
         </p>
     </section>
 
-    <!-- Projects title block -->
-    <section class="title-block-2">
-        <h1>Projects</h1>
-    </section>
-
-    <!-- Project cover pages -->
-    <!-- the Campus section-->
-    <section class="projects">
-        <div class="row">
-            <div class="projects-col">
-                <div class="img-gradient">
-                    <a href="https://www.tutorialspoint.com/online_html_editor.php">
+    <!-- Projects title block with reveal -->
+    <section class="container reveal">
+        <div class="title-block-2">
+            <h1>Projects</h1>
+        </div>
+        <div class="projects">
+            <div class="row">
+                <div class="projects-col">
+                    <div class="img-gradient">
                         <img src="images/index/proj_cover_engineering.png">
-                    </a>
+                    </div>
+                    <div id="content-2-2" onclick="location.href='engineering.html'">
+                        <div class="layer">
+                            <h3> ENGINEERING </h3>
+                        </div>
+                    </div>
                 </div>
-                <div class="layer">
-                    <h3> ENGINEERING </h3>
+
+                <div class="projects-col">
+                    <div class="img-gradient">
+                        <img src="images/index/proj_cover_compsci.png">
+                    </div>
+                    <div id="content-2-2" onclick="location.href='compsci.html'">
+                        <div class="layer">
+                            <h3> CS </h3>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="projects-col">
+                    <div class="img-gradient">
+                        <img src="images/index/proj_cover_hopmc.png">
+                    </div>
+                    <div id="content-2-2" onclick="location.href='hopmc.html'">
+                        <div class="layer">
+                            <h3> HOPMC </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-col">
+                    <div class="img-gradient">
+                        <img src="images/index/proj_cover_art.png">
+                        </a>
+                    </div>
+                    <div id="content-2-2" onclick="location.href='art.html'">
+                        <div class="layer">
+                            <h3> ART </h3>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
-            <div class="projects-col">
-                <div class="img-gradient">
-                    <img src="images/index/proj_cover_compsci.png">
-                </div>
-                <div class="layer">
-                    <h3> CS </h3>
-                </div>
-            </div>
-
-            <div class="projects-col">
-                <div class="img-gradient">
-                    <img src="images/index/proj_cover_hopmc.png">
-                </div>
-                <div class="layer">
-                    <h3> HOPMC </h3>
-                </div>
-            </div>
-
-            <div class="projects-col">
-                <div class="img-gradient">
-
-                    <img src="images/index/proj_cover_art.png">
-                    </a>
-                </div>
-                <div class="layer">
-                    <a href="https://www.youtube.com/watch?v=oYRda7UtuhA&t=2559s&ab_channel=EasyTutorials">
-                        <h3> ART </h3>
-                    </a>
-                </div>
-            </div>
-
         </div>
 
+        <div class="title-block" style="text-align:center">
+            <p> See my skills <a class="skill-button" href="skills.html"><b>here</b></a>! </p>
+            <br>
+            <br>
+            <br>
+        </div> 
     </section>
 
-    <section>
-        <a href="https://www.youtube.com/watch?v=oYRda7UtuhA&t=2559s&ab_channel=EasyTutorials">
-            <img src="images/index/my_logo_gold_round.png" alt="An image">
-        </a>
-    </section>
+    
+
 
     <!-- Footer -->
     <section class="footer">
-        <h4> About Us </h4>
-        <p> Is efficitur. Morbi suscipit aliquam lorem, vel fringilla mi fringilla non. Donec sit amet
-            commodo nunc, convallis hendrerit est. <br> Fusce egestas lorem ut ligula porttitor elementum sed at nisi.
-            Mauris
-            eleifend tortor tellus, eu ultricies mi bi.</p>
         <div class="icons">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
             <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-youtube" aria-hidden="true"></i>
             <i class="fa fa-linkedin" aria-hidden="true"></i>
         </div>
 
         <p> Made with <i class="fa fa-heart" aria-hidden="true"></i> by Joy Yeh </p>
     </section>
-
-
 
     <!-- JavaScript for toggle menu -->
     <script>
@@ -167,6 +163,40 @@
             navLinks.style.left = "-200px";
         }
     </script>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            once = 'true';
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+
+        }
+
+        function once(fn, context) {
+            var result;
+            return function () {
+                if (fn) {
+                    result = fn.apply(context || this, arguments);
+                    fn = null;
+                }
+                return result;
+            };
+        }
+
+        window.addEventListener("scroll", reveal);
+        
+    </script>
+
+
 
 </body>
 
