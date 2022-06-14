@@ -20,6 +20,14 @@
     position: relative;
 }
 
+.center {
+    display: block;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 230px;
+}
+
 /* Top navigation bar */
 nav {
     display: flex;
@@ -114,17 +122,6 @@ nav .fa {
     display: none;
 }
 
-/* Signature png */
-/* To center an image, set left and right margin to auto, and make it into a block element. */
-img {
-    display: block;
-    margin-top: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 230px;
-    z-index: 0.2;
-    /* Important! */
-}
 
 /* set the global background color to white */
 body {
@@ -142,7 +139,7 @@ body {
     line-height: 25px;
     /* https://stackoverflow.com/questions/48370138/how-i-can-set-margin-between-lines-in-one-paragraph */
     padding: 3px;
-    color: rgb(126, 34, 0);
+    color: rgb(126, 0, 115);
 }
 
 /* Welcome */
@@ -220,6 +217,8 @@ body {
     .title-block h1 {
         padding-top: 64px;
         font-size: 36px;
+        background-color: aqua;
+       
     }
 
     .title-block p {
@@ -229,118 +228,72 @@ body {
 
     .title-block-2 h1 {
         font-size: 36px;
+        background-color: aqua;
     }
 }
 
-/* What we do */
-.container {
-    margin: 120px auto;
-    width: 87.5%;
-    padding: 8px;
-}
-
-.container img {
-    width: 550px;
-    border-radius: 10px;
-    display: block;
-    box-shadow: 0 0 20px 0px rgba(43, 105, 156, 0.475)
-}
 /* Reveal with scroll 
 https://codepen.io/alvarotrigo/pen/PoKamZy */
 
 
-.text {
-    text-align: center;
-}
-
-.q-a-text-box h2 {
-    /* color: #fff; */
-    font-size: 36px;
-}
-
-.q-a-text-box p {
-    /* color: #fff; */
-    margin: 10px 0 40px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 25px;
-    padding: 3px;
-}
-
-/* Courses */
-.course {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-
-h1 {
-    font-size: 36px;
-    font-weight: 600;
-}
-
-p {
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 20px;
-    padding: 10px;
-}
-
+/* Set up row elements */
 .row {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
 
-.course-col {
-    flex-basis: 31%;
-    background: #5091c638;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.3s;
-}
-
-h3 {
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-.course-col:hover {
-    box-shadow: 0 0 20px 0px rgba(43, 105, 156, 0.475)
-}
 
 @media(max-width: 700px) {
     .row {
         flex-direction: column;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-/* Campus */
-.campus {
+/* Projects Cover Page */
+.projects {
     width: 90%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: -10px;
+    background-color: aqua;
 }
 
-.campus-col {
-    flex-basis: 32%;
+.projects-col {
+    flex-basis: 23.5%;
     border-radius: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
 }
 
-.campus-col img {
+.projects-col img {
     width: 100%;
     display: block;
 }
 
+/* Image gradients on project page */
+.img-gradient {
+    max-width: 100%;
+    width: 800px;
+    margin: auto;
+}
+
+.img-gradient::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(14, 80, 234, 0.00) 0, rgba(14, 80, 234, 0.02) 20%, rgba(14, 80, 234, 0.38) 100%);
+    margin-top: -180px;
+    height: 180px;
+    width: 100%;
+    content: '';
+    opacity:0.75;
+}
+
+/* The hover links */
 .layer {
     background: transparent;
     height: 100%;
@@ -352,14 +305,15 @@ h3 {
 }
 
 .layer:hover {
-    background: #5091c6b7;
+    background: rgba(251, 133, 0, 0.82);
 }
 
 .layer h3 {
     width: 100%;
-    font-weight: 500;
+    font-weight: 580;
     color: #fff;
-    font-size: 26px;
+    font-size: 28px;
+    top: 35%;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
