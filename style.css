@@ -10,8 +10,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
 /* The large coverpage */
 .header {
     min-height: 100vh;
@@ -430,9 +428,9 @@ a.skill-button:hover {
     overflow: hidden;
 }
 
-.skill-col h2 { 
+.skill-col h2 {
     font-size: 32px;
-    color:rgba(10, 47, 136, 0.85);
+    color: rgba(10, 47, 136, 0.85);
     padding-bottom: 3%;
 }
 
@@ -443,14 +441,18 @@ a.skill-button:hover {
     line-height: 26px;
 }
 
-@media(max-width: 700px) {
-    .skill-col {
-        background-color: rgba(38, 112, 240, 0.38);
-    }
-}
-
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+
+.award-col br {
+    display: block;
+    margin: 10px 0;
+}
+
+.border-right {
+    margin-right: 500px;
+    border-right: 1px solid blue;
 }
