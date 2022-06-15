@@ -133,10 +133,10 @@
             <br>
             <br>
             <br>
-        </div> 
+        </div>
     </section>
 
-    
+
 
 
     <!-- Footer -->
@@ -162,9 +162,8 @@
         function hideMenu() {
             navLinks.style.left = "-200px";
         }
-    </script>
 
-    <script>
+        /* The reveal function */
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
             once = 'true';
@@ -178,22 +177,10 @@
                     reveals[i].classList.remove("active");
                 }
             }
-
-        }
-
-        function once(fn, context) {
-            var result;
-            return function () {
-                if (fn) {
-                    result = fn.apply(context || this, arguments);
-                    fn = null;
-                }
-                return result;
-            };
         }
 
         window.addEventListener("scroll", reveal);
-        
+
     </script>
 
 

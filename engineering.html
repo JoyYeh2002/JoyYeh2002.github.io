@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AstroJays</title>
+    <title>Joy Yeh - Engineering Projects</title>
     <link rel="stylesheet" href="style.css">
 
     <!-- The font is generated from Google Fonts-->
@@ -18,129 +18,71 @@
     <section class="sub-header">
         <nav>
             <!-- able to click on the logo and go to main page-->
-            <a href="index.html"><img src="images/astrojays_logo.png"></a>
             <div class="nav-links" id="navLinks">
-                <!-- Add some links here-->
-                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- the closing icon-->
+                <!-- Display the navigation bar titles and link them to the respective .html -->
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div> <!-- the closing icon-->
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="course.html">COURSES</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="engineering.html">Engineering</a>
+                                <a href="compsci.html">Computer Science</a>
+                                <a href="hopmc.html">HopMC</a>
+                                <a href="art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
-        <h1>Programs for 2022</h1>
+        <!-- Add the signature logo image -->
+        <img src="images/engineering/engineering_signature.png" alt="Engineering" style="width:35%;" class="center-sub">
     </section>
 
-    <!-- Blog Page Content -->
-    <section class="blog-content">
+
+    </section>
+
+    <!-- About Us Content -->
+    <section class="about-us">
         <div class="row">
-            <div class="blog-left">
-                <img src="images/sample/certificate.jpg">
-                <h2> Engineering Projects</h2>
-                <p> to. Vestibulum in ex auctor,
-                    lobortis leo ac, cursus magna. Quisque ornare elit sit amet nisi pellentesque commodo. Sed sagittis
-                    sodales con</p>
-
-
-                <br>
-                <p> Maecenas ultrices dui congue mi vestibulum posuere. Sed sit amet sapien facilisis, scelerisque
-                    libero non, tempus
-                    elit. Sed sodales facilisis tortor, a facilisis ex dapibus a. Vivamus vel ex lobortis, dignissim
-                    diam at, congue
-                    quam. Donec porttitor, nisi quis tristique feugiat, felis enim feugiat lectus, eget blandit est nisi
-                    in lectus.
-                    Nulla facilisi. Curabitur turpis libero, iaculis id risus in, vehicula semper justo. Vestibulum in
-                    ex auctor,
-                    lobortis leo ac, cursus magna. Quisque ornare elit sit amet nisi pellentesque commodo. Sed sagittis
-                    sodales
-                    con
-                </p>
-
-                <br>
-                <p> to. Vestibulum in ex auctor,
-                    lobortis leo ac, cursus magna. Quisque ornare elit sit amet nisi pellentesque commodo. Sed sagittis
-                    sodales
-                    con Maecenas ultrices dui congue mi vestibulum posuere. Sed sit amet sapien facilisis, scelerisque
-                    libero non, tempus
-                    elit. Sed sodales facilisis tortor, a facilisis ex dapibus a. Vivamus vel ex lobortis, dignissim
-                    diam at, congue
-                    quam. Donec porttitor, nisi quis tristique feugiat, felis enim feugiat lectus, eget blandit est nisi
-                    in lectus.
-                    Nulla facilisi. Curabitur turpis libero, iaculis id risus in, vehicula semper justo. Vestibulum in
-                    ex auctor,
-                    lobortis leo ac, cursus magna. Quisque ornare elit sit amet nisi pellentesque commodo. Sed sagittis
-                    sodales
-                    con
-                </p>
-
-                <div class="comment-box">
-                    <h3> Leave Us a Comment</h3>
-                    <form class="comment-form">
-                        <input type="text" placeholder="Enter Name">
-                        <input type="email" placeholder="Enter Email">
-                        <textarea rows="5" placeholder="Your comment">
-                        </textarea>
-                        <button type="submit" class="hero-btn blue-btn"> POST COMMENT</button>
-                    </form>
-                </div>
-
+            <div class="about-col">
+                <h1>Johns Hopkins' Best Rocketry Team</h1>
+                <p> Proin ut malesuada magna, eget rhoncus erat. Pellentesque eget scelerisque arcu. Integer ac mollis
+                    arcu. Nunc
+                    suscipit mi non luctus posuere. Nulla vitae diam arcu. Vestibulum rutrum urna quis sollicitudin
+                    porta. Cras lacinia
+                    est non elit faucibus efficitur a sit amet tellus. Etiam eget enim sapien. Donec vel sapien viverra,
+                    egestas risus
+                    a, aliquam eros.</p>
+                <a href="" class="hero-btn blue-btn">EXPLORE NOW</a>
 
             </div>
-            <div class="blog-right">
-                <h3> Post Categories</h3>
-                <div>
-                    <span> Business Analytics</span>
-                    <span> 21</span>
-                </div>
-                <div>
-                    <span> Computer Science</span>
-                    <span> 28</span>
-                </div>
-                <div>
-                    <span> Economics</span>
-                    <span> 14</span>
-                </div>
-                <div>
-                    <span> International Studies</span>
-                    <span> 10</span>
-                </div>
-                <div>
-                    <span> Chemistry</span>
-                    <span> 15</span>
-                </div>
-                <div>
-                    <span> Electrical Engineering</span>
-                    <span> 29</span>
-                </div>
+            <div class="about-col">
+                <img src="images/sample/about.jpg">
             </div>
+
         </div>
-
     </section>
-
 
     <!-- Footer -->
     <section class="footer">
-        <h4> About Us </h4>
-        <p> Is efficitur. Morbi suscipit aliquam lorem, vel fringilla mi fringilla non. Donec sit amet
-            commodo nunc, convallis hendrerit est. <br> Fusce egestas lorem ut ligula porttitor elementum sed at nisi.
-            Mauris
-            eleifend tortor tellus, eu ultricies mi bi.</p>
         <div class="icons">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
             <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-youtube" aria-hidden="true"></i>
             <i class="fa fa-linkedin" aria-hidden="true"></i>
         </div>
 
         <p> Made with <i class="fa fa-heart" aria-hidden="true"></i> by Joy Yeh </p>
     </section>
-
-
 
     <!-- JavaScript for toggle menu -->
     <script>
@@ -151,6 +93,19 @@
         function hideMenu() {
             navLinks.style.right = "-200px";
         }
+
+        /* javascript for rotation */
+        $('img').each(function () {
+            var deg = $(this).data('rotate') || 0;
+            var rotate = 'rotate(' + $(this).data('rotate') + 'deg)';
+            $(this).css({
+                '-webkit-transform': rotate,
+                '-moz-transform': rotate,
+                '-o-transform': rotate,
+                '-ms-transform': rotate,
+                'transform': rotate
+            });
+        });
     </script>
 
 </body>
