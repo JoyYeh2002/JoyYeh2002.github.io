@@ -436,23 +436,31 @@ a.skill-button:hover {
 
 .skill li {
     text-align: left;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-right: 20px;
-    line-height: 26px;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+.skill ul {
+    text-align: center;
+    line-height: 32px;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 700px) {
+    .skill-col {
+        flex-direction: column;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .row:after {
     content: "";
     display: table;
     clear: both;
-}
-
-.award-col br {
-    display: block;
-    margin: 10px 0;
-}
-
-.border-right {
-    margin-right: 500px;
-    border-right: 1px solid blue;
 }
