@@ -56,7 +56,6 @@ h1::before {
     border-radius: 5px;
     box-shadow: 3px 3px 5px rgb(39, 65, 231);
     margin-bottom: 150px;
-    
 }
 
 h3 {
@@ -160,7 +159,7 @@ label:hover{
 }
 
 #check2:checked ~ .container .photo-gallery .child,
-#check2:checked ~ .container .photo-gallery .place{
+#check2:checked ~ .container .photo-gallery .place {
     opacity: 0;
     transform: scale(0);
     position: absolute;
@@ -175,7 +174,7 @@ label:hover{
 }
 
 #check3:checked ~ .container .photo-gallery .family,
-#check3:checked ~ .container .photo-gallery .place{
+#check3:checked ~ .container .photo-gallery .place {
     opacity: 0;
     transform: scale(0);
     position: absolute;
@@ -190,7 +189,7 @@ label:hover{
 }
 
 #check4:checked ~ .container .photo-gallery .child,
-#check4:checked ~ .container .photo-gallery .family{
+#check4:checked ~ .container .photo-gallery .family {
     opacity: 0;
     transform: scale(0);
     position: absolute;
