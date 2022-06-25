@@ -22,42 +22,41 @@
 <!-- Everything in the body tag will display on the webpage -->
 
 <body>
- 
-        <!-- Make the top navigation bar. Its styles are specified in the "header" class in style.css -->
-        <section class="header">
-            <nav>
-                <!-- able to click on the logo and go to main page-->
-                <div class="nav-links" id="navLinks">
-                    <!-- Display the navigation bar titles and link them to the respective .html -->
-                    <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
-                            onclick="hideMenu()"></i></div> <!-- the closing icon-->
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <button class="dropbtn">Projects &#11167 </button>
-                                <div class="dropdown-content">
-                                    <a href="engineering.html">Engineering</a>
-                                    <a href="compsci.html">Computer Science</a>
-                                    <a href="hopmc.html">HopMC</a>
-                                    <a href="art.html">Visual Art</a>
-                                </div>
+
+    <!-- Make the top navigation bar. Its styles are specified in the "header" class in style.css -->
+    <section class="header">
+        <nav>
+            <!-- able to click on the logo and go to main page-->
+            <div class="nav-links" id="navLinks">
+                <!-- Display the navigation bar titles and link them to the respective .html -->
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div> <!-- the closing icon-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="engineering.html">Engineering</a>
+                                <a href="compsci.html">Computer Science</a>
+                                <a href="hopmc.html">HopMC</a>
+                                <a href="art.html">Visual Art</a>
                             </div>
-                        </li>
-                        <li><a href="skills.html">Skills</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+                        </div>
+                    </li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
 
-                <i class="fa fa-bars" onclick="showMenu()"></i>
-            </nav>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
 
-            <!-- Add the signature logo image -->
-            <img src="images/index/hyeh_signature_orange.png" alt="Joy's Signature Logo" style="width:65%;"
-                class="center">
-        </section>
+        <!-- Add the signature logo image -->
+        <img src="images/index/hyeh_signature_orange.png" alt="Joy's Signature Logo" style="width:65%;" class="center">
+    </section>
 
-        <section class="container reveal">
+    <section class="container reveal">
         <!-- Self-intro/welcome section -->
         <section class="title-block">
             <h1>Welcome!</h1>
@@ -139,13 +138,18 @@
         <!-- Footer -->
         <section class="footer">
             <div class="icons">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-youtube" aria-hidden="true"></i>
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <a href="https://www.instagram.com/joyleafy2002/?hl=en" target="_blank" rel="noopener noreferrer"><i
+                        class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/yeh.joy.1/" target="_blank" rel="noopener noreferrer"> <i
+                        class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UCYaDuhLA0OO3Q-MnSY8LMWg" target="_blank"
+                    rel="noopener noreferrer"> <i class="fa fa-youtube" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/joy-yeh-2002/" target="_blank" rel="noopener noreferrer"> <i
+                        class="fa fa-linkedin" aria-hidden="true"></i></a>
             </div>
 
-            <p> Made with <i class="fa fa-heart" aria-hidden="true"></i> by Joy Yeh </p>
+            <p> Made with <a href="https://joyyeh2002.github.io/"><i class="fa fa-heart" aria-hidden="true"></i></a> by
+                Joy Yeh </p>
         </section>
 
         <!-- JavaScript for toggle menu -->
