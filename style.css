@@ -346,6 +346,7 @@ a.skill-button:hover {
     text-align: center;
     color: rgb(9, 28, 72);
     padding: 30px 0;
+    z-index: 1;
 }
 
 .icons .fa {
@@ -465,7 +466,7 @@ a.skill-button:hover {
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
     /* what */
 }
@@ -474,9 +475,8 @@ a.skill-button:hover {
     /* the container element */
     position: relative;
     height: 240px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
     margin-bottom: 20px;
-    box-shadow: 0 0 4px 0px rgba(10, 67, 113, 0.9);
     cursor: pointer;
     margin-top:-10%;
 }
@@ -485,7 +485,7 @@ a.skill-button:hover {
     margin-top:1%;
     margin-left: 4%;
     margin-right: 4%;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
