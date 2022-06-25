@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joy Yeh - Engineering Projects</title>
+    <title>Engineering Projects</title>
     <link rel="stylesheet" href="style.css">
 
     <!-- The font is generated from Google Fonts-->
@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- Sub Folder for CS Project Page-->
     <section class="sub-header">
         <nav>
             <!-- able to click on the logo and go to main page-->
@@ -44,53 +45,123 @@
         </nav>
 
         <!-- Add the signature logo image -->
-        <img src="images/engineering/engineering_signature.png" alt="Engineering" style="width:40%;" class="center-sub">
+        <img src="images/engineering/engineering_signature.png" alt="Engineering" style="width:45%;" class="center-sub">
     </section>
 
-    <!-- About Us Content -->
-    <section class="about-us">
-        <div class="row">
-            <div class="about-col">
-                <h1>Johns Hopkins' Best Rocketry Team</h1>
-                <p> Proin ut malesuada magna, eget rhoncus erat. Pellentesque eget scelerisque arcu. Integer ac mollis
-                    arcu. Nunc
-                    suscipit mi non luctus posuere. Nulla vitae diam arcu. Vestibulum rutrum urna quis sollicitudin
-                    porta. Cras lacinia
-                    est non elit faucibus efficitur a sit amet tellus. Etiam eget enim sapien. Donec vel sapien viverra,
-                    egestas risus
-                    a, aliquam eros.</p>
-                <a href="" class="hero-btn blue-btn">EXPLORE NOW</a>
-
+    <section class="content reveal">
+    <!-- CS Projects Gallery -->
+    <section class="container reveal">
+        <div class="project-gallery-main">
+            <!-- Course Projects-->
+            <div class="title-block">
+                <h1>Circuits</h1>
             </div>
-            <div class="about-col">
-                <img src="images/sample/about.jpg">
+
+            <div class="project-gallery">
+                <idv class="project-container">
+                    <img src="images/index/proj_cover_art.png">
+                    <p> Movie Sentiments Analyzer</p>
+                </idv>
+                <idv class="project-container">
+                    <img src="images/index/proj_cover_compsci.png">
+                    <p>Play Wordle with Trie</p>
+                </idv>
+                <idv class="project-container">
+                    <img src="images/index/proj_cover_engineering.png">
+                    <p> Autio Generator + Rick Roll!</p>
+                </idv>
+                <idv class="project-container">
+                    <img src="images/index/proj_cover_hopmc.png">
+                    <p> Dijkstra Maze Solver</p>
+                </idv>
+
+                <idv class="project-container">
+                    <img src="images/index/proj_cover_art.png">
+                    <p> AVL Tree and Treap</p>
+                </idv>
+                <idv class="project-container">
+                    <img src="images/index/proj_cover_compsci.png">
+                    <p> x86 Assembly Hex Dump</p>
+                </idv>
+
+                <idv class="project-container">
+                    <img src="images/index/proj_cover_hopmc.png">
+                    <p> Robinhood Hash Map</p>
+                </idv>
+
+                <idv class="project-container">
+                    <img src="images/index/proj_cover_art.png">
+                    <p> John Conway's Game of Life</p>
+                </idv>
+            </div>
+
+
+            <!-- Signals and Systems -->
+            <div class="title-block">
+                <h1>Course Projects</h1>
+            </div>
+
+            <div class="project-gallery" style="grid-template-columns: repeat(3, 1fr);">
+          
+                <idv class="project-container" style="height:250px; margin-top:-5%; margin-bottom:7%;">
+
+                    <img src="images/index/proj_cover_hopmc.png">
+                    <p> Dual-Tone Multifrequency Decoding (DTMF) on Phone Keys</p>
+                </idv>
+
+                <idv class="project-container" style="height:250px; margin-top:-5%; margin-bottom:7%;">
+
+                    <img src="images/index/proj_cover_hopmc.png">
+                    <p> CMOS Imager </p>
+                </idv>
+                <idv class="project-container" style="height:250px; margin-top:-5%; margin-bottom:7%;">
+
+                    <img src="images/index/proj_cover_engineering.png">
+                    <p> Sonar Decryption with the Matched Filter</p>
+                </idv>
+               
+            </div>
+
+            <!-- AstroJays-->
+            <div class="title-block">
+                <h1>AstroJays Rocketry</h1>
+            </div>
+
+            <div class="project-gallery" style="grid-template-columns: repeat(2, 1fr);">
+                <idv class="project-container" style="height:60%; margin-top:-5%; ">
+                    <img src="images/index/proj_cover_art.png">
+                    <p> Hybrid Engine Thrust Stand</p>
+                </idv>
+
+                <idv class="project-container" style="height:60%; margin-top:-5%;">
+                    <img src="images/index/proj_cover_art.png">
+                    <p> FAR 2022 Solid Rocket</p>
+                </idv>
             </div>
 
         </div>
     </section>
+</section>
 
-    <!-- Footer -->
-    <section class="footer">
-        <div class="icons">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <i class="fa fa-youtube" aria-hidden="true"></i>
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </div>
 
-        <p> Made with <i class="fa fa-heart" aria-hidden="true"></i> by Joy Yeh </p>
-    </section>
-
-    <!-- JavaScript for toggle menu -->
     <script>
-        var navLinks = document.getElementById("navLinks");
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-        function hideMenu() {
-            navLinks.style.right = "-200px";
+        /* The reveal function */
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            once = 'true';
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
         }
 
+        window.addEventListener("scroll", reveal);
     </script>
 
 </body>

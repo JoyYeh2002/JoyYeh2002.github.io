@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HopMC</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- The font is generated from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Sub Folder for CS Project Page-->
+    <section class="sub-header">
+        <nav>
+            <!-- able to click on the logo and go to main page-->
+            <div class="nav-links" id="navLinks">
+                <!-- Display the navigation bar titles and link them to the respective .html -->
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div> <!-- the closing icon-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="engineering.html">Engineering</a>
+                                <a href="compsci.html">Computer Science</a>
+                                <a href="hopmc.html">HopMC</a>
+                                <a href="art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- Add the signature logo image -->
+        <img src="images/hopmc/hopmc_signature.png" alt="HopMC" style="width:32%; margin-top:-10px;" class="center-sub">
+
+    </section>
+
+    <!-- HopMC Gallery -->
+
+    <div class="project-gallery-main">
+        <!-- Course Projects-->
+        <div class="title-block">
+            <h1>Gallery</h1>
+        </div>
+
+        <div class="hopmc-gallery">
+            <idv class="hopmc-container">
+                <img src="images/index/proj_cover_art.png">
+                <img src="images/index/proj_cover_art.png">
+                <img src="images/index/proj_cover_compsci.png">
+            </idv>
+
+            <idv class="hopmc-container">
+                <img src="images/index/proj_cover_art.png">
+                <img src="images/index/proj_cover_art.png">
+                <img src="images/index/proj_cover_compsci.png">
+            </idv>
+
+            <idv class="hopmc-container">
+                <img src="images/index/proj_cover_art.png">
+                <img src="images/index/proj_cover_art.png">
+                <img src="images/index/proj_cover_compsci.png">
+            </idv>
+
+            <idv class="hopmc-container">
+                <img src="images/index/proj_cover_art.png">
+                <img src="images/index/proj_cover_art.png">
+                <img src="images/index/proj_cover_compsci.png">
+            </idv>
+
+            <idv class="hopmc-container">
+                <img src="images/index/proj_cover_art.png">
+                <img src="images/index/proj_cover_art.png">
+                <img src="images/index/proj_cover_compsci.png">
+            </idv>
+
+          
+        </div>
+
+
+
+    </div>
+
+    <script>
+        /* The reveal function */
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            once = 'true';
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+
+</body>
+
+</html>

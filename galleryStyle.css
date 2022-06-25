@@ -12,45 +12,13 @@ input {
 .container {
     width: 100%;
     text-align: center;
-    
 }
 
-h1 {
-    font-weight: normal;
-    font-size: 35px;
-    position: relative;
-    margin: 40px 0;
-}
-
-h1::before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 3px;
-    background-color:crimson;
-    bottom: -10px;
-    left:50%;
-    transform:translateX(-50%);
-    animation: animate 4s linear infinite;
-}
-
-@keyframes animate {
-    0%{
-        width: 100px;
-    }
-    50%{
-        width: 200px;
-    }
-    100%{
-        width: 100px;
-    }
-}
-
-.top-content{
+.top-content {
     background-color: rgb(235, 235, 235);
     width: 90%;
     margin: 0 auto 20px auto;
-    height:60px;
+    height: 60px;
     display: flex;
     align-items: center;
     border-radius: 5px;
@@ -60,8 +28,8 @@ h1::before {
 
 h3 {
     height: 100%;
-    background-color:lightgray;
-    line-height:60px;
+    background-color: lightgray;
+    line-height: 60px;
     padding: 0 50px;
     color: white;
 }
@@ -77,122 +45,79 @@ label {
     transition: color .5s;
 }
 
-label:hover{
+label:hover {
     color: black;
 }
 
 .photo-gallery {
+    /* Sets the array with 4-element repetitions */
     width: 90%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
 }
 
 .pic {
+    /* the container element */
     position: relative;
-    height: 250px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px rgb(130, 7, 7);
+    height: 295px;
+    border-radius: 12px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 5px 0px rgba(10, 67, 113, 0.9);
     cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top:-10%;
 }
 
 .pic img {
+    /* The actual image */
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     transition: 0.5s;
 }
 
-.pic:before{
-    content: "PHOTO GALLERY";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
-    width: 100%;
-    margin-top: -200px;
-    margin-bottom: 80px;
-    opacity: 0;
-    transition: 0.3s;
-    transition-delay: 0.2s;
-    z-index: 1;
-}
-
-
-.pic:after{
-    content:"";
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    border-radius: 10px;
-    height: 0;
-    /* background-color: rgba(0,0,0,0.4); */
+.pic:hover {
+    box-shadow: 0 0 10px 0px rgba(0, 102, 255, 0.8);
     transition: 0.3s;
 }
 
-.pic:hover::after{
-    height: 100%;
-}
+@media(max-width: 700px) {
+    .photo-gallery{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
 
-.pic:hover::before{
-    margin-top: 0;
-    opacity: 1;
-}
+    .pic {
+        /* the container element */
+        position: relative;
+        height: 350px;
+        border-radius: 12px;
+        padding-bottom: 70px;
+        margin-bottom: 50px;
+        box-shadow: 0 0 5px 0px rgba(10, 67, 113, 0.9);
+        cursor: pointer;
+        
+    }
 
-#check1:checked ~ .container .photo-gallery .pic {
-    opacity: 1;
-    transform: scale(1);
-    position: relative;
-    transition: .5s;
-}
+    .pic p {
+        margin-top:5%;
+        font-size: 16px;
+    }
 
-/* Set group 2 */
-#check2:checked ~ .container .photo-gallery .family {
-    transform: scale(1);
-    opacity: 1;
-    position: relative;
+    .pic-image {
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
-
-#check2:checked ~ .container .photo-gallery .child,
-#check2:checked ~ .container .photo-gallery .place {
-    opacity: 0;
-    transform: scale(0);
-    position: absolute;
-    transition: 0.5s;
-}
-
-/* Set group 3 */
-#check3:checked ~ .container .photo-gallery .child {
-    transform: scale(1);
-    opacity: 1;
-    position: relative;
-}
-
-#check3:checked ~ .container .photo-gallery .family,
-#check3:checked ~ .container .photo-gallery .place {
-    opacity: 0;
-    transform: scale(0);
-    position: absolute;
-    transition: 0.5s;
-}
-
-/* Set group 4 */
-#check4:checked ~ .container .photo-gallery .place {
-    transform: scale(1);
-    opacity: 1;
-    position: relative;
-}
-
-#check4:checked ~ .container .photo-gallery .child,
-#check4:checked ~ .container .photo-gallery .family {
-    opacity: 0;
-    transform: scale(0);
-    position: absolute;
-    transition: 0.5s;
-}
-

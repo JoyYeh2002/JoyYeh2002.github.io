@@ -156,6 +156,7 @@ body {
     font-size: 56px;
     color: rgba(10, 47, 136, 0.85);
     text-align: center;
+    padding-bottom: 15px;
 }
 
 .title-block p {
@@ -164,14 +165,6 @@ body {
     line-height: 36px;
     padding: 3px;
     color: rgb(9, 28, 72);
-}
-
-/* Another title block for "Projects" */
-.title-block-2 h1 {
-    font-size: 56px;
-    padding-bottom: 30px;
-    color: rgba(10, 47, 136, 0.85);
-    text-align: center;
 }
 
 /* Accomodation for small device */
@@ -237,9 +230,11 @@ body {
 
 /* Set up row elements */
 .row {
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
+
 
 @media(max-width: 700px) {
     .row {
@@ -254,28 +249,22 @@ body {
 .projects {
     width: 90%;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-
+    text-align: center;
+    padding-top: -10px;
 }
 
 .projects-col {
-    border-radius: 10px;
+    flex-basis: 22.5%;
     margin-bottom: 20px;
-    padding-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     position: relative;
     overflow: hidden;
-    width: 30%;
-    background-color: rgb(180, 173, 45);
-    font-size: 18px;
-    font-weight: bold;
 }
 
 .projects-col img {
-    width: 30%;
+    width: 100%;
     display: block;
-    padding-bottom: 10px;
 }
 
 /* Image gradients on project page */
@@ -418,8 +407,9 @@ a.skill-button:hover {
 .skill-col {
     flex-basis: 50%;
     border-radius: 10px;
-    padding: 3%;
+    padding: 2.5%;
     margin: 1%;
+    margin-bottom: -18px;
     position: relative;
     overflow: hidden;
 }
@@ -459,4 +449,136 @@ a.skill-button:hover {
     content: "";
     display: table;
     clear: both;
+}
+
+/* Project Grid */
+.project-gallery-main {
+    width: 100%;
+    text-align: center;
+}
+
+.project-gallery {
+    /* Sets the array with 4-element repetitions */
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.project-container {
+    /* the container element */
+    position: relative;
+    height: 240px;
+    padding-bottom: 70px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 4px 0px rgba(10, 67, 113, 0.9);
+    cursor: pointer;
+    margin-top:-10%;
+}
+
+.project-container p {
+    margin-top:1%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-container img {
+    /* The actual image */
+    width: 100%;
+    height: 100%;
+}
+
+.project-container:hover {
+    box-shadow: 0 0 10px 0px rgba(0, 102, 255, 0.9);
+    transition: 0.3s;
+}
+
+/* Minecraft Grid */
+
+.hopmc-gallery {
+    /* Sets the array with 4-element repetitions */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 6.5px;
+
+}
+    
+
+.hopmc-container {
+    /* the container element */
+    position: relative;
+    height: 220px;
+    cursor: pointer;
+    margin-bottom: -20px;
+    background-color: #fb8500;
+}
+
+.hopmc-container img {
+    /* The actual image */
+    width: 100%;
+    height: 100%;
+}
+
+
+@media(max-width: 700px) {
+    .project-gallery{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .project-container {
+        /* the container element */
+        position: relative;
+        height: 350px;
+        border-radius: 12px;
+        padding-bottom: 70px;
+        margin-bottom: 50px;
+        box-shadow: 0 0 5px 0px rgba(10, 67, 113, 0.9);
+        cursor: pointer;
+    }
+
+    .project-container p {
+        margin-top:5%;
+        font-size: 16px;
+    }
+
+    .project-container-image {
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hopmc-gallery{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .hopmc-container {
+        /* the container element */
+        position: relative;
+        height: 350px;
+        border-radius: 12px;
+        padding-bottom: 70px;
+        margin-bottom: 50px;
+        box-shadow: 0 0 5px 0px rgba(10, 67, 113, 0.9);
+        cursor: pointer;
+    }
 }
