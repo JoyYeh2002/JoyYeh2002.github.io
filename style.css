@@ -32,6 +32,17 @@
     margin-bottom: 84px;
 }
 
+.sub-header-bar {
+    height: 20vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(14, 80, 234, 0.48), rgba(47, 13, 1, 0.588)), url(images/engineering/antelope_creek_6.png);
+    background-position: top;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    margin-bottom: 28px;
+}
+
 .center {
     display: block;
     margin-top: 70px;
@@ -340,12 +351,19 @@ a.skill-button:hover {
     transition: 0.6s;
 }
 
+.blank-space {
+    height: -10px;
+}
+
 /* Footer */
 .footer {
+    position: static;
+    bottom: 0;
     width: 100%;
+    background-color: #ff9e2fe4;
     text-align: center;
     color: rgb(9, 28, 72);
-    padding: 30px 0;
+    padding: 12px 0px 20px 0px;
     z-index: 1;
 }
 
@@ -353,7 +371,7 @@ a.skill-button:hover {
     color: rgb(9, 28, 72);
     margin: 0 13px;
     cursor: pointer;
-    padding: 18px 0;
+    padding: 14px 0;
 }
 
 .fa-heart {

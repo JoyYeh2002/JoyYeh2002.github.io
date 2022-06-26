@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- The "viewport" meta tag makes the website responsive to window scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Sentiments</title>
+    <!-- Refer to the style sheet -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../project_style.css">
+
+    <!-- Generate and reference fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Import the caret icon style sheet from fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- Everything in the body tag will display on the webpage -->
+
+<body>
+
+    <!-- Make the top navigation bar. Its styles are specified in the "header" class in style.css -->
+    <section class="sub-header-bar">
+        <nav>
+            <!-- able to click on the logo and go to main page-->
+            <div class="nav-links" id="navLinks">
+                <!-- Display the navigation bar titles and link them to the respective .html -->
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div> <!-- the closing icon-->
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="../engineering.html">Engineering</a>
+                                <a href="../compsci.html">Computer Science</a>
+                                <a href="../hopmc.html">HopMC</a>
+                                <a href="../art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../skills.html">Skills</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- Wiki content -->
+    <section>
+        <div class="wiki">
+            <h1> Movie Sentiments Prediction</h1>
+            <div class="wiki-content">
+                <h2> October 2020<br>
+                    EN.500.112 Gateway Computing: Java<br>
+                </h2>
+
+                <h3>Objectives:</h3>
+                <li>Read a .txt file with thousands of movie reviews and their associated rating scores out of 5
+                </li>
+                <li>Tally the number of appearances of each word and the ratings
+                </li>
+                <li>Perform sentiment analysis on the existing movies</li>
+                <li>Return the sentiment score of a single word input, in order to determine the positive or negative
+                    tone</li>
+
+                <h3>Skills Applied:</h3>
+                <li>File I/O, data wrangling, debugging
+                </li>
+
+                <h3>Comments:</h3>
+                <p> This was an enjoyable project that showed how efficient it is to streamline repetitive data
+                    processing with code. I was able to format the input and output data however I want and create a
+                    robust tool to handle various tasks. Later in the semester, I started working on data processing at
+                    my research lab, which includes lots of file I/O and data clean-up. What I learned from this project
+                    turned out to be extremely useful.
+                </p>
+
+            </div>
+
+            <div class="wiki-images">
+                <div class="wiki-image-box">
+                    <img src="../images/compsci/movie_proj/reviews_txt.PNG">
+                    <p> The text file containing 8000+ reviews and ratings.</p>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/compsci/movie_proj/sample_run.PNG">
+                    <p> A sample run of my code.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

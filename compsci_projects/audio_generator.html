@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- The "viewport" meta tag makes the website responsive to window scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy Yeh</title>
+    <!-- Refer to the style sheet -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../project_style.css">
+
+    <!-- Generate and reference fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Import the caret icon style sheet from fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- Everything in the body tag will display on the webpage -->
+
+<body>
+
+    <!-- Make the top navigation bar. Its styles are specified in the "header" class in style.css -->
+    <section class="sub-header-bar">
+        <nav>
+            <!-- able to click on the logo and go to main page-->
+            <div class="nav-links" id="navLinks">
+                <!-- Display the navigation bar titles and link them to the respective .html -->
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div> <!-- the closing icon-->
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="../engineering.html">Engineering</a>
+                                <a href="../compsci.html">Computer Science</a>
+                                <a href="../hopmc.html">HopMC</a>
+                                <a href="../art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../skills.html">Skills</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- Wiki content -->
+    <section>
+        <div class="wiki">
+            <h1> Audio Generator (C)</h1>
+            <div class="wiki-content">
+                <h2> March 2021<br>
+                    EN.601.220 Intermediate Programming<br>
+                </h2>
+
+                <h3> Objectives:</h3>
+                <li>Gnerate and transform digital audio</li>
+                <li>Create various wave forms (sine, square wave, sawtooth, etc.) with sinusoidal equations</li>
+                <li>Read provided .txt files with audio data values. Then, generate and save them in .wav</li>
+
+                <h3>Skills Applied:</h3>
+                <li>Knowledge of linear pulse code modulation </li>
+                <li>Ability to understand starter code and implement functions
+                </li>
+                <li>File I/O, debugging</li>
+
+                <h3>Comments:</h3>
+                <p> The concepts of this project are relevant to the Electrical Engineering major. In Signals and
+                    Systems, I revisited how sound is represented and created with computers. It’s interesting to see
+                    how simple mathematical equations create such variety and creative freedom in the music we listen
+                    to.
+                </p>
+
+                <h4>Image Credit: <a href="https://jhu-ip.github.io/cs220-sp21/docs/assignments/midterm/"
+                        target="_blank" rel="noopener noreferrer"> SP21 Intermediate Programming</a></h4>
+            </div>
+
+            <div class="wiki-images">
+                <div class="wiki-image-box">
+                    <img src="../images/compsci/audio_proj/wave_illustration.png">
+                    <p> The Digital Wave Array with Sinusoids.</p>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/compsci/audio_proj/song_code_2.PNG">
+                    <p> Functions implemented.</p>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/compsci/audio_proj/song_code.PNG" style="width:50%; height:50%;">
+                    <p style="text-align: left; padding-left:20px;"> Sample .txt data file.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
