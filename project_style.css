@@ -1,45 +1,57 @@
 /* The style page for individual projects (title, time, objectives, and description). */
 
-/* Project wiki general style */
-.wiki {
-    width: 80%;
-    margin: auto;
-    text-align: left;
+/* The thin sub header bar */
+.sub-header-bar {
+    height: 10vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(14, 80, 234, 0.48), rgba(47, 13, 1, 0.588)), url(images/engineering/antelope_creek_6.png);
+    background-position: top;
+    background-size: cover;
+    text-align: center;
+    position: relative;
 }
 
-.wiki h1 {
-    font-size: 42px;
-    color: rgba(10, 47, 136, 0.85);
-    padding-bottom: 0px;
-    padding-top: 30px;
+/* Project wiki general style */
+.wiki {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    scroll-behavior: smooth;
 }
 
 /* wiki box */
 .wiki-content {
-    width: 55%;
+    width: 60%;
     float: left;
-    height: 700px;
+    height: 500px;
     word-wrap: break-word;
 }
 
-.wiki-content h2 {
-    font-size: 16px;
+.wiki-content h1 {
+    font-size: 38px;
     color: rgba(10, 47, 136, 0.85);
+    padding-bottom: 0px;
     padding-top: 20px;
-    padding-bottom: 5px;
+}
+
+.wiki-content h2 {
+    font-size: 14.5px;
+    color: rgba(10, 47, 136, 0.85);
+    padding-top: 0px;
+    line-height: 24px;
 }
 
 .wiki-content h3{
-    font-size: 16px;
+    font-size: 14px;
     color: rgba(10, 47, 136, 0.85);
-    padding-top: 28px;
+    padding-top: 24px;
     padding-bottom: 5px;
     font-weight: bold;
 }
 
 .wiki-content li, p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 20px;
     padding: 3px;
     color: rgb(9, 28, 72);
 }
@@ -47,16 +59,24 @@
 .wiki-content h4 {
     font-size: 12px;
     color: rgba(10, 47, 136, 0.85);
-    padding-top: 30px;
+   
 }
 
 /* wiki image column */
 .wiki-images {
-    width: 40%;
+    width: 38%;
     float: right;
-    height: 700px;
+    height: 500px;
     word-wrap: break-word;
-    padding-top: 50px;
+    padding-top: 40px;
+}
+
+.wiki-images-low {
+    width: 38%;
+    float: right;
+    height: 500px;
+    word-wrap: break-word;
+    padding-top: 100px;
 }
 
 .wiki-image-box {
@@ -81,6 +101,30 @@
     height: 100%;
 }
 
+@media(max-width: 700px) {
+    .wiki {
+        width: 90%;
+        margin: auto;
+        text-align: left;
+        scroll-behavior: smooth;
+    }
+
+    .wiki-content {
+        width: 100%;
+        height: 600px;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .wiki-images {
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
 .big-blank {
     height: 900px;
 }

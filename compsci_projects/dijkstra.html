@@ -4,7 +4,7 @@
 <head>
     <!-- The "viewport" meta tag makes the website responsive to window scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CS | Movie Sentiments</title>
+    <title>CS | Dijkstra</title>
     <!-- Refer to the style sheet -->
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../project_style.css">
@@ -28,12 +28,12 @@
     <section class="sub-header-bar">
         <nav>
             <!-- able to click on the logo and go to main page-->
-            <div class="nav-links"  id="navLinks">
+            <div class="nav-links" id="navLinks">
                 <!-- Display the navigation bar titles and link them to the respective .html -->
                 <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
                         onclick="hideMenu()"></i></div> <!-- the closing icon-->
                 <ul style="margin-top:-26px;">
-                    <li ><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li>
                         <div class="dropdown">
                             <button class="dropbtn">Projects &#11167 </button>
@@ -57,45 +57,47 @@
     <!-- Wiki content -->
     <section>
         <div class="wiki">
-            
+          
             <div class="wiki-content">
-                <h1> Movie Sentiments Prediction</h1>
-                <h2> October 2020<br>
-                    EN.500.112 Gateway Computing: Java<br>
+                <h1> Dijkstra Path Finder (JAVA)</h1>
+                <h2> April 2021<br>
+                    EN.600.226 Data Structures<br>
                 </h2>
 
-                <h3>Objectives:</h3>
-                <li>Read a .txt file with thousands of movie reviews and their associated ratings (0-4)
+                <h3> Objectives:</h3>
+                <li>Implement the vertex, two-way edge, and labels of a sparse graph
                 </li>
-                <li>Tally the number of appearances of each word and the ratings
+                <li>Implement Dijkstra’s algorithm
                 </li>
-                <li>Calculate the predicted rating based on several keywords</li>
-                <li>Rate any input word and determine the positive or negative
-                    tone</li>
+                <li>Load a .txt file with the distances between every street in Baltimore</li>
+                <li>Find the shortest path between two points</li>
 
                 <h3>Skills Applied:</h3>
-                <li>File I/O, data wrangling, debugging
+                <li>Writing Java unit tests, priority queue
                 </li>
 
                 <h3>Comments:</h3>
-                <p> This was an enjoyable project that showed how efficient it is to streamline repetitive data
-                    processing with code. I was able to format the input and output data however I want and create a
-                    robust tool to handle various tasks. Later in the semester, I started working on data processing at
-                    my research lab, which includes lots of file I/O and data clean-up. What I learned from this project
-                    turned out to be extremely useful.
+                <p>During this project, I learned from online about how lightnings implement Dijkstra’s algorithm when
+                    finding the smallest-resistance path through the air. A slow-motion video of a lightning strike
+                    looks astonishingly similar to the animation demos shown in class. It was a truly fascinating
+                    correspondence.
                 </p>
 
+                <h4>Image Credit: <a href="https://commons.wikimedia.org/wiki/File:Baltimore_Street_Map,_1894.jpg"
+                        target="_blank" rel="noopener noreferrer"> File:Baltimore Street Map, 1894.jpg</a></h4>
             </div>
 
-            <div class="wiki-images-low">
+            <div class="wiki-images">
+                
+
                 <div class="wiki-image-box">
-                    <img src="../images/compsci/movie_proj/reviews_txt.PNG">
-                    <p> The text file containing 8000+ reviews and ratings.</p>
+                    <img src="../images/compsci/dijkstra_proj/map_and_code.PNG">
+                    <p> Sample run and a map of Baltimore.</p>
                 </div>
 
                 <div class="wiki-image-box">
-                    <img style="width:80%;" src="../images/compsci/movie_proj/sample_run.PNG">
-                    <p style="text-align: left; padding-left:80px;"> A sample run of my code.</p>
+                    <img src="../images/compsci/dijkstra_proj/unit_tests.PNG" style="width: 100%;">
+                    <p> Some of the unit tests.</p>
                 </div>
 
             </div>
