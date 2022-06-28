@@ -18,6 +18,12 @@
 
     <!-- Import the caret icon style sheet from fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery-->
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
 </head>
 
 <!-- Everything in the body tag will display on the webpage -->
@@ -28,18 +34,18 @@
     <section class="sub-header-bar">
         <nav>
             <!-- able to click on the logo and go to main page-->
-            <div class="nav-links"  id="navLinks">
+            <div class="nav-links" id="navLinks">
                 <!-- Display the navigation bar titles and link them to the respective .html -->
                 <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
                         onclick="hideMenu()"></i></div> <!-- the closing icon-->
                 <ul style="margin-top:-26px;">
-                    <li ><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../compsci.html#course-projects">CS Projects</a></li>
                     <li>
                         <div class="dropdown">
-                            <button class="dropbtn">Projects &#11167 </button>
+                            <button class="dropbtn">Other Projects &#11167 </button>
                             <div class="dropdown-content">
                                 <a href="../engineering.html">Engineering</a>
-                                <a href="../compsci.html">Computer Science</a>
                                 <a href="../hopmc.html">HopMC</a>
                                 <a href="../art.html">Visual Art</a>
                             </div>
@@ -57,7 +63,6 @@
     <!-- Wiki content -->
     <section>
         <div class="wiki">
-            
             <div class="wiki-content">
                 <h1> Movie Sentiments Prediction</h1>
                 <h2> October 2020<br>
@@ -87,7 +92,13 @@
 
             </div>
 
-            <div class="wiki-images-low">
+            <div class="wiki-images">
+                <!-- Prev and next buttons -->
+                <div class="button-box">
+                    <a href="trie.html" class="previous"> &laquo; Previous: Trie</a>
+                    <a href="audio_generator.html" class="next">Next: Audio Generator &raquo;</a>
+                </div>
+
                 <div class="wiki-image-box">
                     <img src="../images/compsci/movie_proj/reviews.PNG">
                     <p> The text file containing 8000+ reviews and ratings.</p>
@@ -101,6 +112,40 @@
             </div>
         </div>
     </section>
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        /* These get called on click: <i class = "fa fa-times" onclick = "showMenu()"></i> */
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+
+    </script>
+
+    <!-- Java Script for smooth transition -->
+    <script>
+        var speed = 'normal';
+
+        $('html, body').hide();
+
+        $(document).ready(function () {
+            $('html, body').fadeIn(speed, function () {
+                $('a[href], button[href]').click(function (event) {
+                    var url = $(this).attr('href');
+                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+                    event.preventDefault();
+                    $('html, body').fadeOut(speed, function () {
+                        window.location = url;
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

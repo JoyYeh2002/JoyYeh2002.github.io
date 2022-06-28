@@ -18,13 +18,16 @@
 
     <!-- Import the caret icon style sheet from fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <!-- Everything in the body tag will display on the webpage -->
 
 <body>
 
-    <!-- Make the top navigation bar. Its styles are specified in the "header" class in style.css -->
+    <!-- Thin nav bar -->
     <section class="sub-header-bar">
         <nav>
             <!-- able to click on the logo and go to main page-->
@@ -34,12 +37,12 @@
                         onclick="hideMenu()"></i></div> <!-- the closing icon-->
                 <ul style="margin-top:-26px;">
                     <li><a href="../index.html">Home</a></li>
+                    <li><a href="../compsci.html#course-projects">CS Projects</a></li>
                     <li>
                         <div class="dropdown">
-                            <button class="dropbtn">Projects &#11167 </button>
+                            <button class="dropbtn">Other Projects &#11167 </button>
                             <div class="dropdown-content">
                                 <a href="../engineering.html">Engineering</a>
-                                <a href="../compsci.html">Computer Science</a>
                                 <a href="../hopmc.html">HopMC</a>
                                 <a href="../art.html">Visual Art</a>
                             </div>
@@ -89,18 +92,57 @@
             </div>
 
             <div class="wiki-images">
+                <!-- Prev and next buttons -->
+                <div class="button-box">
+                    <a href="trie.html" class="previous"> &laquo; Previous: Game of Life</a>
+                    <a href="movie_sentiments.html" class="next">Next: Movies &raquo;</a>
+                </div>
+
                 <div class="wiki-image-box">
-                    <img src="../images/compsci/trie_proj/trie_illustration.png"  style="width:54%;">
+                    <img src="../images/compsci/trie_proj/trie_illustration.png" style="width:45%;">
                     <p> The trie dictionary structure.</p>
                 </div>
 
                 <div class="wiki-image-box">
-                    <img src="../images/compsci/trie_proj/word_hunt.PNG"  style="width:90%;">
+                    <img src="../images/compsci/trie_proj/word_hunt.PNG" style="width:80%;">
                     <p> A sample run of a Word Hunt Game.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        /* These get called on click: <i class = "fa fa-times" onclick = "showMenu()"></i> */
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+
+    </script>
+
+<script>
+    var speed = 'normal';
+
+    $('html, body').hide();
+
+    $(document).ready(function () {
+        $('html, body').fadeIn(speed, function () {
+            $('a[href], button[href]').click(function (event) {
+                var url = $(this).attr('href');
+                if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+                event.preventDefault();
+                $('html, body').fadeOut(speed, function () {
+                    window.location = url;
+                });
+            });
+        });
+    });
+</script>
 </body>
 
 </html>

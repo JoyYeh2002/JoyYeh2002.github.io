@@ -10,6 +10,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* The large coverpage */
 .header {
     min-height: 100vh;
@@ -52,7 +56,6 @@
 nav {
     display: flex;
     padding: 2% 6%;
-
     justify-content: space-between;
     align-items: center;
 }
@@ -173,6 +176,7 @@ body {
     /* Small-screen nav bar design */
     .nav-links ul li {
         display: block;
+        color: red;
     }
 
     .nav-links {
@@ -181,10 +185,14 @@ body {
         height: 100vh;
         width: 200px;
         top: 0;
-        left: -200px;
+        left: -300px;
         text-align: left;
         z-index: 2;
         transition: 0.3s;
+    }
+
+    .dropbtn {
+        padding-left: 16px;
     }
 
     /* The cross icon for the screen menu */
@@ -196,6 +204,7 @@ body {
         cursor: pointer;
     }
 
+    /* every element except for "projects" */
     .nav-links ul {
         padding: 30px;
     }
@@ -481,11 +490,11 @@ a.skill-button:hover {
     padding-bottom: 80px;
     margin-bottom: 20px;
     cursor: pointer;
-    margin-top:-10%;
+    margin-top: -10%;
 }
 
 .project-container p {
-    margin-top:1%;
+    margin-top: 1%;
     margin-left: 4%;
     margin-right: 4%;
     font-size: 20px;
@@ -515,7 +524,7 @@ a.skill-button:hover {
     grid-gap: 6.5px;
 
 }
-    
+
 
 .hopmc-container {
     /* the container element */
@@ -534,7 +543,7 @@ a.skill-button:hover {
 
 
 @media(max-width: 700px) {
-    .project-gallery{
+    .project-gallery {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -555,7 +564,7 @@ a.skill-button:hover {
     }
 
     .project-container p {
-        margin-top:5%;
+        margin-top: 5%;
         font-size: 16px;
     }
 
@@ -566,7 +575,7 @@ a.skill-button:hover {
         margin-right: auto;
     }
 
-    .hopmc-gallery{
+    .hopmc-gallery {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
