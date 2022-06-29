@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS | Audio Generator </title>
+    <title>CS | Game of Life </title>
 
     <!-- Style sheets -->
     <link rel="stylesheet" href="../style.css">
@@ -19,7 +19,7 @@
     <!-- Fontawesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- JQuery-->
+    <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -57,52 +57,47 @@
         <div class="wiki">
             <!-- Text -->
             <div class="wiki-content">
-                <h1> Dijkstra Path Finder (JAVA)</h1>
-                <h2> April 2021<br>
-                    EN.600.226 Data Structures<br>
+                <h1> John Conway's Game of Life (MATLAB) </h1>
+                <h2> December 2020<br>
+                     EN.500.134 Bootcamp: MATLAB<br>
                 </h2>
 
                 <h3> Objectives:</h3>
-                <li>Implement the vertex, two-way edge, and labels of a sparse graph
-                </li>
-                <li>Implement Dijkstra’s algorithm
-                </li>
-                <li>Load a .txt file with the distances between every street in Baltimore</li>
-                <li>Find the shortest path between two points</li>
+                <li>Implement the rules of the Game of Life, a cellular automaton</li>
+                <li>Read a .txt file indicating a game state</li>
+                <li>Display the real-time game states after the initial frames</li>
+                <li>Build an interactive GUI for inputting files, advance through certain intervals of generations, and
+                    saving game states and videos</li>
 
                 <h3>Skills Applied:</h3>
-                <li>Writing Java unit tests, priority queue
-                </li>
+                <li>MATLAB maatrices, MATLAB GUI, file I/O</li>
 
                 <h3>Comments:</h3>
-                <p>During this project, I learned from online about how lightnings implement Dijkstra’s algorithm when
-                    finding the smallest-resistance path through the air. A slow-motion video of a lightning strike
-                    looks astonishingly similar to the animation demos shown in class. It was a truly fascinating
-                    correspondence.
+                <p> I first came across the concept of the Game of Life a few years earlier, and I was glad to implement
+                    it from scratch. I later built another GUI for my research lab and what I learned from this course
+                    was extremely helpful.
                 </p>
-
-                <h4>Image Credit: <a href="https://commons.wikimedia.org/wiki/File:Baltimore_Street_Map,_1894.jpg"
-                        target="_blank" rel="noopener noreferrer"> File:Baltimore Street Map, 1894.jpg</a></h4>
             </div>
 
             <!-- Image and buttons -->
             <div class="wiki-images">
                 <!-- Prev and next buttons -->
                 <div class="button-box">
-                    <a href="audio_generator.html" class="previous"> &laquo; Previous: Audio</a>
-                    <a href="cache.html" class="next">Next: Cache &raquo;</a>
+                    <a href="trie.html" class="previous"> &laquo; Previous: Hash Map</a>
+                    <a href="dijkstra.html" class="next">Next: Trie &raquo;</a>
                 </div>
 
                 <!-- Images -->
                 <div class="wiki-image-box">
-                    <img src="../images/compsci/dijkstra_proj/map_and_code.PNG">
-                    <p> Sample run and a map of Baltimore.</p>
+                    <img src="../images/compsci/game_of_life_proj/gui.PNG" style="width:80%;">
+                    <p> The Digital Wave Array with Sinusoids.</p>
                 </div>
 
                 <div class="wiki-image-box">
-                    <img src="../images/compsci/dijkstra_proj/unit_tests.PNG" style="width: 100%;">
-                    <p> Some of the unit tests.</p>
+                    <img src="../images/compsci/game_of_life_proj/video.mp4" style="width:94%;">
+                    <p> Functions implemented.</p>
                 </div>
+
             </div>
         </div>
     </section>

@@ -24,7 +24,6 @@
 </head>
 
 <body>
-
     <!-- Thin nav bar -->
     <section class="sub-header-bar">
         <nav>
@@ -36,7 +35,7 @@
                     <li><a href="../compsci.html#course-projects">CS Projects</a></li>
                     <li>
                         <div class="dropdown">
-                            <button class="dropbtn">Other Projects &#11167 </button>
+                            <button class="dropbtn"> Projects &#11167 </button>
                             <div class="dropdown-content">
                                 <a href="../engineering.html">Engineering</a>
                                 <a href="../hopmc.html">HopMC</a>
@@ -107,23 +106,18 @@
     <!-- JS for toggle menu -->
     <script>
         var navLinks = document.getElementById("navLinks");
-
-        /* These get called on click: <i class = "fa fa-times" onclick = "showMenu()"></i> */
         function showMenu() {
             navLinks.style.left = "0";
         }
         function hideMenu() {
             navLinks.style.left = "-200px";
         }
-
     </script>
 
     <!-- JS for smooth page transition -->
     <script>
         var speed = 'normal';
-
         $('html, body').hide();
-
         $(document).ready(function () {
             $('html, body').fadeIn(speed, function () {
                 $('a[href], button[href]').click(function (event) {

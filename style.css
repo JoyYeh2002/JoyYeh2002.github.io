@@ -142,6 +142,7 @@ nav {
 .dropdown:hover .dropdown-content {
     display: block;
     opacity: 1;
+    transition: 0.3s;
 }
 
 /* When not in large screen mode, the .fa icons don't show. */
@@ -176,7 +177,6 @@ body {
     /* Small-screen nav bar design */
     .nav-links ul li {
         display: block;
-        color: red;
     }
 
     .nav-links {
@@ -192,14 +192,25 @@ body {
     }
 
     .dropbtn {
-        padding-left: 16px;
+        padding-left: 0px;
     }
 
     /* The cross icon for the screen menu */
-    nav .fa {
+    nav .fa-bars {
         display: block;
         color: rgb(255, 255, 255);
         margin: 10px;
+        margin-top: 5px;
+        margin-left: 0px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    nav .fa-times {
+        display: block;
+        color: rgb(255, 255, 255);
+        margin: 10px;
+        margin-left: 14px;
         font-size: 22px;
         cursor: pointer;
     }

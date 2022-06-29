@@ -2,48 +2,40 @@
 <html>
 
 <head>
-    <!-- The "viewport" meta tag makes the website responsive to window scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CS | Movie Sentiments</title>
-    <!-- Refer to the style sheet -->
+    <title>CS | Audio Generator </title>
+
+    <!-- Style sheets -->
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../project_style.css">
 
-    <!-- Generate and reference fonts from Google Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Import the caret icon style sheet from fontawesome -->
+    <!-- Fontawesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- JQuery-->
-
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-<!-- Everything in the body tag will display on the webpage -->
-
 <body>
-
-    <!-- Make the top navigation bar. Its styles are specified in the "header" class in style.css -->
+    <!-- Thin nav bar -->
     <section class="sub-header-bar">
         <nav>
-            <!-- able to click on the logo and go to main page-->
             <div class="nav-links" id="navLinks">
-                <!-- Display the navigation bar titles and link them to the respective .html -->
                 <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
-                        onclick="hideMenu()"></i></div> <!-- the closing icon-->
+                        onclick="hideMenu()"></i></div>
                 <ul style="margin-top:-26px;">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../compsci.html#course-projects">CS Projects</a></li>
                     <li>
                         <div class="dropdown">
-                            <button class="dropbtn">Other Projects &#11167 </button>
+                            <button class="dropbtn">Projects &#11167 </button>
                             <div class="dropdown-content">
                                 <a href="../engineering.html">Engineering</a>
                                 <a href="../hopmc.html">HopMC</a>
@@ -60,9 +52,10 @@
         </nav>
     </section>
 
-    <!-- Wiki content -->
+    <!-- Page content -->
     <section>
         <div class="wiki">
+            <!-- Text -->
             <div class="wiki-content">
                 <h1> Movie Sentiments Prediction</h1>
                 <h2> October 2020<br>
@@ -92,6 +85,7 @@
 
             </div>
 
+            <!-- Image and buttons -->
             <div class="wiki-images">
                 <!-- Prev and next buttons -->
                 <div class="button-box">
@@ -113,26 +107,21 @@
         </div>
     </section>
 
-    <!-- JavaScript for toggle menu -->
+    <!-- JS for toggle menu -->
     <script>
         var navLinks = document.getElementById("navLinks");
-
-        /* These get called on click: <i class = "fa fa-times" onclick = "showMenu()"></i> */
         function showMenu() {
             navLinks.style.left = "0";
         }
         function hideMenu() {
             navLinks.style.left = "-200px";
         }
-
     </script>
 
-    <!-- Java Script for smooth transition -->
+    <!-- JS for smooth page transition -->
     <script>
         var speed = 'normal';
-
         $('html, body').hide();
-
         $(document).ready(function () {
             $('html, body').fadeIn(speed, function () {
                 $('a[href], button[href]').click(function (event) {

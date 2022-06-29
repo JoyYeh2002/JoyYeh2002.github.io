@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS | Audio Generator </title>
+    <title>CS | Hash Map </title>
 
     <!-- Style sheets -->
     <link rel="stylesheet" href="../style.css">
@@ -57,51 +57,45 @@
         <div class="wiki">
             <!-- Text -->
             <div class="wiki-content">
-                <h1> Dijkstra Path Finder (JAVA)</h1>
-                <h2> April 2021<br>
-                    EN.600.226 Data Structures<br>
+                <h1> Robinhood Hash Map (Java) </h1>
+                <h2> November 2021 <br>
+                    EN.601.226 Data Structures<br>
                 </h2>
 
                 <h3> Objectives:</h3>
-                <li>Implement the vertex, two-way edge, and labels of a sparse graph
+                <li>Implement a Chaining Hash Map and an Open Addressing Hash Map with any hashing technique
                 </li>
-                <li>Implement Dijkstra’s algorithm
+                <li>Maximize efficiency and test using JMH runtime tests
                 </li>
-                <li>Load a .txt file with the distances between every street in Baltimore</li>
-                <li>Find the shortest path between two points</li>
 
                 <h3>Skills Applied:</h3>
-                <li>Writing Java unit tests, priority queue
+                <li>Using Java Maps to organize the entry, its position, and hashing capacity
+                </li>
+                <li>Learning and implementing Robinhood Hashing, which wasn’t covered in the course
                 </li>
 
                 <h3>Comments:</h3>
-                <p>During this project, I learned from online about how lightnings implement Dijkstra’s algorithm when
-                    finding the smallest-resistance path through the air. A slow-motion video of a lightning strike
-                    looks astonishingly similar to the animation demos shown in class. It was a truly fascinating
-                    correspondence.
-                </p>
+                <p> Most of my peers implemented quadratic hashing with tombstones, which requires more complex data
+                    structures and more class fields. After reading a few papers on Robinhood Hashing, I decided to
+                    implement it and make it work without tombstones. Runtime results showed that using backward
+                    shifting to resolve collisions is much faster than tombstones. All other hashing features also work
+                    as intended.
 
-                <h4>Image Credit: <a href="https://commons.wikimedia.org/wiki/File:Baltimore_Street_Map,_1894.jpg"
-                        target="_blank" rel="noopener noreferrer"> File:Baltimore Street Map, 1894.jpg</a></h4>
+                </p>
             </div>
 
             <!-- Image and buttons -->
             <div class="wiki-images">
                 <!-- Prev and next buttons -->
                 <div class="button-box">
-                    <a href="audio_generator.html" class="previous"> &laquo; Previous: Audio</a>
-                    <a href="cache.html" class="next">Next: Cache &raquo;</a>
+                    <a href="hex_dump.html" class="previous"> &laquo; Previous: Hex Dump</a>
+                    <a href="game_of_life.html" class="next">Next: Game of Life &raquo;</a>
                 </div>
 
                 <!-- Images -->
                 <div class="wiki-image-box">
-                    <img src="../images/compsci/dijkstra_proj/map_and_code.PNG">
-                    <p> Sample run and a map of Baltimore.</p>
-                </div>
-
-                <div class="wiki-image-box">
-                    <img src="../images/compsci/dijkstra_proj/unit_tests.PNG" style="width: 100%;">
-                    <p> Some of the unit tests.</p>
+                    <img src="../images/compsci/hash_map_proj/autograd.PNG" style="width:100%;">
+                    <p> Some of the Gradescope autograder results; all tests passed.</p>
                 </div>
             </div>
         </div>
