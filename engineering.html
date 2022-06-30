@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2442adcce2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -45,86 +46,100 @@
         </nav>
 
         <!-- Add the signature logo image -->
-        <img src="images/engineering/engineering_signature.png" alt="Engineering" style="width:45%;" class="center-sub">
+        <img src="images/engineering/engineering_signature.png" alt="Computer Science" style="width:45%;" margin-top="4%"
+            class="center-sub">
     </section>
 
     <!-- CS Projects Gallery -->
-    <section class="container reveal">
-        <div class="project-gallery-main">
-            <!-- Course Projects-->
-            <div class="title-block">
-                <h1>Circuits</h1>
-            </div>
 
-            <div class="project-gallery">
-                <idv class="project-container">
-                    <img src="images/index/proj_cover_art.png">
-                    <p> AM Radio Receiver</p>
-                </idv>
-                <idv class="project-container">
-                    <img src="images/index/proj_cover_compsci.png">
-                    <p>Quaduture Counter</p>
-                </idv>
-                <idv class="project-container">
-                    <img src="images/index/proj_cover_engineering.png">
-                    <p>Traffic Lights Simulator</p>
-                </idv>
-                <idv class="project-container">
-                    <img src="images/index/proj_cover_hopmc.png">
-                    <p>Solar-Powered Mosquito Trap</p>
-                </idv>
-
-                <idv class="project-container">
-                    <img src="images/index/proj_cover_art.png">
-                    <p>3-bit Grey's Counter</p>
-                </idv>
-            </div>
-
-            <!-- Signals and Systems -->
-            <div class="title-block">
-                <h1>Course Projects</h1>
-            </div>
-
-            <div class="project-gallery" style="grid-template-columns: repeat(3, 1fr);">
-
-                <idv class="project-container" style="height:250px; margin-top:-5%; margin-bottom:7%;">
-
-                    <img src="images/index/proj_cover_hopmc.png">
-                    <p> Phone Key DTMF</p>
-                </idv>
-
-                <idv class="project-container" style="height:250px; margin-top:-5%; margin-bottom:7%;">
-
-                    <img src="images/index/proj_cover_hopmc.png">
-                    <p> CMOS Imager </p>
-                </idv>
-                <idv class="project-container" style="height:250px; margin-top:-5%; margin-bottom:7%;">
-
-                    <img src="images/index/proj_cover_engineering.png">
-                    <p> Matched Filter Sonar Decryption</p>
-                </idv>
-
-            </div>
-
-            <!-- AstroJays-->
-            <div class="title-block">
-                <h1>AstroJays Rocketry</h1>
-            </div>
-
-            <div class="project-gallery" style="grid-template-columns: repeat(2, 1fr);">
-                <idv class="project-container" style="height:60%; margin-top:-5%; ">
-                    <img src="images/index/proj_cover_art.png">
-                    <p> Hybrid Engine Thrust Stand</p>
-                </idv>
-
-                <idv class="project-container" style="height:60%; margin-top:-5%;">
-                    <img src="images/index/proj_cover_art.png">
-                    <p> FAR 2022 Solid Rocket</p>
-                </idv>
-            </div>
+    <div class="project-gallery-main" id="course-projects">
+        <!-- Course Projects-->
+        <div class="title-block">
+            <h1>Breadboard Circuits</h1>
         </div>
-    </section>
-    </section>
+
+        <div class="project-gallery">
+            <idv class="project-container">
+                <a href="engineering_projects/traffic.html">
+                    <img src="images/engineering/eng_title_page/traffic_cover.png"></a>
+                <p> Traffic Lights Simulator </p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="engineering_projects/am_radio.html">
+                    <img src="images/engineering/eng_title_page/radio_cover.png"></a>
+                <p> AM Radio Receiver </p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="engineering_projects/quad_counter.html">
+                    <img src="images/engineering/eng_title_page/quad_counter_cover.png"></a>
+                <p> Quadrature Counter</p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="engineering_projects/gray_counter.html"><img
+                        src="images/engineering/eng_title_page/gray_code_cover.png"></a>
+                <p> 3-bit Gray Code </p>
+            </idv>
+ 
+            <idv class="project-container">
+                <a href="engineering_projects/mosquito_trap.html">
+                <img src="images/engineering/eng_title_page/mosquito_cover.png"></a>
+                <p> Solar-Powered Mosquito Trap </p>
+            </idv>
+        </div>
+
+        <!-- Design Projects -->
+        <div class="title-block">
+            <h1>Design Projects</h1>
+        </div>
+
+        <div class="project-gallery" style="grid-template-columns: repeat(3, 1fr); ">
+            <idv class="project-container">
+                <a href="engineering_projects/cmos_imager.html">
+                <img src="images/engineering/eng_title_page/cmos_cover.png"></a>
+                <p> CMOS Imager </p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="engineering_projects/dtmf.html">
+                <img src="images/engineering/eng_title_page/dtmf_cover.png"></a>
+                <p> Phone Key DTMF </p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="engineering_projects/sonar.html">
+                <img src="images/engineering/eng_title_page/sonar_cover.png"></a>
+                <p> Sonar Signal Decryption </p>
+            </idv>
+        </div>
+
+         <!-- AstroJays -->
+         <div class="title-block">
+            <h1>AstroJays Rocketry</h1>
+        </div>
+
+        <div class="project-gallery" style="grid-template-columns: repeat(3, 1fr); ">
+            <idv class="project-container">
+                <a href="engineering_projects/thrust_stand.html">
+                <img src="images/engineering/eng_title_page/thrust_stand_cover.png"></a>
+                <p> Thrust Stand Design </p>
+            </idv>
+        
+            <idv class="project-container">
+                <a href="engineering_projects/tripoli.html">
+                <img src="images/engineering/eng_title_page/tripoli_cover.png"></a>
+                <p> Tripoli Lv.1 Rocketry Certification </p>
+            </idv>
+
+            <idv class="project-container">
+                <a href="engineering_projects/solidworks.html">
+                <img src="images/engineering/eng_title_page/SW_cover.png"></a>
+                <p> SOLIDWORKS Gallery </p>
+            </idv>
+        </div>
+    </div>
 
     <!-- Footer -->
     <section class="footer">
@@ -142,7 +157,6 @@
         <p> Made with <a href="https://joyyeh2002.github.io/"><i class="fa fa-heart" aria-hidden="true"></i></a> by Joy
             Yeh </p>
     </section>
-
 
     <script>
         /* The reveal function */
@@ -164,6 +178,27 @@
         window.addEventListener("scroll", reveal);
     </script>
 
+    <!-- Java Script for smooth transition to here-->
+    <script>
+        var speed = 'slow';
+
+        $('html, body').hide();
+
+        $(document).ready(function () {
+            $('html, body').fadeIn(speed, function () {
+                $('a[href], button[href]').click(function (event) {
+                    var url = $(this).attr('href');
+                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+                    event.preventDefault();
+                    $('html, body').fadeOut(speed, function () {
+                        window.location = url;
+                    });
+                });
+            });
+        });
+    </script>
+
+    
 </body>
 
 </html>

@@ -142,7 +142,7 @@ nav {
 .dropdown:hover .dropdown-content {
     display: block;
     opacity: 1;
-    transition: 0.3s;
+   
 }
 
 /* When not in large screen mode, the .fa icons don't show. */
@@ -484,7 +484,7 @@ a.skill-button:hover {
 .project-gallery {
     /* Sets the array with 4-element repetitions */
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;

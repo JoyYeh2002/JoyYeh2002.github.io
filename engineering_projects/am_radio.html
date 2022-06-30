@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering | AM Radio Receiver </title>
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../project_style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Thin nav bar -->
+    <section class="sub-header-bar">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div>
+                <ul style="margin-top:-26px;">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../compsci.html#course-projects">Engineering Projects</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="../compsci.html">CS</a>
+                                <a href="../hopmc.html">HopMC</a>
+                                <a href="../art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../skills.html">Skills</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- Page content -->
+    <section>
+        <div class="wiki">
+            <!-- Text -->
+            <div class="wiki-content" style="width: 44%">
+                <h1> AM Radio Receiver</h1>
+                <h2> November 2021<br>
+                    EN.520.231 Mastering Electronics Lab <br>
+                </h2>
+
+                <h3> Objectives: </h3>
+                <li> Build an AM radio receiver to listen to nearby radio audio with a long wire
+                </li>
+
+                <h3>Skills Applied:</h3>
+                <li> LTSpice schematics, debugging with multimeter
+                </li>
+                <li> AM radio frequency envelopes
+                </li>
+
+                <h3>Comments:</h3>
+                <li>I used the minimum number of components possible to make a functional radio receiver. It can receive
+                    2 channels with a 30-365 pF tunable capacitor.</li>
+                <li>
+                    Amazingly, when I touch the input wire with my fingers, the circuit can also use my body as
+                    an antenna and receive a quieter but audible signal.</li>
+                
+                <div id="blank-space"></div>
+                
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/radio_proj/calculations.PNG" style="width:100%; height: 101%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> Relevant calculations.</p>
+                </div>
+
+            </div>
+
+            <!-- Image and buttons -->
+            <div class="wiki-images" style="width:52%;">
+                <!-- Prev and next buttons -->
+                <div class="button-box">
+                    <a href="traffic.html" class="previous"> &laquo; Previous: Traffic Light </a>
+                    <a href="quad_counter.html" class="next">Next: Quadrature Counter &raquo;</a>
+                </div>
+
+                <!-- Images -->
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/radio_proj/schematic.PNG" style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> The schematic.</p>
+                </div>
+
+                <!-- Embed video here -->
+                <div class="wiki-image-box" style="height:100%;">
+                    <iframe width="100%" height="80%" src="https://www.youtube.com/embed/sW2lWtMBfmU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p> Project Demo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+
+    <!-- JS for smooth page transition -->
+    <script>
+        var speed = 'normal';
+        $('html, body').hide();
+        $(document).ready(function () {
+            $('html, body').fadeIn(speed, function () {
+                $('a[href], button[href]').click(function (event) {
+                    var url = $(this).attr('href');
+                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+                    event.preventDefault();
+                    $('html, body').fadeOut(speed, function () {
+                        window.location = url;
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
