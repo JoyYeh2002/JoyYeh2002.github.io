@@ -182,3 +182,9 @@
     align-items:  center;
    }
 
+   video {
+    object-fit: fill;
+padding-left: -20px;
+    height: 100%;
+ 
+}
