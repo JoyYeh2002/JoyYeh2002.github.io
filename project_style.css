@@ -55,7 +55,7 @@
     line-height: 24px;
 }
 
-.wiki-content h3{
+.wiki-content h3 {
     font-size: 14px;
     color: rgba(10, 47, 136, 0.85);
     padding-top: 24px;
@@ -76,7 +76,7 @@
 }
 
 #blank-space {
-    margin-top:60px;
+    margin-top: 60px;
 }
 
 #blank-space-small {
@@ -96,7 +96,8 @@
     /* the container element */
     position: relative;
     padding-bottom: 10px;
-    margin-bottom: 10px; /* distance between images */
+    margin-bottom: 10px;
+    /* distance between images */
     cursor: pointer;
 }
 
@@ -125,30 +126,30 @@
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
-  }
-  
-  .button-box a:hover {
+}
+
+.button-box a:hover {
     background-color: rgba(251, 133, 0, 0.82);
     color: black;
-  }
-  
-  .previous {
+}
+
+.previous {
     background-color: #f1f1f1;
     color: black;
     margin-left: 0px;
     margin-right: 6px;
     font-size: 14px;
-  }
-  
-  .next {
+}
+
+.next {
     background-color: rgba(10, 47, 136, 0.85);
     color: white;
-    font-size:14px;
-  }
-  
-  .round {
+    font-size: 14px;
+}
+
+.round {
     border-radius: 50%;
-  }
+}
 
 @media(max-width: 700px) {
     .wiki {
@@ -166,7 +167,7 @@
         margin-right: auto;
     }
 
-    .wiki-images, .wiki-images-low{
+    .wiki-images, .wiki-images-low {
         flex-direction: column;
         width: 100%;
         margin-left: auto;
@@ -177,19 +178,8 @@
 }
 
 /* Previous and next buttons */
-.center{
+.center {
     justify-content: center;
-    display:flex;
-    align-items:  center;
-   }
-
-   #headphone-icon {
-    position: absolute;
-    left: 50;
-
-    font-size:36px; 
-    font-weight: bold; 
-    color:rgba(10, 47, 136, 0.85);
-    margin-left: 50px;
-    padding-left: 50px;
-   }
+    display: flex;
+    align-items: center;
+}
