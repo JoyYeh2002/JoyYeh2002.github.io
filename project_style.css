@@ -38,6 +38,7 @@
     float: left;
     height: 500px;
     word-wrap: break-word;
+    position: relative;
 }
 
 .wiki-content h1 {
@@ -78,6 +79,10 @@
     margin-top:60px;
 }
 
+#blank-space-small {
+    margin-top: 30px;
+}
+
 /* wiki image column */
 .wiki-images {
     width: 38%;
@@ -85,15 +90,6 @@
     height: 500px;
     word-wrap: break-word;
     padding-top: 40px;
-    border-color: blue;
-}
-
-.wiki-images-low {
-    width: 38%;
-    float: right;
-    height: 500px;
-    word-wrap: break-word;
-    padding-top: 100px;
 }
 
 .wiki-image-box {
@@ -185,4 +181,15 @@
     justify-content: center;
     display:flex;
     align-items:  center;
+   }
+
+   #headphone-icon {
+    position: absolute;
+    left: 50;
+
+    font-size:36px; 
+    font-weight: bold; 
+    color:rgba(10, 47, 136, 0.85);
+    margin-left: 50px;
+    padding-left: 50px;
    }
