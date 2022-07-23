@@ -10,8 +10,10 @@
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     --orange: #fb8500;
+    --faint-orange: rgba(251, 133, 0, 0.82);
     --dark-navy:rgba(19, 50, 122, 0.92);
     --dark-navy-solid: rgb(17, 43, 104);
+    --lightning-blue: rgba(0, 102, 255, 0.9);
 }
 
 html {
@@ -38,6 +40,10 @@ html {
     text-align: center;
     position: relative;
     margin-bottom: 84px;
+}
+
+.sub-header h1 {
+    margin-top: 10px;
 }
 
 .center {
@@ -162,7 +168,6 @@ body {
     font-size: 3rem;
     color: rgba(10, 47, 136, 0.85);
     text-align: center;
-    padding-bottom: 1rem;
 }
 
 .title-block p {
@@ -176,7 +181,7 @@ body {
 @media(max-width: 1024px) {
     /* Small-screen nav bar design */
 
-    #home-logo {
+    #home-logo{
         width: 90%;
     }
 
@@ -270,42 +275,39 @@ body {
     text-align: center;
     padding-top: -10px;
 }
-
 .projects-col {
     flex-basis: 22.5%;
-    margin-bottom: 1.1rem;
+    margin-bottom: 20px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     position: relative;
     overflow: hidden;
 }
-
 .projects-col img {
     width: 100%;
     display: block;
 }
-
 /* Image gradients on project page */
 .img-gradient {
     max-width: 100%;
+    width: 800px;
     margin: auto;
 }
-
 /* The hover links */
 .layer {
     background: transparent;
     height: 100%;
     width: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
     transition: 0.3s;
     z-index: 2;
 }
-
 .layer:hover {
-    background: rgba(251, 133, 0, 0.82);
+    background: var(--faint-orange);
     z-index: 2;
 }
-
 .layer h3 {
     width: 100%;
     font-weight: 580;
@@ -320,11 +322,11 @@ body {
     transition: 0.5s;
     cursor: pointer;
 }
-
 .layer:hover h3 {
     bottom: 49%;
     opacity: 1;
 }
+
 
 /* Scrollable web element */
 .reveal {
@@ -368,51 +370,14 @@ a.skill-button:hover {
 }
 
 .icons .fa {
-    color: rgb(9, 28, 72);
+    color: var(--dark-navy-solid);
     margin: 0 13px;
     cursor: pointer;
     padding: 14px 0;
 }
 
 .fa-heart {
-    color: rgba(1, 41, 134, 0.75);
-}
-
-/* ---------- ABOUT US ----------- */
-/* About us Page */
-
-.sub-header h1 {
-    margin-top: 10px;
-}
-
-.about-us {
-    width: 80%;
-    margin: auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
-}
-
-.about-col {
-    flex-basis: 48%;
-    padding: 30px 2px;
-}
-
-.about-col img {
-    width: 100%;
-}
-
-.about-col h1 {
-    padding-top: 0;
-}
-
-.about-col p {
-    padding: 15px 0 25px;
-}
-
-.blue-btn {
-    border: 1px solid #5091c6;
-    background: transparent;
-    color: #5091c6;
+    color: var(--dark-navy);
 }
 
 /* Skills: two columns */
@@ -428,34 +393,31 @@ a.skill-button:hover {
     border-radius: 10px;
     padding: 2.5%;
     margin: 1%;
-    margin-bottom: -18px;
+    margin-bottom: -1rem;
     position: relative;
     overflow: hidden;
 }
 
 .skill-col h2 {
     font-size: 32px;
-    color: rgba(10, 47, 136, 0.85);
-    padding-bottom: 3%;
+    color: var(--dark-navy-solid);
+    padding-bottom: 1%;
 }
 
 .skill li {
     text-align: left;
-    padding-left: 50px;
-    padding-right: 20px;
-    line-height: 32px;
-    font-size: 20px;
+    padding-left: 3rem;
+    padding-right: 1rem;
+    line-height: 1.8rem;
 }
 
 .skill ul {
     text-align: center;
-    line-height: 32px;
-    font-size: 20px;
-    margin-top: 0px;
+    line-height: 1.8rem;
     margin-bottom: 20px;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 1024px) {
     .skill-col {
         flex-direction: column;
         width: 80%;
@@ -478,7 +440,7 @@ a.skill-button:hover {
 
 .project-gallery {
     /* Sets the array with 4-element repetitions */
-    margin-top: 40px;
+    margin-top: 1vw;
     margin-bottom: 30px;
     width: 90%;
     margin-left: auto;
@@ -486,7 +448,6 @@ a.skill-button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    /* what */
 }
 
 .project-container {
@@ -494,9 +455,7 @@ a.skill-button:hover {
     position: relative;
     height: 240px;
     padding-bottom: 80px;
-    margin-bottom: 20px;
     cursor: pointer;
-    margin-top: -10%;
 }
 
 .project-container p {
@@ -514,7 +473,7 @@ a.skill-button:hover {
 }
 
 .project-container:hover {
-    box-shadow: 0 0 10px 0px rgba(0, 102, 255, 0.9);
+    box-shadow: 0 0 10px 0px var(--lightning-blue);
     transition: 0.3s;
 }
 
@@ -530,7 +489,6 @@ a.skill-button:hover {
     grid-gap: 6.5px;
 
 }
-
 
 .hopmc-container {
     /* the container element */
@@ -550,12 +508,13 @@ a.skill-button:hover {
 
 @media(max-width: 700px) {
     .project-gallery {
+        flex-direction: column;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 20px;
+        grid-gap: 1rem;
     }
 
     .project-container {
@@ -563,15 +522,16 @@ a.skill-button:hover {
         position: relative;
         height: 350px;
         border-radius: 12px;
-        padding-bottom: 70px;
-        margin-bottom: 50px;
-        box-shadow: 0 0 5px 0px rgba(10, 67, 113, 0.9);
+        padding-bottom: 18vw; /* height of the white description bar */
+        margin-bottom: 2vw;
+    
+        box-shadow: 0 0 5px 0px var(--lightning-blue);
         cursor: pointer;
     }
 
     .project-container p {
-        margin-top: 5%;
-        font-size: 16px;
+        margin-top: 0.5vw;
+        font-size: 4vw;
     }
 
     .project-container-image {
