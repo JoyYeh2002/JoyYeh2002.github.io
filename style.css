@@ -11,7 +11,7 @@
     font-size: 18px;
     --orange: #fb8500;
     --faint-orange: rgba(251, 133, 0, 0.82);
-    --dark-navy:rgba(19, 50, 122, 0.92);
+    --dark-navy: rgba(19, 50, 122, 0.92);
     --dark-navy-solid: rgb(17, 43, 104);
     --lightning-blue: rgba(0, 102, 255, 0.9);
 }
@@ -44,6 +44,17 @@ html {
 
 .sub-header h1 {
     margin-top: 10px;
+}
+
+/* The thin sub header bar for individual projects */
+.sub-header-bar {
+    height: 10vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(14, 80, 234, 0.28), rgba(14, 80, 234, 0.48)), url(images/engineering/antelope_creek_6.png);
+    background-position: top;
+    background-size: cover;
+    text-align: center;
+    position: relative;
 }
 
 .center {
@@ -181,7 +192,7 @@ body {
 @media(max-width: 1024px) {
     /* Small-screen nav bar design */
 
-    #home-logo{
+    #home-logo {
         width: 90%;
     }
 
@@ -231,7 +242,7 @@ body {
 
     /* Make background image smaller */
     .header {
-        min-height: 45vh;
+        min-height: 70vh;
     }
 
     /* Make background image smaller */
@@ -274,25 +285,39 @@ body {
     margin: auto;
     text-align: center;
     padding-top: -10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
 }
+
+@media(max-width:1024px) {
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+}
+
 .projects-col {
-    flex-basis: 22.5%;
+    margin-top: 1.5rem;
     margin-bottom: 20px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     position: relative;
     overflow: hidden;
 }
+
 .projects-col img {
     width: 100%;
     display: block;
 }
+
 /* Image gradients on project page */
 .img-gradient {
     max-width: 100%;
     width: 800px;
     margin: auto;
 }
+
 /* The hover links */
 .layer {
     background: transparent;
@@ -304,10 +329,12 @@ body {
     transition: 0.3s;
     z-index: 2;
 }
+
 .layer:hover {
     background: var(--faint-orange);
     z-index: 2;
 }
+
 .layer h3 {
     width: 100%;
     font-weight: 580;
@@ -322,6 +349,7 @@ body {
     transition: 0.5s;
     cursor: pointer;
 }
+
 .layer:hover h3 {
     bottom: 49%;
     opacity: 1;
@@ -522,9 +550,10 @@ a.skill-button:hover {
         position: relative;
         height: 350px;
         border-radius: 12px;
-        padding-bottom: 18vw; /* height of the white description bar */
+        padding-bottom: 18vw;
+        /* height of the white description bar */
         margin-bottom: 2vw;
-    
+
         box-shadow: 0 0 5px 0px var(--lightning-blue);
         cursor: pointer;
     }

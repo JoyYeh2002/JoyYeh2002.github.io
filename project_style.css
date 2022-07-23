@@ -1,28 +1,5 @@
 /* The style page for individual projects (title, time, objectives, and description). */
 
-/* The thin sub header bar */
-.sub-header-bar {
-    height: 10vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(14, 80, 234, 0.28), rgba(14, 80, 234, 0.48)), url(images/engineering/antelope_creek_6.png);
-    background-position: top;
-    background-size: cover;
-    text-align: center;
-    position: relative;
-}
-
-.sub-header-bar .nav-links {
-    flex: 1;
-    text-align: left;
-    margin-left: -28px;
-}
-
-.sub-header-bar .nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 16px;
-    position: relative;
-}
 
 /* Project wiki general style */
 .wiki {
@@ -177,13 +154,12 @@
     }
 
     .button-box {
-        border: solid 5px red;
         height: 40px;
         z-index: 1;
         margin-top: 4vw;
         padding-bottom: 40px;
     }
-    
+
 }
 
 /* Previous and next buttons */

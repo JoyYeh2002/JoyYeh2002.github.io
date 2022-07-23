@@ -160,45 +160,58 @@
             Yeh </p>
     </section>
 
-    <script>
-        /* The reveal function */
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-            once = 'true';
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 50;
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
+          <!-- JavaScript for toggle menu -->
+          <script>
+            var navLinks = document.getElementById("navLinks");
+
+            /* These get called on click: <i class = "fa fa-times" onclick = "showMenu()"></i> */
+            function showMenu() {
+                navLinks.style.left = "0";
+            }
+            function hideMenu() {
+                navLinks.style.left = "-200px";
+            }
+
+        </script>
+
+        <!-- JS Reveal -->
+        <script>
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+                once = 'true';
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 50;
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    } else {
+                        reveals[i].classList.remove("active");
+                    }
                 }
             }
-        }
+            window.addEventListener("scroll", reveal);
+        </script>
 
-        window.addEventListener("scroll", reveal);
-    </script>
+        <!-- Java Script for smooth transition -->
+        <script>
+            var speed = 'slow';
 
-    <!-- Java Script for smooth transition to here-->
-    <script>
-        var speed = 'slow';
+            $('html, body').hide();
 
-        $('html, body').hide();
-
-        $(document).ready(function () {
-            $('html, body').fadeIn(speed, function () {
-                $('a[href], button[href]').click(function (event) {
-                    var url = $(this).attr('href');
-                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
-                    event.preventDefault();
-                    $('html, body').fadeOut(speed, function () {
-                        window.location = url;
+            $(document).ready(function () {
+                $('html, body').fadeIn(speed, function () {
+                    $('a[href], button[href]').click(function (event) {
+                        var url = $(this).attr('href');
+                        if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+                        event.preventDefault();
+                        $('html, body').fadeOut(speed, function () {
+                            window.location = url;
+                        });
                     });
                 });
             });
-        });
-    </script>
+        </script>
 
     
 </body>
