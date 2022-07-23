@@ -8,6 +8,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    --orange: #fb8500;
+    --dark-navy:rgba(19, 50, 122, 0.92);
+    --dark-navy-solid: rgb(17, 43, 104);
 }
 
 html {
@@ -22,7 +26,7 @@ html {
     background-position: center;
     background-size: cover;
     position: relative;
-    margin-bottom: 84px;
+    margin-bottom: 4vw;
 }
 
 .sub-header {
@@ -42,6 +46,10 @@ html {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 230px;
+}
+
+.center img {
+    width: 65%;
 }
 
 .center-sub {
@@ -69,7 +77,7 @@ nav {
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     position: relative;
 }
 
@@ -77,7 +85,6 @@ nav {
 .nav-links ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
 }
 
 /* Animation for the end of hovering underscore effect */
@@ -86,7 +93,7 @@ nav {
     /*hide the bar until it's clicked */
     width: 0%;
     height: 3px;
-    background: #fb8500;
+    background: var(--orange);
     display: block;
     margin: auto;
     transition: 0.3s;
@@ -102,12 +109,8 @@ nav {
 .dropbtn {
     background-color: transparent;
     color: #fff;
-    padding: 0px;
-    font-size: 18px;
     border: none;
     cursor: pointer;
-    /* More cursor types: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor */
-
 }
 
 .dropdown {
@@ -118,31 +121,30 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(19, 50, 122, 0.92);
-    min-width: 130px;
+    background-color: var(--dark-navy);
+    min-width: 8rem;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
     z-index: 1;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: 0.3s;
 }
 
 .dropdown-content a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #fb8500
+    background-color: var(--orange);
+    transition: 0.3s;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
     opacity: 1;
-   
 }
 
 /* When not in large screen mode, the .fa icons don't show. */
@@ -157,31 +159,34 @@ body {
 
 /* Welcome */
 .title-block h1 {
-    font-size: 56px;
+    font-size: 3rem;
     color: rgba(10, 47, 136, 0.85);
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 1rem;
 }
 
 .title-block p {
-    margin: 10px 60px 60px;
-    font-size: 22px;
-    line-height: 36px;
-    padding: 3px;
-    color: rgb(9, 28, 72);
+    margin: 10px 40px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: var(--dark-navy);
 }
 
 /* Accomodation for small device */
-@media(max-width: 700px) {
-
+@media(max-width: 1024px) {
     /* Small-screen nav bar design */
+
+    .center img {
+        width: 90%;
+    }
+    
     .nav-links ul li {
         display: block;
     }
 
     .nav-links {
         position: fixed;
-        background: rgb(19, 50, 122);
+        background: var(--dark-navy-solid);
         height: 100vh;
         width: 200px;
         top: 0;
@@ -198,20 +203,19 @@ body {
     /* The cross icon for the screen menu */
     nav .fa-bars {
         display: block;
-        color: rgb(255, 255, 255);
+        color: #fff;
         margin: 10px;
         margin-top: 5px;
-        margin-left: 0px;
-        font-size: 22px;
+        font-size: 1.2rem;
         cursor: pointer;
     }
 
     nav .fa-times {
         display: block;
-        color: rgb(255, 255, 255);
+        color: #fff;
         margin: 10px;
         margin-left: 14px;
-        font-size: 22px;
+        font-size: 1.2rem;
         cursor: pointer;
     }
 
@@ -222,29 +226,23 @@ body {
 
     /* Make background image smaller */
     .header {
-        min-height: 60vh;
-        margin-bottom: 64px;
+        min-height: 45vh;
     }
 
     /* Make background image smaller */
     .sub-header {
         min-height: 40vh;
         height: 40%;
-        margin-bottom: 64px;
+        margin-bottom: 2vw;
     }
 
     /* Adjust the welcome page for small page */
     .title-block h1 {
-        font-size: 36px;
-    }
-
-    .title-block p {
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 8vw;
     }
 
     .title-block-2 h1 {
-        font-size: 36px;
+        font-size: 2rem;
     }
 }
 
