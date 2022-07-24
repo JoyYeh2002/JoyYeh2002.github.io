@@ -39,7 +39,7 @@ html {
     background-size: cover;
     text-align: center;
     position: relative;
-    margin-bottom: 84px;
+    margin-bottom: 3rem;
 }
 
 .sub-header h1 {
@@ -77,6 +77,15 @@ html {
     margin-bottom: 230px;
 }
 
+.center-sub {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 230px;
+}
+
+/* Specific Signature logo locations */
 #home-logo {
     width: 65%;
 }
@@ -85,12 +94,23 @@ html {
     width: 30%;
 }
 
-.center-sub {
-    display: block;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 230px;
+#eng-logo {
+    width:45%;
+}
+
+@media(max-width: 1024px) {
+    #home-logo {
+        width: 90%;
+    }
+
+    #skills-logo {
+        width: 40%;
+    }
+
+    #eng-logo {
+        margin-top: 0%;
+        width: 70%;
+    }
 }
 
 /* Top navigation bar */
@@ -209,15 +229,6 @@ body {
 /* Accomodation for small device */
 @media(max-width: 1024px) {
     /* Small-screen nav bar design */
-
-    #home-logo {
-        width: 90%;
-    }
-
-    #skills-logo {
-        width: 40%;
-    }
-
     .nav-links ul li {
         display: block;
     }
@@ -268,7 +279,7 @@ body {
         font-size: 10vw;
     }
 
-    #honor {
+    #small-title {
         font-size: 9vw;
         color: var(--dark-navy-solid);
     }
@@ -531,7 +542,7 @@ a.skill-button:hover {
 
 .project-gallery {
     /* Sets the array with 4-element repetitions */
-    margin-top: 1vw;
+    margin-top: 1.2rem;
     margin-bottom: 30px;
     width: 90%;
     margin-left: auto;
@@ -601,6 +612,7 @@ a.skill-button:hover {
     .project-gallery {
         flex-direction: column;
         width: 80%;
+        margin-top: 3vw;
         margin-left: auto;
         margin-right: auto;
         display: grid;
@@ -611,19 +623,20 @@ a.skill-button:hover {
     .project-container {
         /* the container element */
         position: relative;
-        height: 350px;
-        border-radius: 12px;
+        width: 100%;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
         padding-bottom: 18vw;
+        
         /* height of the white description bar */
-        margin-bottom: 2vw;
-
+        margin-bottom: 2.2vw;
         box-shadow: 0 0 5px 0px var(--lightning-blue);
         cursor: pointer;
     }
 
     .project-container p {
         margin-top: 0.5vw;
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .project-container-image {
