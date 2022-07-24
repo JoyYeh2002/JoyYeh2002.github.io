@@ -14,7 +14,7 @@
     width: 60%;
     float: left;
     min-height: 500px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
     color: var(--dark-navy);
     word-wrap: break-word;
     position: relative;
@@ -32,6 +32,13 @@
 }
 
 .wiki-content h3 {
+    font-size: 14px;
+    padding-top: 24px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.wiki-content a {
     font-size: 14px;
     padding-top: 24px;
     padding-bottom: 5px;
