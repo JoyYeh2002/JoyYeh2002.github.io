@@ -8,6 +8,7 @@
     <!-- Style sheets -->
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../project_style.css">
+    <link rel="stylesheet" href="../eng_size_tags.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +31,7 @@
             <div class="nav-links" id="navLinks">
                 <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
                         onclick="hideMenu()"></i></div>
-                <ul style="margin-top:-26px;">
+                <ul style="margin-top:-30px;">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../engineering.html#breadboard-circuits">Engineering Projects</a></li>
                     <li>
@@ -56,7 +57,7 @@
     <section>
         <div class="wiki">
             <!-- Text -->
-            <div class="wiki-content" style="width: 32%">
+            <div class="wiki-content" id="sonar-l">
                 <h1> Sonar Signal Decryption with Matched Filter</h1>
                 <h2> February 2022<br>
                     EN.520.214 Signals and Systems <br>
@@ -72,19 +73,25 @@
                 <li> MATLAB signal processing and control loops </li>
                 <li> Pair work with classmate</li>
 
-                <div id="blank-space-small" style="padding-top: 8px;"></div>
+                <h3> Comments: </h3>
+                <p> See <a href="#"
+                        onclick='window.open("../images/engineering/sonar_proj/sonar_report.pdf");return false;'>
+                        this link </a> for the complete project report.
+                </p>
+                <br>
+                <div id="blank-space-small" style="margin-top: 14px;"></div>
 
                 <!-- Images -->
                 <div class="wiki-image-box">
-                    <img src="../images/engineering/sonar_proj/convolution.png"
-                        style="width:99%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
-                    <p> Sample run and convolution result. </p>
+                    <img src="../images/engineering/sonar_proj/noise_09.PNG"
+                        style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> Original signal (blue) and additive noise at scale 0.9.</p>
                 </div>
 
             </div>
 
             <!-- Image and buttons -->
-            <div class="wiki-images" style="width:64%;">
+            <div class="wiki-images" id="sonar-r">
                 <!-- Prev and next buttons -->
                 <div class="button-box">
                     <a href="dtmf.html" class="previous"> &laquo; Previous: Phone Key DTMF </a>
@@ -92,11 +99,16 @@
                 </div>
 
                 <div class="wiki-image-box">
-                    <!-- Embed pdf here -->
-                    <embed
-                        src="../images/engineering/sonar_proj/sonar_report.pdf#toolbar=0&navpanes=0&scrollbar=0"
-                        width="740" height="593" />
-                    <p>Project report with methods and decryption results.</p>
+                    <img src="../images/engineering/sonar_proj/convolution.png"
+                        style="width:99%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> Convolution result. </p>
+
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/sonar_proj/sine_sgnal.PNG"
+                        style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> The sinusoidal signal and noise.</p>
                 </div>
             </div>
         </div>

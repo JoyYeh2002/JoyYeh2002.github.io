@@ -8,6 +8,7 @@
     <!-- Style sheets -->
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../project_style.css">
+    <link rel="stylesheet" href="../eng_size_tags.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +31,7 @@
             <div class="nav-links" id="navLinks">
                 <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
                         onclick="hideMenu()"></i></div>
-                <ul style="margin-top:-26px;">
+                <ul style="margin-top:-30px;">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../engineering.html#breadboard-circuits">Engineering Projects</a></li>
                     <li>
@@ -56,7 +57,7 @@
     <section>
         <div class="wiki">
             <!-- Text -->
-            <div class="wiki-content" style="width: 36%">
+            <div class="wiki-content" id="mosquito-l">
                 <h1> Solar-Powered Mosquito Trap</h1>
                 <h2> October 2021 - April 2022<br>
                     EN.520.212 ECE Engineering Team Project <br>
@@ -68,11 +69,15 @@
                 </li>
                 <li> The trap should be as affordable as possible and alternate power sources between a LiPo battery and
                     a solar panel. </li>
-                    <li> It heats up a semiconductor heating pad to 2 degrees celsuis above ambient temperature, then lures and kills mosquitos with insecticide. </li>
+                <li> It heats up a semiconductor heating pad to 2 degrees celsuis above ambient temperature, then lures
+                    and kills mosquitos with insecticide. </li>
                 <li>Affiliated with:
                     <a href=" https://malaria.jhsph.edu/" target="_blank" rel="noopener noreferrer"> the JHU Malaria
-                        Research
-                        Institude</a>
+                        Research Institude</a>
+                <li>See
+                    <a href="#"
+                        onclick='window.open("../images/engineering/mosquito_proj/SP22_final_report.pdf");return false;'>
+                        this link </a> for the Spring 2022 preliminary report.
                 </li>
 
 
@@ -81,31 +86,23 @@
 
                 <div id="blank-space-small" style="padding-top: 8px;"></div>
 
-                <!-- Images -->
-                <div class="wiki-image-box">
-                    <a href="#"
-                        onclick='window.open("../images/engineering/mosquito_proj/jhu_design_day_poster.png");return false;'>
-                        <img src="../images/engineering/mosquito_proj/jhu_design_day_poster.png"
-                            style="width:99%; height: 90%; border: 2px solid rgba(0,0,0,0.3);"></a>
-                    <p> the 2022 JHU Design Day Poster. Click image to enlarge. </p>
-                </div>
-
             </div>
 
             <!-- Image and buttons -->
-            <div class="wiki-images" style="width:60%;">
+            <div class="wiki-images" id="mosquito-r">
                 <!-- Prev and next buttons -->
                 <div class="button-box">
                     <a href="gray_counter.html" class="previous"> &laquo; Previous: Gray Code </a>
                     <a href="thrust_stand.html" class="next">Next: Thrust Stand &raquo;</a>
                 </div>
 
+                <!-- Images -->
                 <div class="wiki-image-box">
-                    <!-- Embed pdf here -->
-                    <embed
-                        src="../images/engineering/mosquito_proj/SP22_final_report.pdf#toolbar=0&navpanes=0&scrollbar=0"
-                        width="700" height="593" />
-                    <p>Preliminary report of the SP22 semester.</p>
+                    <a href="#"
+                        onclick='window.open("../images/engineering/mosquito_proj/jhu_design_day_poster.png");return false;'>
+                        <img src="../images/engineering/mosquito_proj/jhu_design_day_poster.png"
+                            style="width:99%; height: 90%; border: 2px solid rgba(0,0,0,0.3);"></a>
+                    <p> the 2022 JHU Design Day Poster. Click on image to enlarge. </p>
                 </div>
             </div>
         </div>

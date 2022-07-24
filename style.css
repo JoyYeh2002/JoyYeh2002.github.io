@@ -176,7 +176,7 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--dark-navy);
+    background-color: var(--dark-navy-solid);
     min-width: 8rem;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
     z-index: 1;
@@ -280,6 +280,9 @@ body {
     }
 
     #small-title {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 9vw;
         color: var(--dark-navy-solid);
     }
@@ -627,7 +630,7 @@ a.skill-button:hover {
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
         padding-bottom: 18vw;
-        
+
         /* height of the white description bar */
         margin-bottom: 2.2vw;
         box-shadow: 0 0 5px 0px var(--lightning-blue);

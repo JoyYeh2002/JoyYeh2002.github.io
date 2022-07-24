@@ -1,31 +1,59 @@
 /* Various specific engineering project tags for different column widths */
 
-#cmos-l {
+#cmos-l, #dtmf-l  {
     width: 44%;
 }
 
-#cmos-r {
+#cmos-r, #dtmf-r {
     width: 52%;
 }
 
+#sonar-l {
+    width: 44%;
+}
+
+#sonar-r {
+    width: 52%;
+}
+
+#mosquito-l {
+    width: 33%;
+}
+
+#mosquito-r {
+    width: 60%;
+}
 
 @media(max-width: 1024px) {
-#cmos-l {
-    width: 100%;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-}
+    #cmos-l, #dtmf-l, #sonar-l, #mosquito-l {
+        width: 100%;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-#cmos-r{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-.cmos-r div:first-child {
-    order: 1;
-}
+    #cmos-r, #dtmf-r, #sonar-r, #mosquito-r {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .cmos-r div:first-child {
+        order: 1;
+    }
+
+    .dtmf-r div:first-child {
+        order: 1;
+    }
+
+    .sonar-r div:first-child {
+        order: 1;
+    }
+
+    .mosquito-r div:first-child {
+        order: 1;
+    }
 }
