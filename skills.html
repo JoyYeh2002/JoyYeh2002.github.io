@@ -4,7 +4,7 @@
 <head>
     <!-- The "viewport" meta tag makes the website responsive to window scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joy Yeh</title>
+    <title>My Skills</title>
     <!-- Refer to the style sheet -->
     <link rel="stylesheet" href="style.css">
 
@@ -15,14 +15,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Import the caret icon style sheet from fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<!-- Everything in the body tag will display on the webpage -->
-
 <body>
-
     <!-- Make the top navigation bar. Its styles are specified in the "header" class in style.css -->
     <section class="sub-header">
         <nav>
@@ -53,14 +49,14 @@
         </nav>
 
         <!-- Add the signature logo image -->
-        <img src="images/skills/skills_signature.png" alt="Skills" style="width:30%;" class="center-sub">
+        <img src="images/skills/skills_signature.png" alt="Skills" class="center-sub" id="skills-logo">
     </section>
 
     <!-- Skill -->
-    <section class="container reveal">
+    
         <section class="title-block">
             <div class="skill">
-                <div class="row">
+                <div class="row" id="skill-row">
                     <div class="skill-col" style="background-color:rgba(38, 112, 240, 0.38);">
                         <h2>Design</h2>
                         <li>SOLIDWORKS, TinkerCAD, SketchUp</li>
@@ -82,7 +78,7 @@
             </div>
 
             <div class="skill">
-                <div class="row">
+                <div class="row" id="skill-row">
                     <div class="skill-col" style="background-color:rgba(250, 130, 24, 0.422);">
                         <h2>Art & Media</h2>
                         <li>Adobe Photoshop, InDesign, Illustator</li>
@@ -92,30 +88,27 @@
                     </div>
                     <div class="skill-col" style="background-color:rgba(38, 112, 240, 0.38);">
                         <h2>Languages</h2>
-                        <li>English (native/billingual)</li>
-                        <li>Mandarin (native/billingual)</li>
-                        <li>French (A1 vevel)</li>
+                        <li>English (native)</li>
+                        <li>Mandarin (native)</li>
+                        <li>French (A2 level)</li>
                         <li>Japanese (first-year level)</li>
                     </div>
                 </div>
             </div>
 
             <br>
-            <br>
-            <br>
-        </section>
 
         <!-- Projects title block with reveal -->
         <section>
-            <div class="title-block">
-                <h1>Honors & Awards</h1>
+            <div class="title-block" >
+                <h1 id="honor">Honors & Awards</h1>
             </div>
         </section>
 
         <!-- Honors and Awards -->
         <section>
             <div class="skill">
-                <div class="skill-col" style="background-color:rgba(255, 133, 172, 0.614);">
+                <div class="skill-col" id="honor-col" style="background-color:rgba(255, 133, 172, 0.614);">
                     <ul><b>05.2022.</b> JHU Design Day 2022 Electrical Engineering Department Best
                         Presentations: Solar-Powered Mosquito Trap (Honorable Mention) </ul>
                     <ul><b>04.2022.</b> JHU Study Abroad Scholarship ($4500) in support of my fall 2022
@@ -132,13 +125,7 @@
             
         </section>
 
-        <br>
-            <br>
-            <br>
-
-            <br>
-            <br>
-            <br>
+     <div class="gap-space"></div>
     </section>
 
     <!-- Footer -->
