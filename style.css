@@ -57,6 +57,18 @@ html {
     position: relative;
 }
 
+@media(max-width: 1024px) {
+    .header {
+        min-height: 50vh;
+    }
+
+    .sub-header {
+        min-height: 30vh;
+        height: 40%;
+        margin-bottom: 2vw;
+    }
+}
+
 .center {
     display: block;
     margin-top: 70px;
@@ -188,6 +200,8 @@ body {
     color: var(--dark-navy);
 }
 
+
+
 /* Accomodation for small device */
 @media(max-width: 1024px) {
     /* Small-screen nav bar design */
@@ -240,21 +254,10 @@ body {
         padding: 30px;
     }
 
-    /* Make background image smaller */
-    .header {
-        min-height: 70vh;
-    }
-
-    /* Make background image smaller */
-    .sub-header {
-        min-height: 40vh;
-        height: 40%;
-        margin-bottom: 2vw;
-    }
-
     /* Adjust the welcome page for small page */
     .title-block h1 {
-        font-size: 8vw;
+        margin-top: 2rem;
+        font-size: 10vw;
     }
 
     .title-block-2 h1 {
@@ -268,7 +271,6 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
 
 @media(max-width: 700px) {
     .row {
@@ -290,13 +292,6 @@ body {
     grid-gap: 1.5rem;
 }
 
-@media(max-width:1024px) {
-    .projects {
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
-    }
-}
-
 .projects-col {
     margin-top: 1.5rem;
     margin-bottom: 20px;
@@ -304,6 +299,19 @@ body {
     border-bottom-right-radius: 10px;
     position: relative;
     overflow: hidden;
+}
+
+@media(max-width:1024px) {
+    .projects {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+    }
+
+    .projects-col {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
 }
 
 .projects-col img {
@@ -355,6 +363,12 @@ body {
     opacity: 1;
 }
 
+@media(max-width:1024px) {
+    .layer h3 {
+        top: 40%;
+        font-size: 9vw;
+    }
+}
 
 /* Scrollable web element */
 .reveal {
@@ -370,9 +384,12 @@ body {
 }
 
 /* Skill Button */
+
 a.skill-button:link {
     color: rgba(10, 47, 136, 0.85);
     text-decoration: underline;
+    font-size: 1.2rem;
+    font-weight: 900;
 }
 
 a.skill-button:visited {
@@ -452,6 +469,7 @@ a.skill-button:hover {
         margin-left: auto;
         margin-right: auto;
     }
+
 }
 
 .row:after {
