@@ -139,6 +139,9 @@
         margin-right: auto;
     }
 
+    .wiki-content h1 {
+        font-size: 1.6rem;
+    }
     .wiki-content h2 {
         margin-top: 0.5rem;
     }
