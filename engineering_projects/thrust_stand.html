@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering | Thrust Stand </title>
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../project_style.css">
+    <link rel="stylesheet" href="../eng_size_tags.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Thin nav bar -->
+    <section class="sub-header-bar">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div>
+                <ul style="margin-top:-30px;">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../engineering.html#breadboard-circuits">Engineering Projects</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="../compsci.html">CS</a>
+                                <a href="../hopmc.html">HopMC</a>
+                                <a href="../art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../skills.html">Skills</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- Page content -->
+    <section>
+        <div class="wiki">
+            <!-- Text -->
+            <div class="wiki-content" id="cmos-l">
+                <h1> Combustion Chamber Test Stand</h1>
+                <h2> September 2021<br>
+                    JHU AstroJays Rocketry Team <br>
+                </h2>
+
+                <h3> Objectives: </h3>
+                <li> Design and build a test stand for the team's hybrid rocket engine, BJ01. The rocket engine is about
+                    6 feet long and can theoretically generate 825 lb of thrust and 9100lbf-s of total impulse.</li>
+                <li> During a hotfire test, the rocket engine is fired while secured on the stand. Measurements such as
+                    chamber temperature, interior pressure, and the time vs. force curves are made. </li>
+                <li> Therefore, the design needs to prevent structural deformation under high shear forces. </li>
+                <li> To improve structural integrity, we decided to place 4 sliding carriages under the chamber stand
+                    and the base. This allows the combustion chamber to slide backward slightly during firing. However,
+                    several important components are manufactured in either imperial or metric units. Thus, multiple
+                    plates were designed to mate the components across measurement systems.</li>
+
+                <h3>Skills Applied:</h3>
+                <li> Mechanical design, SOLIDWORKS parts and assembly </li>
+                <li> The ANSI Engineering Drawing standard </li>
+
+                <h3>Comments:</h3>
+                <li>I applied plenty of knowledge from my Mechanical Engineering courses from the freshman fall
+                    semester. From the help of MechE upperclassmen on the team, we went through the full ideation,
+                    iteration, and execution process for engineering.</li>
+                <li> I created all the CAD files, drawings, and bill of materials in SOLIDWORKS. I was also in charge of
+                    working with the team treasurer on ordering all the components.</li>
+                <li> The actual thrust stand assembly was finished in Spring 2022, thanks to several teammates who spent
+                    many hours manufacturing.
+                </li>
+
+                <div id="blank-space"></div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/radio_proj/calculations.PNG"
+                        style="width:100%; height: 101%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> Relevant calculations.</p>
+                </div>
+
+            </div>
+
+            <!-- Image and buttons -->
+            <div class="wiki-images" id="cmos-r">
+                <!-- Prev and next buttons -->
+                <div class="button-box">
+                    <a href="traffic.html" class="previous"> &laquo; Previous: Traffic Lights </a>
+                    <a href="quad_counter.html" class="next">Next: Quadrature Counter &raquo;</a>
+                </div>
+
+                <!-- Images -->
+                <div class="wiki-image-box">
+                    <img src="../images/engineering/radio_proj/schematic.PNG"
+                        style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> The schematic.</p>
+                </div>
+
+                <!-- Embed video here -->
+                <div class="wiki-image-box">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/sW2lWtMBfmU" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p> Project Demo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+
+    <!-- JS for smooth page transition -->
+    <script>
+        var speed = 'normal';
+        $('html, body').hide();
+        $(document).ready(function () {
+            $('html, body').fadeIn(speed, function () {
+                $('a[href], button[href]').click(function (event) {
+                    var url = $(this).attr('href');
+                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+                    event.preventDefault();
+                    $('html, body').fadeOut(speed, function () {
+                        window.location = url;
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -60,25 +60,25 @@
         <div class="project-gallery">
             <idv class="project-container">
                 <a href="engineering_projects/cmos_imager.html">
-                <img src="images/engineering/eng_title_page/vlsi_cover.png" style="height:100%;"></a>
+                    <img src="images/engineering/eng_title_page/vlsi_cover.png" style="height:100%;"></a>
                 <p> CMOS Imager </p>
             </idv>
 
             <idv class="project-container">
                 <a href="engineering_projects/dtmf.html">
-                <img src="images/engineering/eng_title_page/dtmf_cover.png"></a>
+                    <img src="images/engineering/eng_title_page/dtmf_cover.png"></a>
                 <p> Phone Key DTMF </p>
             </idv>
 
             <idv class="project-container">
                 <a href="engineering_projects/sonar.html">
-                <img src="images/engineering/eng_title_page/sonar_cover.png"></a>
+                    <img src="images/engineering/eng_title_page/sonar_cover.png"></a>
                 <p> Sonar Signal Decryption </p>
             </idv>
         </div>
 
         <!-- Course Projects-->
-        <div class="title-block"> 
+        <div class="title-block">
             <h1 id="small-title">Breadboard Circuits</h1>
         </div>
 
@@ -106,39 +106,55 @@
                         src="images/engineering/eng_title_page/gray_code_cover.png"></a>
                 <p> 3-bit Gray Code </p>
             </idv>
- 
+
             <idv class="project-container">
                 <a href="engineering_projects/mosquito_trap.html">
-                <img src="images/engineering/eng_title_page/mosquito_cover.png"></a>
+                    <img src="images/engineering/eng_title_page/mosquito_cover.png"></a>
                 <p> Solar-Powered Mosquito Trap </p>
             </idv>
         </div>
 
-        
-         <!-- AstroJays -->
-         <div class="title-block">
+
+        <!-- AstroJays -->
+        <div class="title-block">
             <h1 id="small-title">AstroJays Rocketry</h1>
         </div>
 
         <div class="project-gallery">
             <idv class="project-container">
                 <a href="engineering_projects/thrust_stand.html">
-                <img src="images/engineering/eng_title_page/thrust_stand_cover.png"></a>
+                    <img src="images/engineering/eng_title_page/thrust_stand_cover.png"></a>
                 <p> Thrust Stand Design </p>
             </idv>
-        
+
             <idv class="project-container">
                 <a href="engineering_projects/tripoli.html">
-                <img src="images/engineering/eng_title_page/tripoli_cover.png"></a>
+                    <img src="images/engineering/eng_title_page/tripoli_cover.png"></a>
                 <p> Tripoli Lv.1 Rocketry Certification </p>
             </idv>
 
             <idv class="project-container">
                 <a href="engineering_projects/solidworks.html">
-                <img src="images/engineering/eng_title_page/SW_cover.png"></a>
+                    <img src="images/engineering/eng_title_page/SW_cover.png"></a>
                 <p> SOLIDWORKS Gallery </p>
             </idv>
         </div>
+    </div>
+
+    <!-- Prev and next buttons -->
+    <div class="nav-button-grid">
+        <div class="nav-button-container">
+            <a href="engineering.html">
+                <h3> Previous: Home</h3>
+            </a>
+        </div>
+
+        <div class="nav-button-container">
+            <a href="hopmc.html">
+                <h3> Next: CS </h3>
+            </a>
+        </div>
+
     </div>
 
     <!-- Footer -->
@@ -158,60 +174,60 @@
             Yeh </p>
     </section>
 
-          <!-- JavaScript for toggle menu -->
-          <script>
-            var navLinks = document.getElementById("navLinks");
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
 
-            /* These get called on click: <i class = "fa fa-times" onclick = "showMenu()"></i> */
-            function showMenu() {
-                navLinks.style.left = "0";
-            }
-            function hideMenu() {
-                navLinks.style.left = "-200px";
-            }
+        /* These get called on click: <i class = "fa fa-times" onclick = "showMenu()"></i> */
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
 
-        </script>
+    </script>
 
-        <!-- JS Reveal -->
-        <script>
-            function reveal() {
-                var reveals = document.querySelectorAll(".reveal");
-                once = 'true';
-                for (var i = 0; i < reveals.length; i++) {
-                    var windowHeight = window.innerHeight;
-                    var elementTop = reveals[i].getBoundingClientRect().top;
-                    var elementVisible = 50;
-                    if (elementTop < windowHeight - elementVisible) {
-                        reveals[i].classList.add("active");
-                    } else {
-                        reveals[i].classList.remove("active");
-                    }
+    <!-- JS Reveal -->
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            once = 'true';
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
                 }
             }
-            window.addEventListener("scroll", reveal);
-        </script>
+        }
+        window.addEventListener("scroll", reveal);
+    </script>
 
-        <!-- Java Script for smooth transition -->
-        <script>
-            var speed = 'slow';
+    <!-- Java Script for smooth transition -->
+    <script>
+        var speed = 'slow';
 
-            $('html, body').hide();
+        $('html, body').hide();
 
-            $(document).ready(function () {
-                $('html, body').fadeIn(speed, function () {
-                    $('a[href], button[href]').click(function (event) {
-                        var url = $(this).attr('href');
-                        if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
-                        event.preventDefault();
-                        $('html, body').fadeOut(speed, function () {
-                            window.location = url;
-                        });
+        $(document).ready(function () {
+            $('html, body').fadeIn(speed, function () {
+                $('a[href], button[href]').click(function (event) {
+                    var url = $(this).attr('href');
+                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+                    event.preventDefault();
+                    $('html, body').fadeOut(speed, function () {
+                        window.location = url;
                     });
                 });
             });
-        </script>
+        });
+    </script>
 
-    
+
 </body>
 
 </html>
