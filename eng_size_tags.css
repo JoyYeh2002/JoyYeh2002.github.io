@@ -8,12 +8,12 @@
     width: 52%;
 }
 
-#sonar-l {
-    width: 44%;
+#rocket-l {
+    width: 60%;
 }
 
-#sonar-r {
-    width: 52%;
+#rocket-r {
+    width: 35%;
 }
 
 #mosquito-l {
@@ -25,14 +25,14 @@
 }
 
 @media(max-width: 1024px) {
-    #cmos-l, #dtmf-l, #sonar-l, #mosquito-l {
+    #cmos-l, #dtmf-l, #rocket-l, #mosquito-l {
         width: 100%;
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #cmos-r, #dtmf-r, #sonar-r, #mosquito-r {
+    #cmos-r, #dtmf-r, #rocket-r, #mosquito-r {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -49,7 +49,7 @@
         order: 1;
     }
 
-    .sonar-r div:first-child {
+    .rocket-r div:first-child {
         order: 1;
     }
 

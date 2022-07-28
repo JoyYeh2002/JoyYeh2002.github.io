@@ -12,12 +12,14 @@ body .container {
   display: flex;
 }
 body .container section {
+  flex: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: calc(100vw - 100px);
   height: 100vh;
   scroll-snap-align: start;
+  scroll-margin-left: 100px;
 }
 body .container section:nth-of-type(1) {
   background-color: rgb(28, 28, 28);
