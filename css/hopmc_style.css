@@ -1,0 +1,82 @@
+/* Main section container */
+.section-box {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    z-index: 1;
+    margin-top: 10vh;
+    justify-content: space-between;
+}
+
+.section-box img {
+    width: 100%;
+}
+
+/* Section text */
+.content {
+    width: 46%;
+    word-wrap: break-word;
+    position: relative;
+    margin-top: 8vh;
+}
+
+.content h1 {
+    font-size: 3vw;
+    color: var(--dark-navy-solid);
+    margin-top: -1rem;
+}
+
+.content h2 {
+    font-size: 1.1rem;
+    color: var(--sky-blue);
+    margin-top: -0.6rem;
+    margin-bottom: 4px;
+    display: inline-block;
+    position: relative;
+}
+
+.content p {
+    color: var(--smoke-white);
+    line-height: 1.5rem;
+    display: inline-block;
+    position: relative;
+}
+
+.content ul {
+    list-style-type: none;
+    line-height: 120%;
+}
+
+.content li {
+    color: var(--smoke-white);
+    line-height: 1.8rem;
+    word-wrap: break-word;
+    position: relative;
+}
+
+/* wiki image column */
+.image-box {
+    width: 50%;
+    margin-top: 8vh;
+}
+
+.image-box img {
+    width: 100%;
+    max-height: 100%;
+    z-index: 5;
+}
+
+#alive-image:hover {
+    box-shadow: 0 0 14px 0px var(--lightning-blue);
+    transition: 0.2s;
+}
+
+
+#bird-logo-l {
+    width: 30%;
+}
+
+#bird-logo-r {
+    width: 65%;
+}
