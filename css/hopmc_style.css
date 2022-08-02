@@ -1,7 +1,7 @@
 /* Main section container */
 .section-box {
     display: flex;
-    width: 90%;
+    width: 85%;
     margin: auto;
     text-align: left;
     z-index: 1;
@@ -78,5 +78,13 @@
 }
 
 #bird-logo-r {
+    width: 65%;
+}
+
+#campus-process-l {
+    width: 30%;
+}
+
+#campus-process-r {
     width: 65%;
 }
