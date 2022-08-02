@@ -34,7 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 1em 0;
+    padding: 1em 1em;
     position: relative;
     font-size: 12px;
     border-radius: 0.5em;
@@ -45,7 +45,7 @@ body {
 
 i {
     color: var(--orange);
-    font-size: 1.5em;
+    font-size: 2.5em;
     text-align: center;
 }
 
@@ -54,12 +54,12 @@ span.num {
     display: grid;
     place-items: center;
     font-weight: 600;
-    font-size: 2.2em;
+    font-size: 3.2em;
 }
 
 span.text {
     color: #e0e0e0;
-    font-size: 0.8em;
+    font-size: 1.5em;
     text-align: center;
     pad: 0.7em 0;
     font-weight: 400;
