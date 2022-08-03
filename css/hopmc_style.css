@@ -1,16 +1,54 @@
 /* Main section container */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    --orange: #fb8500;
+    --faint-orange: rgba(251, 133, 0, 0.82);
+    --dark-navy: rgba(19, 50, 122, 0.92);
+    --dark-navy-solid: rgb(17, 43, 104);
+    --lightning-blue: rgba(0, 102, 255, 0.9);
+    --water-blue: rgba(138, 192, 236, 0.411);
+}
+
 .section-box {
     display: flex;
     width: 85%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 5px solid red;
     text-align: left;
     z-index: 1;
-    margin-top: 10vh;
+
     justify-content: space-between;
+
+
 }
 
 .section-box img {
     width: 100%;
+}
+
+.center-section-box {
+    display: flex;
+    width: 85%;
+    margin: 2.5vw auto;
+    text-align: center;
+    z-index: 1;
+
+    justify-content: space-between;
+}
+
+.center-section-box h2 {
+    padding: 1.5rem 1rem;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    background: var(--water-blue);
+    color: var(--dark-navy-solid);
+border-radius: 10px;
 }
 
 /* Section text */
@@ -18,7 +56,8 @@
     width: 46%;
     word-wrap: break-word;
     position: relative;
-    margin-top: 8vh;
+    margin: 6vh 0;
+
 }
 
 .content h1 {
@@ -58,7 +97,8 @@
 /* wiki image column */
 .image-box {
     width: 50%;
-    margin-top: 8vh;
+    margin: 6vh 0;
+
 }
 
 .image-box img {
@@ -72,7 +112,6 @@
     transition: 0.2s;
 }
 
-
 #bird-logo-l {
     width: 30%;
 }
@@ -82,63 +121,145 @@
 }
 
 #campus-process-l {
-    width: 30%;
-}
-
-#campus-process-r {
     width: 65%;
 }
 
-.wrapper {
+#campus-process-r {
+    width: 30%;
+}
+
+.stats-wrapper {
     position: relative;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 85%;
+    margin: 4vh auto;
     border: 5px solid red;
     display: flex;
     justify-content: space-around;
     gap: 10px;
 }
 
+.stat-block {
+    width: 50vmin;
+    height: 28vmin;
+    border: 1px solid var(--lightning-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 1em;
+    position: relative;
+    font-size: 12px;
+    border-radius: 0.5em;
+    background-color: var(--dark-navy-solid);
+    border-bottom: 7px solid var(--orange);
+
+}
+
+i {
+    color: var(--orange);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+span.num {
+    color: white;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3.2em;
+}
+
+span.text {
+    color: #e0e0e0;
+    font-size: 1.5em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        width: 85vw;
+    }
+    .container {
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 90vw;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .container {
+        height: calc(50% - 40px);
+        width: 30vmin;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        gap: 15px;
+    }
+
+    .container {
+        width: 100%;
+        height: 25vmin;
+        font-size: 14px;
+        line-height: 9vw;
+    }
+
+    span.num {
+        font-size: 7vmin;
+    }
+
+    i {
+        font-size: 6vmin;
+    }
+}
 
 /* Responsive YouTube embeds */
-.center-vid-container { 
-    position: relative; 
+.center-vid-container {
+    position: relative;
     border: 5px solid blue;
-    padding-bottom: 56.25%; 
-    padding-top: 30px; 
-    height: 0; 
-    overflow: hidden; 
-    
-    width: 100%;
-    margin-bottom: 10px;
+    padding-bottom: 49.25%;
+
+    margin-left: auto;
+    margin-right: auto;
+    height: 0;
+    overflow: hidden;
+    place-items: center;
+    width: 85%;
     text-align: center;
     cursor: pointer;
 }
 
-.center video-container iframe, .video-container object, .video-container embed { 
-    position: absolute; 
+.center video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
     height: 600;
     width: 580;
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.embed-youtube {
+.center-youtube {
     position: relative;
-    padding-bottom: 56.25%; /* - 16:9 aspect ratio (most common) */
-    /* padding-bottom: 62.5%; - 16:10 aspect ratio */
-    /* padding-bottom: 75%; - 4:3 aspect ratio */
+    padding-bottom: 56.25%;
     padding-top: 30px;
     height: 0;
     overflow: hidden;
 }
 
-.embed-youtube iframe,
-.embed-youtube object,
-.embed-youtube embed {
+.center-youtube iframe,
+.center-youtube object,
+.center-youtube embed {
     border: 0;
     position: absolute;
     top: 0;

@@ -16,7 +16,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet">
+
+    <!-- Import the caret icon style sheet from fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery -->
+    <script src="https.//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -75,45 +81,82 @@
         </div>
 
         <div class="image-box" id="bird-logo-l">
-            <img style="vertical-align:middle" style="height: 390px;" src="images/hopmc/HopMC Logo - PNG.png">
+            <img style="vertical-align:middle;" src="images/hopmc/HopMC Logo - PNG.png">
         </div>
+
     </div>
+
+    <!-- Put the club stats here -->
+    <class class="stats-wrapper">
+
+        <div class="stat-block">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span class="num" data-val="76">76</span>
+            <span class="text">Max # Players Online</span>
+        </div>
+
+        <div class="stat-block">
+            <i class="fa-solid fa-video"></i>
+            <span class="num" data-val="500">500</span>
+            <span class="text">Game Highlight Views</span>
+        </div>
+
+        <div class="stat-block">
+            <i class="fa-brands fa-instagram"></i>
+            <span class="num" data-val="472">470</span>
+            <span class="text">Ins Followers</span>
+        </div>
+
+        <div class="stat-block">
+            <i class="fa-solid fa-newspaper"></i>
+            <span class="num" data-val="4">4</span>
+            <span class="text">Articles about Us</span>
+        </div>
+    </class>
+
     </section>
 
     <!-- The Adventure -->
     <!-- <section class="container reveal"> -->
     <div class="section-box">
-
-        <div class="image-box" id="campus-process-r">
+        <div class="image-box" id="campus-process-l">
             <img src="images/hopmc/campus_process_collage.jpg">
         </div>
 
-        <div class="content" id="campus-process-l">
+        <div class="content" id="campus-process-r">
             <h1>The Adventure</h1>
-            <p> After playing on a survival server for a month, about 15 players became interested in re-building
-                the Johns Hopkins Homewood Campus in the game. Starting on August 6th, 2020, our epic build project
-                began. <br>
-                <br>
-                We started with Gilman Hall, the most distinctive building on campus with a clock tower, an
+            <p> In August 2020, about 15 players became interested in re-building
+                the Johns Hopkins Homewood Campus on the Minecraft server. Starting on August 6th, 2020, We started with
+                Gilman Hall, the school landmark with a clock tower, an
                 archeology museum, and a large reading room in the back. We based the scale off of several
                 blueprints found on Google - which turned out to be very accurate.
                 <br>
             </p>
         </div>
     </div>
-    <div class="section-box">
-        <h2> People worked on different parts of the building in groups, collaborating over Discord voice
-            chats along the way. Two weeks later, this was how far we got: <h2>
+
+    <div class="center-section-box">
+        <h2> We worked on different parts of the building in groups, collaborating over Discord voice
+            chats. This was how far we got after two weeks: </h2>
     </div>
 
-    <div class="wrapper">
+    <!-- Embed the trailer Video -->
+    <div class="center-vid-container">
         <div class="center-youtube">
-            <iframe width="700" height="390"  src="https://www.youtube.com/embed/ahXFe0YvNvQ" title="YouTube video player" frameborder="0"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ahXFe0YvNvQ"
+                title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
     </div>
     </section>
+
+    <div class="center-section-box">
+        <h2> In addition to the campus build, we also hosted dozens of gaming events throughout the semesters. These are
+            our beautiful server maps: </h2>
+    </div>
+
+
 
 
     <!-- Footer -->
@@ -147,6 +190,18 @@
 
         window.addEventListener("scroll", reveal);
     </script>
+
+    <!-- JQuery counter up script -->
+    <script>
+        $(document).ready(function () {
+            $(".num").counterUp({
+                delay: 10,
+                time: 1200
+            });
+        });
+    </script>
+
+<script src="exercises/animated_tally/script.js" async defer></script>
 
 </body>
 
