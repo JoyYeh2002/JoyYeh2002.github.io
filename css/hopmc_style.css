@@ -5,28 +5,78 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+
+
     --orange: #fb8500;
     --faint-orange: rgba(251, 133, 0, 0.82);
     --dark-navy: rgba(19, 50, 122, 0.92);
     --dark-navy-solid: rgb(17, 43, 104);
     --lightning-blue: rgba(0, 102, 255, 0.9);
+    --sky-blue: rgb(146, 190, 255);
     --water-blue: rgba(138, 192, 236, 0.411);
 }
+
+
+.hop-contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+}
+
+.reveal-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.media-info {
+    width: 400px;
+    margin-left: 50px;
+}
+
+.media-info li {
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.media-info li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.media-info li:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.media-info li:nth-child(2) {
+    padding-left: 20px;
+}
+
+.media-info li:nth-child(3) {
+    padding-left: 40px;
+}
+
+.media-info li:nth-child(4) {
+    padding-left: 60px;
+}
+
 
 .section-box {
     display: flex;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-
-    border: 5px solid red;
     text-align: left;
     z-index: 1;
-
     justify-content: space-between;
 
-
 }
+
 
 .section-box img {
     width: 100%;
@@ -50,8 +100,20 @@
     font-size: 1.3rem;
     line-height: 2.2rem;
     margin: 0 auto;
-   
+
 }
+
+.center-section-box a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.center-section-box a:hover {
+    color: var(--orange);
+    transition: 0.3s;
+}
+
+
 
 /* Section text */
 .content {
@@ -63,10 +125,12 @@
 }
 
 .content h1 {
-    font-size: 3vw;
+    font-size: 2.5rem;
     color: var(--dark-navy-solid);
     margin-top: -1rem;
 }
+
+
 
 .content h2 {
     font-size: 1.1rem;
@@ -115,11 +179,11 @@
 }
 
 #bird-logo-l {
-    width: 30%;
+    width: 65%;
 }
 
 #bird-logo-r {
-    width: 65%;
+    width: 30%;
 }
 
 #campus-process-l {
@@ -130,10 +194,42 @@
     width: 32%;
 }
 
+
+
+@media screen and (max-width: 1024px) {
+    .content h1 {
+        font-size: 7vw;
+    }
+
+    .section-box {
+        flex-direction: column;
+    }
+
+    /* wiki image column */
+    .image-box {
+        width: 50%;
+        margin: 6vh 0;
+    }
+
+    #alive-image:hover {
+        box-shadow: 0 0 14px 0px var(--lightning-blue);
+        transition: 0.2s;
+    }
+
+    #bird-logo-l, 
+    #bird-logo-r, 
+    #campus-process-l,
+    #campus-process-r {
+        width: 100%;
+    }
+
+}
+
+
 .stats-wrapper {
     position: relative;
     width: 85%;
-    margin: 4vh auto;
+    margin: 9vh auto;
     display: flex;
     justify-content: space-around;
     gap: 10px;
@@ -152,13 +248,19 @@
     border-radius: 1em;
     background-color: var(--dark-navy-solid);
     border-bottom: 7px solid var(--orange);
-
 }
 
 i {
     color: var(--orange);
     font-size: 2.5em;
     text-align: center;
+}
+
+#small-i {
+    font-size: 1.2em;
+    padding: 0 6px;
+    margin-bottom: -10px;
+    line-height: 20px;
 }
 
 span.num {
@@ -298,19 +400,9 @@ span.text {
     height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
-    cursor: pointer;
-    transition: .5s ease-in-out;
 }
-
-.gallery-item:hover .image {
-    box-shadow: 0 0 10px 0px var(--lightning-blue);
-    transition: 0.3s;
-}
-
 
 /*.gallery-item:hover .image img { */
-
-
 .gallery-item .text {
     opacity: 0;
     position: absolute;
@@ -322,9 +414,7 @@ span.text {
     pointer-events: none;
     z-index: 4;
     opacity: 1;
-
 }
-
 
 .w-1 {
     grid-column: span 1;
@@ -381,20 +471,5 @@ span.text {
 
     .w-1, .w-2, .w-3, .w-4, .w-5, .w-6 {
         grid-column: span 1;
-    }
-}
-
-@keyframes move-down {
-
-    0% {
-        top: 10%;
-    }
-
-    50% {
-        top: 35%;
-    }
-
-    100% {
-        top: 50%;
     }
 }
