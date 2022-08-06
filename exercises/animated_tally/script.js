@@ -1,6 +1,6 @@
 let valueDisplays = document.querySelectorAll(".num");
-let interval = 1000;
-var delayInMilliseconds = 500; //1 second
+let interval = 1500;
+var delayInMilliseconds = 1300; //1 second
 
 const header = document.querySelector("stats-wrapper");
 const sectionOne = document.querySelector(".stats-wrapper");
