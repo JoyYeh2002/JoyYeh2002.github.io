@@ -97,6 +97,10 @@ html {
     width:45%;
 }
 
+#hopmc-logo {
+    width: 33%;
+}
+
 #comp-sci-logo {
     width: 55%;
 }
@@ -113,6 +117,11 @@ html {
     #eng-logo {
         margin-top: 0%;
         width: 70%;
+    }
+
+    #hopmc-logo {
+        margin-top: 0%;
+        width: 50%;
     }
 
     #comp-sci-logo {
