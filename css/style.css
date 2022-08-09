@@ -105,6 +105,10 @@ html {
     width: 55%;
 }
 
+#art-logo {
+    width: 39%;
+}
+
 @media(max-width: 1024px) {
     #home-logo {
         width: 90%;
@@ -127,6 +131,11 @@ html {
     #comp-sci-logo {
         margin-top: 5%;
         width: 80%;
+    }
+
+    #art-logo {
+        margin-top: 0%;
+        width: 60%;
     }
 }
 
