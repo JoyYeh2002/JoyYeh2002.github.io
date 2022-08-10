@@ -17,54 +17,68 @@
 
 .contact-wrapper {
     width: 70%;
-    margin: 0 auto;
+    margin: 6vw auto;
     display: flex;
     justify-content: space-between;
-    border: solid 5px red;
-    outline: 4px solid var(--lightning-blue);
+    outline: 7px solid var(--water-blue);
     outline-offset: 15px;
 }
 
 .contact-text {
-    width: 65%;
-    border: solid 5px green;
+    width: 68%;
     background: var(--water-blue);
+    margin-bottom: 7px;
+}
+
+.contact-text h2 {
+    padding-top: 20px;
+    color: var(--dark-navy-solid);
+    font-size: 1.5rem;
+    margin-left: 3%;
+    margin-bottom: -20px;
 }
 
 .contact-col {
-    flex-basis: 48%;
+    flex-basis: 50%;
     margin-top: 5%;
 }
 
 .contact-col div {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 1.2rem;
+}
+
+.contact-col div:last-child{
+    margin-bottom: 0px;
 }
 
 .contact-col div .fa {
     font-size: 28px;
-    color: var(--smoke-white);
+    color: var(--lightning-blue);
     margin: 10px;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+#envelope {
+    font-size: 23px;
+}
+
+.contact-col div a {
+    font-size: 1rem;
+
+    color: var(--dark-navy-solid);
     margin-right: 30px;
 }
 
-.contact-col div p {
-    padding: 0;
-    color: var(--sky-blue);
-}
-
-.contact-col div h5 {
-    font-size: 20px;
-    margin-bottom: 5px;
-    font-weight: 600;
-    color: var(--smoke-white);
+.contact-col div a:hover {
+    color: var(--orange);
+    transition: 0.3s;
 }
 
 .contact-col input, .contact-col textarea {
     width: 100%;
-    padding: 15px;
-    margin-bottom: 1rem;
     outline: none;
     border: 1px solid var(--jay-blue);
     box-sizing: border-box;

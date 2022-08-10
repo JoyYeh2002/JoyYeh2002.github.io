@@ -57,6 +57,10 @@ html {
     position: relative;
 }
 
+.sub-header-bar .nav-links ul{
+   margin-top: -15px;
+}
+
 @media(max-width: 1024px) {
     .header {
         min-height: 40vh;
