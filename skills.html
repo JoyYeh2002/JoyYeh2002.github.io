@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 
 <body>
@@ -128,70 +132,73 @@
     </section>
 
 
-        <!-- Prev and next buttons -->
-        <div class="nav-button-grid">
-            <div class="nav-button-container">
-                <a href="hopmc.html">
-                    <h3> Previous: HopMC</h3>
-                </a>
-            </div>
-
-            <div class="nav-button-container">
-                <a href="contact.html">
-                    <h3> Next: Contact</h3>
-                </a>
-            </div>
+    <!-- Prev and next buttons -->
+    <div class="nav-button-grid">
+        <div class="nav-button-container">
+            <a href="hopmc.html">
+                <h3> Previous: HopMC</h3>
+            </a>
         </div>
 
-        <!-- Footer -->
-        <section class="footer">
-            <div class="icons">
-                <a href="https://www.instagram.com/joyleafy2002/?hl=en" target="_blank" rel="noopener noreferrer"><i
-                        class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/yeh.joy.1/" target="_blank" rel="noopener noreferrer"> <i
-                        class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://www.youtube.com/channel/UCYaDuhLA0OO3Q-MnSY8LMWg" target="_blank"
-                    rel="noopener noreferrer"> <i class="fa fa-youtube" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/joy-yeh-2002/" target="_blank" rel="noopener noreferrer"> <i
-                        class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </div>
+        <div class="nav-button-container">
+            <a href="contact.html">
+                <h3> Next: Contact</h3>
+            </a>
+        </div>
+    </div>
 
-            <p> Made with <a href="https://joyyeh2002.github.io/"><i class="fa fa-heart" aria-hidden="true"></i></a> by
-                Joy
-                Yeh </p>
-        </section>
+    <!-- Footer -->
+    <section class="footer">
+        <div class="icons">
+            <a href="https://www.instagram.com/joyleafy2002/?hl=en" target="_blank" rel="noopener noreferrer"><i
+                    class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/yeh.joy.1/" target="_blank" rel="noopener noreferrer"> <i
+                    class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCYaDuhLA0OO3Q-MnSY8LMWg" target="_blank"
+                rel="noopener noreferrer"> <i class="fa fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/joy-yeh-2002/" target="_blank" rel="noopener noreferrer"> <i
+                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
 
-        <!-- JavaScript for toggle menu -->
-        <script>
-            var navLinks = document.getElementById("navLinks");
+        <p> Made with <a href="https://joyyeh2002.github.io/"><i class="fa fa-heart" aria-hidden="true"></i></a> by
+            Joy
+            Yeh </p>
+    </section>
 
-            /* These get called on click: <i class = "fa fa-times" onclick = "showMenu()"></i> */
-            function showMenu() {
-                navLinks.style.left = "0";
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        /* These get called on click: <i class = "fa fa-times" onclick = "showMenu()"></i> */
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+
+    <script>
+        ScrollReveal({
+            reset: false,
+            distance: '60px',
+            duration: 1200,
+            delay: 300
+
+        });
+
+        ScrollReveal().reveal('.widgets', {
+            viewOffset: {
+                top: 900
             }
-            function hideMenu() {
-                navLinks.style.left = "-200px";
-            }
+        });
 
-            /* The reveal function */
-            function reveal() {
-                var reveals = document.querySelectorAll(".reveal");
-                once = 'true';
-                for (var i = 0; i < reveals.length; i++) {
-                    var windowHeight = window.innerHeight;
-                    var elementTop = reveals[i].getBoundingClientRect().top;
-                    var elementVisible = 50;
-                    if (elementTop < windowHeight - elementVisible) {
-                        reveals[i].classList.add("active");
-                    } else {
-                        reveals[i].classList.remove("active");
-                    }
-                }
-            }
+        ScrollReveal().reveal('.skill', { delay: 800, distance: '10px', duration: 1700, origin: 'bottom' });
+        ScrollReveal().reveal('.title-block', { delay: 600, distance: '30px', duration: 1500, origin: 'right'});
+        ScrollReveal().reveal('.nav-button-grid', { delay: 1400, distance: '10px', duration: 700, origin: 'top' });
+    </script>
 
-            window.addEventListener("scroll", reveal);
-
-        </script>
+    </script>
 
 
 
