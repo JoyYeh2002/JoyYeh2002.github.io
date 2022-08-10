@@ -83,7 +83,7 @@
 .center-section-box {
     display: flex;
     width: 100%;
-    margin: 2.5vw auto;
+    margin: 12px auto;
     align-items: center;
     text-align: center;
     z-index: 1;
@@ -95,15 +95,14 @@
 
 .center-section-box h2 {
     padding: 1.2rem 1rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 2.2rem;
     margin: 0 auto;
-
 }
 
 .center-section-box a {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .center-section-box a:hover {
@@ -114,21 +113,21 @@
 @media screen and (max-width: 768px) {
 
     .center-section-box {
-        margin-top: 1vw;
+        margin-top: 12px;
     }
 
     .center-section-box h2,
     .center-section-box a {
         font-size: 4vw;
-        line-height: 4vw;
         margin-top: 0%;
     }
 
     .center-section-box h2 {
+        font-size: 0.8rem;
         padding-top: -10px;
+        line-height: 1.5rem;
     }
 }
-
 
 
 /* Section text */
@@ -178,7 +177,6 @@
 .image-box {
     width: 50%;
     margin: 6vh 0;
-
 }
 
 .image-box img {
@@ -187,18 +185,12 @@
     z-index: 5;
 }
 
-#alive-image:hover {
-    box-shadow: 0 0 14px 0px var(--lightning-blue);
-    transition: 0.2s;
-}
-
 #bird-logo-l {
     width: 65%;
 }
 
 #bird-logo-r {
     width: 30%;
-
 }
 
 .art-intro {
@@ -281,8 +273,8 @@
     border-bottom: 7px solid var(--orange);
 }
 
-i {
-    margin-top: 20px;
+.stat-block i {
+    margin-top: 30px;
     color: var(--orange);
     font-size: 2.5em;
     text-align: center;
@@ -304,9 +296,10 @@ span.num {
 
 span.text {
     color: #e0e0e0;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: center;
-    pad: 0.7em 0;
+    pad: 2em 0;
+    padding-bottom: 1.5em;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -321,6 +314,10 @@ span.text {
         height: 26vmin;
         width: 26vmin;
         font-size: 12px;
+    }
+
+    span.text {
+        padding-bottom: 1vw;
     }
 
     .i {
@@ -423,7 +420,7 @@ span.text {
 /* The image grid */
 .img-gallery {
     width: 85%;
-    margin: 3vw auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-auto-rows: 100px 200px;
@@ -513,11 +510,37 @@ span.text {
 }
 
 @media screen and (max-width:500px) {
+
+
     .img-gallery {
         grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 100px 20px;
     }
 
     .w-1, .w-2, .w-3, .w-4, .w-5, .w-6 {
         grid-column: span 1;
     }
+
+    .h-1, .h-2, .h-3, .h-4, .h-5, .h-6 {
+        grid-row: span 6;
+    }
+
+    #ver {
+        grid-row: span 8;
+    }
+
+    #hori {
+        grid-row: span 3;
+    }
+
+    #hori-stretch {
+        grid-row: span 4;
+    }
+
+    .gallery-item .image {
+        width: 100%;
+        
+        overflow: hidden;
+    }
+
 }

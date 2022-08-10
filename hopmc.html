@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hopmc_style.css">
 
+
     <link rel="stylesheet" href="../css/project_style.css">
     <link rel="stylesheet" href="../css/eng_size_tags.css">
 
@@ -363,17 +364,32 @@
 
     </div>
 
-    <!-- Hyperlinks -->
+    <!-- Hyperlinks for HopMC-->
     <div class="center-section-box">
         <h2> Explore more:<a href="https://www.instagram.com/hopmc.official/?hl=en" target="_blank"
-                rel="noopener noreferrer"> <i class="fa-brands fa-instagram" id="small-i"></i> hopmc.official      </a><a
+                rel="noopener noreferrer"> <i class="fa-brands fa-instagram" id="small-i"></i> hopmc.official </a><a
                 href="https://www.youtube.com/channel/UCjMZQkDQBslzJ3NXdJM1yMg" target="_blank"
                 rel="noopener noreferrer"> <i class="fa fa-youtube-play" id="small-i"></i>HopMC</a> </h2>
     </div>
 
+    <!-- Prev and next buttons -->
+    <div class="nav-button-grid">
+        <div class="nav-button-container">
+            <a href="engineering.html">
+                <h3> Previous: Projects</h3>
+            </a>
+        </div>
+
+        <div class="nav-button-container">
+            <a href="art.html">
+                <h3> Next: Art </h3>
+            </a>
+        </div>
+    </div>
+
     <!-- Footer -->
-    <section class="footer">
-        <div class="icons">
+    <section class="footer" >
+        <div class="icons" id="footer">
             <i class="fa fa-instagram" aria-hidden="true"></i>
             <i class="fa fa-facebook" aria-hidden="true"></i>
             <i class="fa fa-youtube" aria-hidden="true"></i>
@@ -416,6 +432,7 @@
     <script src="exercises/animated_tally/script.js" async defer></script>
 
     <script>
+        
         ScrollReveal({
             reset: false,
             distance: '60px',
@@ -423,8 +440,14 @@
             delay: 300
         });
 
-       
-/*
+        
+        ScrollReveal().reveal('.widgets', {
+            viewOffset: {
+                top: 900
+            }
+        });
+
+
         ScrollReveal().reveal('.section-box .content h1', { delay: 500, origin: 'top' });
         ScrollReveal().reveal('#bird-logo-l p', { delay: 700, duration: 3000, origin: 'left' });
         ScrollReveal().reveal('#campus-process-r p', { delay: 700, duration: 3000, origin: 'right' });
@@ -438,9 +461,10 @@
         ScrollReveal().reveal('.center-vid-container', { delay: 0, distance: '20px', duration: 1400, origin: 'top' });
 
         // Reveal the grid 
-        ScrollReveal().reveal('.img-gallery .gallery-container .gallery-item .image img', { delay: 400, distance: '10px', duration: 1600, origin: 'bottom' });
-*/
+      //  ScrollReveal().reveal('.img-gallery .gallery-container .gallery-item .image img', { delay: 400, distance: '10px', duration: 400, origin: 'bottom' });
 
+        // Reveal buttons
+        ScrollReveal().reveal('.nav-button-grid', { delay: 200, distance: '10px', duration: 700, origin: 'top' });
     </script>
 
 </body>

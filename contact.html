@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact_style.css">
+    <link rel="stylesheet" href="css/project_style.css">
+    <link rel="stylesheet" href="css/eng_size_tags.css">
+
+    <!-- The font is generated from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Import the caret icon style sheet from fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery -->
+    <script src="https.//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <!-- Sub Folder for CS Project Page-->
+    <section class="sub-header">
+        <nav>
+            <!-- able to click on the logo and go to main page-->
+            <div class="nav-links" id="navLinks">
+                <!-- Display the navigation bar titles and link them to the respective .html -->
+                <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
+                        onclick="hideMenu()"></i></div> <!-- the closing icon-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="engineering.html">Engineering</a>
+                                <a href="compsci.html">Computer Science</a>
+                                <a href="hopmc.html">HopMC</a>
+                                <a href="art.html">Visual Art</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- Add the signature logo image -->
+        <img src="images/contact/contact_signature.png" alt="Contact Me" class="center-sub" id="contact-logo">
+    </section>
+
+
+    <div class="contact-wrapper">
+        <div class="contact-text">
+            <h2> Reach out to request a resume & chat! </h2>
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:hyeh9@jhu.edu" target="_blank" rel="noopener noreferrer"> hyeh9@jhu.edu</a>
+                </div>
+
+                <div>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <a href="https://www.linkedin.com/in/joy-yeh-2002/" target="_blank" rel="noopener noreferrer">
+                        Huanying (Joy) Yeh</a>
+                </div>
+
+                <div>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <h5><a href="https://www.instagram.com/joyleafy2002/" target="_blank" rel="noopener noreferrer">
+                            JoyYeh2002</a>
+                    </h5>
+                </div>
+
+                <div>
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    <a href="https://www.youtube.com/channel/UCYaDuhLA0OO3Q-MnSY8LMWg" target="_blank"
+                        rel="noopener noreferrer"> Joy Yeh </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mugshot">
+            <img src="images/contact/my_profile_pic.png">
+        </div>
+    </div>
+
+    <!--Contact form not used because the form php isn't working. -->
+    <div class="contact-col">
+        <form action="mailto:hopkinsrocketry@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter email address" required>
+            <input type="text" name="subject" placeholder="Enter the subject" required>
+            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn blue-btn" style="margin-right: 10px;"> Send Message </button>
+            <button type="reset" class="hero-btn blue-btn-right"> Reset</button>
+        </form>
+    </div>
+    </section>
+
+    <!-- Prev and next buttons -->
+    <div class="nav-button-grid">
+        <div class="nav-button-container">
+            <a href="skills.html">
+                <h3> Previous: Skills</h3>
+            </a>
+        </div>
+
+        <div class="nav-button-container">
+            <a href="index.html">
+                <h3> Next: Home</h3>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="icons">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+
+        <p> Made with <i class="fa fa-heart" aria-hidden="true"></i> by Joy Yeh </p>
+    </section>
+
+    <!-- JQuery counter up script -->
+    <script>
+        $(document).ready(function () {
+            $(".num").counterUp({
+                delay: 10,
+                time: 1200
+            });
+        });
+    </script>
+
+    <script src="exercises/animated_tally/script.js" async defer></script>
+
+    <script>
+        ScrollReveal({
+            reset: false,
+            distance: '60px',
+            duration: 1200,
+            delay: 300
+
+        });
+
+        ScrollReveal().reveal('.widgets', {
+            viewOffset: {
+                top: 900
+            }
+        });
+
+        ScrollReveal().reveal('.nav-button-grid', { delay: 400, distance: '10px', duration: 700, origin: 'top' });
+    </script>
+
+</body>
+
+</html>

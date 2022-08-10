@@ -89,24 +89,32 @@ html {
     width: 70%;
 }
 
-#skills-logo {
-    width: 30%;
+#eng-logo {
+    margin-top: 2%;
+    width:45%;
 }
 
-#eng-logo {
-    width:45%;
+#comp-sci-logo {
+    margin-top: 3%;
+    width: 55%;
 }
 
 #hopmc-logo {
     width: 33%;
 }
 
-#comp-sci-logo {
-    width: 55%;
-}
-
 #art-logo {
     width: 39%;
+}
+
+#skills-logo {
+    margin-top: 3%;
+    width: 30%;
+}
+
+#contact-logo {
+margin-left: 33%;
+    width: 40%;
 }
 
 @media(max-width: 1024px) {
@@ -114,18 +122,9 @@ html {
         width: 90%;
     }
 
-    #skills-logo {
-        width: 40%;
-    }
-
     #eng-logo {
-        margin-top: 0%;
+        margin-top: 3%;
         width: 70%;
-    }
-
-    #hopmc-logo {
-        margin-top: 0%;
-        width: 50%;
     }
 
     #comp-sci-logo {
@@ -133,9 +132,18 @@ html {
         width: 80%;
     }
 
+    #hopmc-logo {
+        margin-top: 0%;
+        width: 50%;
+    }
+
     #art-logo {
         margin-top: 0%;
         width: 60%;
+    }
+
+    #skills-logo {
+        width: 40%;
     }
 }
 
@@ -156,8 +164,20 @@ nav {
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 1rem 1rem;
+    padding: 0rem 1rem;
     position: relative;
+}
+
+
+@media(max-width:1024px) {
+    .nav-links ul li {
+        padding: 
+        1rem 1rem;
+    }
+
+    .sub-header i {
+       padding-top: 2.5vw;
+    }
 }
 
 /* Set font color to white */
@@ -481,11 +501,12 @@ a.skill-button:hover {
     z-index: 1;
 }
 
-.icons .fa {
+.footer .icons .fa{
     color: var(--dark-navy-solid);
-    margin: 0 13px;
+    margin: 0 24px;
     cursor: pointer;
-    padding: 14px 0;
+    padding: 6px 0;
+    padding-bottom: 15px;
 }
 
 .fa-heart {

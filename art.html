@@ -68,7 +68,7 @@
     </div>
 
     <div class="img-gallery">
-        <div class="gallery-container w-5 h-3">
+        <div class="gallery-container w-5 h-3" id="hori">
             <div class="gallery-item">
                 <div class="image">
                     <img src="images/art/digital_conserve.jpg">
@@ -92,7 +92,7 @@
             </div>
         </div>
 
-        <div class="gallery-container w-1 h-1">
+        <div class="gallery-container w-1 h-1" id="ver">
             <div class="gallery-item">
                 <div class="image">
                     <img src="images/art/digital_astronaut.png">
@@ -100,7 +100,7 @@
             </div>
         </div>
 
-        <div class="gallery-container w-4 h-2">
+        <div class="gallery-container w-4 h-2" id="hori-stretch">
             <div class="gallery-item">
                 <div class="image">
                     <img src="images/art/color_pencil_still_life.jpg">
@@ -124,7 +124,7 @@
             </div>
         </div>
 
-        <div class="gallery-container w-1 h-1">
+        <div class="gallery-container w-1 h-1" id="ver">
             <div class="gallery-item">
                 <div class="image">
                     <img src="images/art/color_pencil_balerrina.jpg">
@@ -140,7 +140,7 @@
             </div>
         </div>
 
-        <div class="gallery-container w-3 h-2">
+        <div class="gallery-container w-3 h-2" id="hori-stretch">
             <div class="gallery-item">
                 <div class="image">
                     <img src="images/art/inktober_dino_skull.JPG">
@@ -156,7 +156,7 @@
             </div>
         </div>
 
-        <div class="gallery-container w-5 h-3">
+        <div class="gallery-container w-5 h-3" id="hori-stretch">
             <div class="gallery-item">
                 <div class="image">
                     <img src="images/art/inktober_penguin.JPG">
@@ -172,7 +172,7 @@
             </div>
         </div>
 
-        <div class="gallery-container w-5 h-2">
+        <div class="gallery-container w-5 h-2" id="hori">
             <div class="gallery-item">
                 <div class="image">
                     <img src="images/art/girls_on_ice_plants.jpg">
@@ -228,7 +228,7 @@
             </div>
         </div>
 
-        <div class="gallery-container w-4 h-2">
+        <div class="gallery-container w-4 h-2" id="hori">
             <div class="gallery-item">
                 <div class="image">
                     <img src="images/art/girls_ice_cave.JPG">
@@ -290,8 +290,23 @@
 
     <!-- Contact me!! -->
     <div class="center-section-box">
-        <h2> Contacat <a href="mailto:someone@yoursite.com" target="_blank"
+        <h2> Contact <a href="mailto:someone@yoursite.com" target="_blank"
                 rel="noopener noreferrer">joy.2002.art@gmail.com</a> for commission requests! </h2>
+    </div>
+
+    <!-- Prev and next buttons -->
+    <div class="nav-button-grid">
+        <div class="nav-button-container">
+            <a href="hopmc.html">
+                <h3> Previous: HopMC</h3>
+            </a>
+        </div>
+
+        <div class="nav-button-container">
+            <a href="contact.html">
+                <h3> Next: Contact</h3>
+            </a>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -344,13 +359,23 @@
             distance: '60px',
             duration: 1200,
             delay: 300
+
         });
 
-
+        ScrollReveal().reveal('.widgets', {
+            viewOffset: {
+                top: 900
+            }
+        });
 
         // Reveal the grid 
-        ScrollReveal().reveal('.img-gallery .gallery-container .gallery-item .image img', { delay: 400, distance: '10px', duration: 1600, origin: 'bottom' });
+       // .stat-block:nth-child(1),
+        ScrollReveal().reveal('.center-section-box:nth-child(1)', { delay: 400, distance: '60px', duration: 1800, origin: 'top' });
+      //  ScrollReveal().reveal('.img-gallery .gallery-container .gallery-item .image img', { delay: 500, distance: '10px', duration: 1400, origin: 'bottom' });
 
+         // Reveal buttons
+        ScrollReveal().reveal('.center-section-box:nth-child(2)', { delay: 200, distance: '10px', duration: 700, origin: 'bottom' });
+         ScrollReveal().reveal('.nav-button-grid', { delay: 400, distance: '10px', duration: 700, origin: 'top' });
     </script>
 
 </body>

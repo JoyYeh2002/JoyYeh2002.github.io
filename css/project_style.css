@@ -7,6 +7,11 @@
     scroll-behavior: smooth;
 }
 
+#contact-wiki {
+    width: 70%;
+    border: solid 5px red;
+}
+
 /* wiki box */
 .wiki-content {
     width: 60%;
@@ -77,6 +82,7 @@
     min-height: 500px;
     word-wrap: break-word;
     padding-top: 40px;
+    border: solid 5px red;
 }
 
 .wiki-image-box {
