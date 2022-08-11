@@ -16,6 +16,10 @@
     --water-blue: rgba(138, 192, 236, 0.411);
 }
 
+#bold {
+    color: var(--dark-navy);
+    font-weight: 800;
+}
 
 .hop-contact {
     position: relative;

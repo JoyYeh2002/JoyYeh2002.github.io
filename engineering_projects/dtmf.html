@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engineering | Phone Key DTMF</title>
 
-   <!-- Style sheets -->
-   <link rel="stylesheet" href="../css/style.css">
-   <link rel="stylesheet" href="../css/project_style.css">
-   <link rel="stylesheet" href="../css/eng_size_tags.css">
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project_style.css">
+    <link rel="stylesheet" href="../css/eng_size_tags.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,30 +64,32 @@
                 </h2>
 
                 <h3> Objectives: </h3>
-                <li> Use MATLAB to generate and decode the dual-tone frequency audio for each of the 12 phone keys on
+                <li> <span id="bold-p">Use MATLAB to generate and decode the dual-tone frequency audio</span> for 12
+                    keys on
                     the phone pad
                 </li>
-                <li> Investigate the effects of additive noise, diffterent channel gains, and reverberation. </li>
+                <li> Investigate the effects of <span id="bold-p">additive noise, diffterent channel gains, and
+                        reverberation. </span></li>
                 <li> Test the decode() function extensively to find the maximum gain allowed for successful decryption
                 </li>
 
                 <h3>Skills Applied & Outcomes:</h3>
-                <li> MATLAB signal processing: using signal energy threshold and FFT to separate phone key tones from
-                    noise.
-                    Validate the audio time intervals in both the time- and frequency-domain. </li>
-                <li> The algorithm can correctly decode individual phone key characters 80%+ of the time with noise gain
-                    = 3 (meaning that the noise was 3 times as that of the actual signal)</li>
-                <li> For a = 1.4, 90%+ of the phone number strings of 4-10 digits are entirely correct.</li>
+                <li> Signal processing: using energy threshold and FFT to separate phone key tones from
+                    noise.</li>
+                <li> Validate the audio time intervals in both the time- and frequency-domain. </li>
+                <li> The algorithm can <span id="bold-p">correctly decode individual phone key characters 80%+ of the time with noise gain
+                    = 3 (when the noise was 3 times louder than the actual signal)</span></li>
+                <li> <span id="bold-p"> For a = 1.4, there 90%+ of the phone numbers (length 4-10 digits) encoded entirely correctly.</span></li>
                 <li> Most of my peers' algorithms were able to have noise gains up to 0.8 - 1.1.</li>
 
                 <h3> Comments: </h3>
                 <p> This is one of the most challenging and complete individual projects I've done. I learned to do my
                     best under a tight deadlind, maximize efficiency in a code/file organizations, and clarify my
-                    scientific writing. See
+                    scientific writing. <!-- See
                     <a href="#"
                         onclick='window.open("../images/engineering/dtmf_proj/Yeh_Proj02_Report.pdf");return false;'>
-                        this link </a> for the complete project report.
-                    </p>
+                        this link </a> for the complete project report. !-->
+                </p>
 
                 <div id="blank-space-small" style="padding-top: 11px;"></div>
 

@@ -50,7 +50,7 @@ html {
 .sub-header-bar {
     height: 10vh;
     width: 100%;
-    background-image: linear-gradient(rgba(14, 80, 234, 0.28), rgba(14, 80, 234, 0.48)), url(../images/engineering/antelope_creek_6.png);
+    background: rgb(51, 85, 163);
     background-position: top;
     background-size: cover;
     text-align: center;

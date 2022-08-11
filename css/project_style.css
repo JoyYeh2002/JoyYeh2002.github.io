@@ -38,11 +38,18 @@
     font-weight: bold;
 }
 
+
 .wiki-content a {
     font-size: 14px;
     padding-top: 24px;
     padding-bottom: 5px;
     font-weight: bold;
+}
+
+.wiki-content h4 {
+    font-size: 14px;
+    padding-left: 2px;
+    padding-top: 2px;
 }
 
 .wiki-content li, p {
@@ -54,12 +61,8 @@
 
 #bold-p {
     font-size: 14px;
-    color: var(--dark-navy-solid);
+    color: var(--dark-navy);
     font-weight: 800;
-}
-
-.wiki-content h4 {
-    font-size: 12px;
 }
 
 #blank-space {
