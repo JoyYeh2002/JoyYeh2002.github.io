@@ -289,6 +289,11 @@ body {
     color: var(--dark-navy);
 }
 
+#bold-intro-text {
+    font-size: 1.2rem; 
+    font-weight: 800;
+}
+
 /* Accomodation for small device */
 @media(max-width: 1024px) {
 
