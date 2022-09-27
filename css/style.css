@@ -283,7 +283,7 @@ body {
 }
 
 .title-block p {
-    margin: 10px 40px;
+    margin: 10px 5rem;
     font-size: 1.2rem;
     line-height: 2rem;
     color: var(--dark-navy);
@@ -360,6 +360,11 @@ body {
     .title-block-2 h1 {
         font-size: 2rem;
     }
+
+    .title-block p {
+        margin: 10px 2rem;
+    }
+    
 }
 
 /* Set up row elements */
