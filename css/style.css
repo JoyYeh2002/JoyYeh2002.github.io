@@ -566,6 +566,7 @@ a.skill-button:hover {
 
 .skill ul {
     text-align: center;
+    margin: 0 3rem;
     line-height: 1.8rem;
     margin-bottom: 20px;
 }
@@ -593,8 +594,8 @@ a.skill-button:hover {
 
     .skill li {
         text-align: left;
-        padding-left: 5%;
-        padding-right: 2%;
+        padding-left: 8%;
+        padding-right: 5%;
         line-height: 1.8rem;
     }
 
