@@ -9,8 +9,6 @@
 
     <link rel="stylesheet" href="../css/project_style.css">
     <link rel="stylesheet" href="../css/eng_size_tags.css">
-    
-
 
     <!-- The font is generated from Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +25,17 @@
 
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSPJBPLTJ3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LSPJBPLTJ3');
+    </script>
+
 </head>
 
 <body>
@@ -371,13 +380,13 @@
         });
 
         // Reveal the grid 
-       // .stat-block:nth-child(1),
+        // .stat-block:nth-child(1),
         ScrollReveal().reveal('.center-section-box:nth-child(1)', { delay: 400, distance: '60px', duration: 1800, origin: 'top' });
-      //  ScrollReveal().reveal('.img-gallery .gallery-container .gallery-item .image img', { delay: 500, distance: '10px', duration: 1400, origin: 'bottom' });
+        //  ScrollReveal().reveal('.img-gallery .gallery-container .gallery-item .image img', { delay: 500, distance: '10px', duration: 1400, origin: 'bottom' });
 
-         // Reveal buttons
+        // Reveal buttons
         ScrollReveal().reveal('.center-section-box:nth-child(2)', { delay: 200, distance: '10px', duration: 700, origin: 'bottom' });
-         ScrollReveal().reveal('.nav-button-grid', { delay: 400, distance: '10px', duration: 700, origin: 'top' });
+        ScrollReveal().reveal('.nav-button-grid', { delay: 400, distance: '10px', duration: 700, origin: 'top' });
     </script>
 
 </body>
