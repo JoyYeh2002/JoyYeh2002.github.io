@@ -8,6 +8,7 @@
     <!-- Style sheets -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/project_style.css">
+    <link rel="stylesheet" href="../css/eng_size_tags.css">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,47 +57,72 @@
     <section>
         <div class="wiki">
             <!-- Text -->
-            <div class="wiki-content">
+            <div class="wiki-content" id="mia-l">
                 <h1> Cardiac Imaging</h1>
                 <h2> May 2023<br>
                     EN.510.433 Medical Image Analysis<br>
                 </h2>
 
                 <h3>Objectives:</h3>
-                <li>Given a sequence of cardiac ultrasound images (2-channel and 4-channel views), use medical image analysis techniques to locate the left ventricle of the heart</li>
-                <li>Then, re-construct 3D volumes of the left ventricle according to the orthogonal image views, then estimate the stroke volumes</li>
-                <li>Evaluate the algorithm on test data of 10 patients</li>
+                <li>Given a sequence of <span id="bold-p"> cardiac ultrasound images</span>(2-channel and 4-channel views), use medical image analysis techniques to 
+                    <span id="bold-p"> locate the left ventricle (LV) of the heart</span></li>
+                <li>Then, re-construct a <span id="bold-p"> 3D volume </span> of the LV according to the orthogonal image views, then 
+                    <span id="bold-p"> estimate the stroke volumes during a full heartbeat</span></li>
+                <li>Evaluate the algorithm on test data of 10 new patients (as shown in the animations).</li>
 
                 <h3>Skills Applied:</h3>
-                <li>Computer vision implementation wtih Python: dynamic thresholding, image denoising, template matching, and interpolation</li>
-                <li>Algorithm design, development, and testing</li>
-                <li>Data pipeline organization</li>
+                <li>Computer vision implementation wtih <span id="bold-p"> Python</span>: dynamic thresholding, 
+                    image denoising,<span id="bold-p">template matching</span>, and interpolation</li>
+                <li>Algorithm design and testing</li>
+                <li><span id="bold-p"> GitHub, CI/CD data pipeline</span></li>
 
                 <h3>Comments:</h3>
-                <p> The project has a largely open-ended task that allows me to apply any image analysis technique from the course material. This project adopted traditional computer vision techniques, rather than ML-based models, 
-                    allowing me to gain a much deeper understanding of their practical applications. However, I'm curious about the performances of ML-based approaches after manually setting a-priori constraints and pre-processing.</p>
+                <p> The project was largely open-ended, allowing me to apply any image analysis technique from course materials. 
+                    This project adopted <span id="bold-p"> classic computer vision techniques </span>, rather than ML-based models, 
+                    where I gained a much deeper understanding of their practical applications. 
+                    In the future, I'm curious about ML-based approaches as well, where the model setting accounts for 
+                    a-priori pre-processing and constraints.</p>
                 </p>
-                <div id="blank-space"></div>
+
+                <div id="blank-space-small" style="padding-top: 11px;"></div>
+
+                <!-- Images -->
+                <div class="wiki-image-box">
+                    <img src="../images/compsci/MIA_proj/LV_setup.png"
+                        style="width:100%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> <span id="bold-p">Left: </span>formulas for end-diastolic Volume (EDV), end-systolic volume (ESV), 
+                        and ejection fraction (EF). <span id="bold-p">Right: </span>image pre-processing</p>
+                </div>       
+                
+                <!-- <div id="blank-space"></div> -->
             </div>
 
             <!-- Image and buttons -->
-            <div class="wiki-images">
+            <div class="wiki-images", id="mia-r">
                 <!-- Prev and next buttons -->
                 <div class="button-box">
                     <a href="https://github.com/JoyYeh2002/Avoid_Falling_Blocks_Game" target="_blank"
-                    rel="noopener noreferrer" class="previous"> &laquo; Previous: Falling Blocks</a>
+                    rel="noopener noreferrer" class="previous"> &laquo; Previous: Falling Blocks (GitHub)</a>
                     <a href="game_of_life.html" class="next">Next: Game of Life &raquo;</a>
                 </div>
 
                 <!-- Images -->
                 <div class="wiki-image-box">
-                    <img src="../images/compsci/cache_proj/sample_run.PNG">
-                    <p> A sample run.</p>
+                    <img src="../images/compsci/MIA_proj/LV_localization.png"
+                    style="width:100%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> Region of interest labeling</p>
                 </div>
 
                 <div class="wiki-image-box">
-                    <img src="../images/compsci/cache_proj/hit_rate.PNG">
-                    <p> Analyzing hit rates.</p>
+                    <img src="../images/compsci/MIA_proj/cardiac_3D_gif01.gif"
+                    style="width:100%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> ESV reconstructed video</p>
+                </div>
+
+                <div class="wiki-image-box">
+                    <img src="../images/compsci/MIA_proj/cardiac_3D_gif02.gif"
+                    style="width:100%; height: 90%; border: 2px solid rgba(0,0,0,0.3);">
+                    <p> EDV reconstructed video</p>
                 </div>
             </div>
         </div>
