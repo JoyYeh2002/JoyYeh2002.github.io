@@ -3,12 +3,12 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS | Game of Life </title>
+    <title>CS | Cardiac 3D Stroke Volume Estimation </title>
 
     <!-- Style sheets -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/project_style.css">
-
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
     <!-- Fontawesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- JQuery -->
+    <!-- JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -57,50 +57,47 @@
         <div class="wiki">
             <!-- Text -->
             <div class="wiki-content">
-                <h1> Game of Life (MATLAB) </h1>
-                <h2> December 2020<br>
-                    EN.500.134 Bootcamp: MATLAB<br>
+                <h1> Cardiac Imaging</h1>
+                <h2> May 2023<br>
+                    EN.510.433 Medical Image Analysis<br>
                 </h2>
 
-                <h3> Objectives:</h3>
-                <li>Implement John Conway's Game of Life, a cellular automaton</li>
-                <li>Read a .txt file indicating a game state</li>
-                <li>Display the real-time game states after a certain number of initial frames</li>
-                <li> <span id="bold-p">Build an interactive GUI</span> for inputting files and
-                    saving game states and videos</li>
+                <h3>Objectives:</h3>
+                <li>Given a sequence of cardiac ultrasound images (2-channel and 4-channel views), use medical image analysis techniques to locate the left ventricle of the heart</li>
+                <li>Then, re-construct 3D volumes of the left ventricle according to the orthogonal image views, then estimate the stroke volumes</li>
+                <li>Evaluate the algorithm on test data of 10 patients</li>
 
                 <h3>Skills Applied:</h3>
-                <li>MATLAB maatrices, MATLAB GUI, file I/O</li>
+                <li>Computer vision implementation wtih Python: dynamic thresholding, image denoising, template matching, and interpolation</li>
+                <li>Algorithm design, development, and testing</li>
+                <li>Data pipeline organization</li>
 
                 <h3>Comments:</h3>
-                <p> I later <span id="bold-p">built another GUI</span> for my research lab, and what I learned from this project
-                    was extremely helpful.
+                <p> The project has a largely open-ended task that allows me to apply any image analysis technique from the course material. This project adopted traditional computer vision techniques, rather than ML-based models, 
+                    allowing me to gain a much deeper understanding of their practical applications. However, I'm curious about the performances of ML-based approaches after manually setting a-priori constraints and pre-processing.</p>
                 </p>
                 <div id="blank-space"></div>
             </div>
 
-        
             <!-- Image and buttons -->
             <div class="wiki-images">
                 <!-- Prev and next buttons -->
                 <div class="button-box">
-                    <!-- <a href="https://github.com/JoyYeh2002/Avoid_Falling_Blocks_Game" target="_blank"
-                    rel="noopener noreferrer" class="previous"> &laquo; Previous: Falling Blocks</a> -->
-                    <a href="cardiac_imaging.html" class="previous"> &laquo; Previous: Cardiac Volume Reconstruction</a>
-                    <a href="audio_generator.html" class="next">Next: Audio Generator &raquo;</a>
+                    <a href="https://github.com/JoyYeh2002/Avoid_Falling_Blocks_Game" target="_blank"
+                    rel="noopener noreferrer" class="previous"> &laquo; Previous: Falling Blocks</a>
+                    <a href="game_of_life.html" class="next">Next: Game of Life &raquo;</a>
                 </div>
 
                 <!-- Images -->
                 <div class="wiki-image-box">
-                    <img src="../images/compsci/game_of_life_proj/gui.PNG" style="width:80%;">
-                    <p> The interactive GUI interface.</p>
+                    <img src="../images/compsci/cache_proj/sample_run.PNG">
+                    <p> A sample run.</p>
                 </div>
 
                 <div class="wiki-image-box">
-                    <img src="../images/compsci/game_of_life_proj/demo_video.gif" style=width:80%;">
-                    <p> Sample animation generated.</p>
+                    <img src="../images/compsci/cache_proj/hit_rate.PNG">
+                    <p> Analyzing hit rates.</p>
                 </div>
-
             </div>
         </div>
     </section>

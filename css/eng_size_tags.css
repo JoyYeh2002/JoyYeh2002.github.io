@@ -41,14 +41,14 @@
 }
 
 @media(max-width: 1024px) {
-    #cmos-l, #dtmf-l, #rocket-l, #mosquito-l, #cotact-l{
+    #cmos-l, #dtmf-l, #rocket-l, #mosquito-l, #limbs-l, #cotact-l{
         width: 100%;
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #cmos-r, #dtmf-r, #rocket-r, #mosquito-r, #contact-r {
+    #cmos-r, #dtmf-r, #rocket-r, #mosquito-r, #limbs-r, #contact-r {
         display: flex;
         flex-direction: column;
         width: 100%;
