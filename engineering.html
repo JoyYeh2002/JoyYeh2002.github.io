@@ -1,18 +1,16 @@
+<!-- Updated 09.15.2023 -->
 <!DOCTYPE html>
 <html>
 
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSPJBPLTJ3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-LSPJBPLTJ3');
     </script>
 
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engineering Projects</title>
     <link rel="stylesheet" href="css/style.css">
@@ -30,9 +28,7 @@
     <!-- Sub Folder for Engineering Project Page-->
     <section class="sub-header">
         <nav>
-            <!-- able to click on the logo and go to main page-->
             <div class="nav-links" id="navLinks">
-                <!-- Display the navigation bar titles and link them to the respective .html -->
                 <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
                         onclick="hideMenu()"></i></div> <!-- the closing icon-->
                 <ul>
@@ -69,11 +65,10 @@
         </div>
 
         <div class="project-gallery">
-
             <idv class="project-container">
                 <a href="engineering_projects/ofdm.html">
                     <img src="images/engineering/eng_title_page/ofdm_cover.png" style="height:100%;"></a>
-                <p> OFDM Audio Transmission </p>
+                <p> OFDM Wireless Audio Transmission </p>
             </idv>
 
             <idv class="project-container">
@@ -93,10 +88,16 @@
                     <img src="images/engineering/eng_title_page/sonar_cover.png"></a>
                 <p> Sonar Signal Decryption </p>
             </idv>
+
+            <idv class="project-container">
+                <a href="engineering_projects/thrust_stand.html">
+                    <img src="images/engineering/eng_title_page/thrust_stand_cover.png"></a>
+                <p> Rocket Thrust Stand Design </p>
+            </idv>
         </div>
 
-        <!-- AstroJays -->
-        <div class="title-block">
+        <!-- AstroJays UPDATE 09.15.23: Got rid of website -->
+        <!-- <div class="title-block">
             <h1 id="small-title">AstroJays Rocketry</h1>
         </div>
 
@@ -112,8 +113,7 @@
                     <img src="images/engineering/eng_title_page/astrojays_cover.PNG"></a>
                 <p> The AstroJays Team Website </p>
             </idv>
-
-        </div>
+        </div> -->
 
         <!-- Course Projects-->
         <div class="title-block">
@@ -189,8 +189,6 @@
     <!-- JavaScript for toggle menu -->
     <script>
         var navLinks = document.getElementById("navLinks");
-
-        /* These get called on click: <i class = "fa fa-times" onclick = "showMenu()"></i> */
         function showMenu() {
             navLinks.style.left = "0";
         }
@@ -222,9 +220,7 @@
     <!-- Java Script for smooth transition -->
     <script>
         var speed = 'slow';
-
         $('html, body').hide();
-
         $(document).ready(function () {
             $('html, body').fadeIn(speed, function () {
                 $('a[href], button[href]').click(function (event) {
@@ -238,8 +234,5 @@
             });
         });
     </script>
-
-
 </body>
-
 </html>

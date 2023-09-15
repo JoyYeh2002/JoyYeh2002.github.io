@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering | OFDM Wireless Data Transmission</title>
+    <title>Engineering | OFDM Wireless Transmission</title>
 
     <!-- Style sheets -->
     <link rel="stylesheet" href="../css/style.css">
@@ -48,7 +48,6 @@
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
             </div>
-
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </section>
@@ -58,27 +57,28 @@
         <div class="wiki">
             <!-- Text -->
             <div class="wiki-content" id="cmos-l">
-                <h1> OFDM: Audio Data Transmission System</h1>
+                <h1> OFDM: Wireless Audio Transmission System</h1>
                 <h2> December 2022<br>
-                    EE-442: Wireless Device Algorithms <br>
+                     EE-442: Wireless Device Algorithms <br>
                 </h2>
 
                 <h3> Objectives: </h3>
-                <li> Use the Orthogonal Frequency Division Multiplexing technique, as well as concepts in DFT and phase matching, to implement an audio-based wireless data transmission system.
-                </li>
-                <li> Use two speakers and a microphone to transmit audio data in binary bits</li>
-                <li> Implement algorithms in MATLAB for transmission (data packaging and pre-processing) and reception (denoising, phase correceions, decoding).</li>
-                <li> Write a complete test suite to verify and evaluate the design integrity (SNR vs. BER plots, performances under various fading channels, etc.)</li>
+                <li> Use the <span id="bold-p">Orthogonal Frequency Division Multiplexing (OFDM)</span> technique, 
+                     as well as <span id="bold-p">DFT</span> and phase matching, 
+                     to implement a wireless data transmission system. </li>
+                <li> Use <span id="bold-p"> two speakers and a microphone </span> to transmit audio in binary bits</li>
+                <li> Implement <span id="bold-p">MATLAB </span>algorithms for transmission (data packaging and pre-processing) and reception (denoising, phase correceions, decoding).</li>
+                <li> Write a complete <span id="bold-p">test suite to evaluate design integrity (SNR vs. BER plots, performances under different fading channels, etc.)</li>
                 
                 <h3> Comments: </h3>
-                <p> <li>I worked with two graduate students at EPFL for this group project, which was 50% of the course final grade. My teammates implemented most of the Block and Comb Pilot code. </li>
-                    <li>Then, I was responsbile for testing the implementations, both experimentally (making measurements on the audio speakers) and through simulations (adding Gaussian white noise in the code, changing parameters of the fading channels, etc.)
+                <p> <li>I worked with two graduate students at <span id="bold-p">EPFL, Switzerland</span> during my study abroad, which was 50% of the course grade. 
+                    My teammates implemented most of the Block and Comb Pilot code. </li>
+                    <li>Then, I was responsbile for testing the implementations, both experimentally 
+                        and through simulations (adding Gaussian white noise, tuning the fading channels, etc.)
                     </li>
-                    </p>
+                </p>
 
                 <h3> Project Deliverables: </h3>
-                    <p>
-                    
                     <li> A 20-page
                     <a href="#"
                         onclick='window.open("../images/engineering/ofdm_proj/OFDM_Project_Report.pdf");return false;'>
@@ -86,10 +86,9 @@
                     <li> A 15-minute <a href="#"
                         onclick='window.open("../images/engineering/ofdm_proj/OFDM_Presentation.pdf");return false;'>
                         presentation </a></li>
-                    <li> Complete MATLAB code for the function implementations and testing. See the <a href="https://github.com/JoyYeh2002/OFDM_Final_Project"> 
-                        GitHub repo</a>
+                    <li> Complete MATLAB code for the function implementations and testing. See the <a href="https://github.com/JoyYeh2002/OFDM_Final_Project"
+                        target="_blank" rel="noopener noreferrer"> GitHub repo</a>
                     </li>
-                </p>
                 <br>
 
                 <!-- Images Immediately Under -->
@@ -113,7 +112,7 @@
                     <a href="#" onclick='window.open("../images/engineering/cmos_proj/VLSI_poster.png");return false;'>
                         <img src="../images/engineering/ofdm_proj/demo01.PNG"
                             style="width:99%; height: 90%; border: 2px solid rgba(0,0,0,0.3);"></a>
-                    <p> The physical speaker system and project introduction. </p>
+                    <p> System block diagram. </p>
                 </div>
 
                 <div class="wiki-image-box">
@@ -125,7 +124,7 @@
                 <div class="wiki-image-box">
                     <img src="../images/engineering/ofdm_proj/demo09.PNG"
                         style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
-                    <p> Parameters of the optimal data transmission architecture.</p>
+                    <p> Optimal transmission parameters.</p>
                 </div>  
                 </div>
             </div>
@@ -141,24 +140,6 @@
         function hideMenu() {
             navLinks.style.left = "-200px";
         }
-    </script>
-
-    <!-- JS for smooth page transition -->
-    <script>
-        var speed = 'normal';
-        $('html, body').hide();
-        $(document).ready(function () {
-            $('html, body').fadeIn(speed, function () {
-                $('a[href], button[href]').click(function (event) {
-                    var url = $(this).attr('href');
-                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
-                    event.preventDefault();
-                    $('html, body').fadeOut(speed, function () {
-                        window.location = url;
-                    });
-                });
-            });
-        });
     </script>
 </body>
 

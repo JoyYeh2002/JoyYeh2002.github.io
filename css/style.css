@@ -40,7 +40,6 @@ html {
     margin-right: auto;
 }
 
-
 .sub-header {
     height: 65vh;
     width: 100%;
@@ -153,8 +152,8 @@ html {
     }
 
     #eng-logo {
-        margin-top: 3%;
-        width: 70%;
+        margin-top: 0%;
+        width: 60%;
     }
 
     #comp-sci-logo {
@@ -482,7 +481,7 @@ body {
     font-weight: 580;
     color: #fff;
     font-size: 28px;
-    top: 35%;
+    top: 39%;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
