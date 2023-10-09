@@ -101,8 +101,7 @@
             <div class="wiki-images", id="mia-r">
                 <!-- Prev and next buttons -->
                 <div class="button-box">
-                    <a href="https://github.com/JoyYeh2002/Avoid_Falling_Blocks_Game" target="_blank"
-                    rel="noopener noreferrer" class="previous"> &laquo; Previous: Falling Blocks (GitHub)</a>
+                    <a href="limbs_gui.html" class="previous"> &laquo; Previous: Knifefish Research</a>
                     <a href="game_of_life.html" class="next">Next: Game of Life &raquo;</a>
                 </div>
 
@@ -137,24 +136,6 @@
         function hideMenu() {
             navLinks.style.left = "-200px";
         }
-    </script>
-
-    <!-- JS for smooth page transition -->
-    <script>
-        var speed = 'normal';
-        $('html, body').hide();
-        $(document).ready(function () {
-            $('html, body').fadeIn(speed, function () {
-                $('a[href], button[href]').click(function (event) {
-                    var url = $(this).attr('href');
-                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
-                    event.preventDefault();
-                    $('html, body').fadeOut(speed, function () {
-                        window.location = url;
-                    });
-                });
-            });
-        });
     </script>
 </body>
 

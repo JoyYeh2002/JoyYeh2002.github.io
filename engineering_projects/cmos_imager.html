@@ -1,3 +1,4 @@
+<!-- Updated 09.15.2023 -->
 <!DOCTYPE html>
 <html>
 
@@ -48,7 +49,6 @@
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
             </div>
-
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </section>
@@ -60,24 +60,21 @@
             <div class="wiki-content" id="cmos-l">
                 <h1> CMOS Imager Design in Cadence</h1>
                 <h2> April 2022<br>
-                    EN.520.216 Introduction to VLSI <br>
+                     EN.520.216 Introduction to VLSI <br>
                 </h2>
 
                 <h3> Objectives: </h3>
-                <li> Use Cadence to design and implement a CMOS imager chip 
+                <li> Use <span id="bold-p">Cadence </span> to design a CMOS imager chip 
                 </li>
-                <li> Write a final report in IEEE format</li>
+                <li> Write a final report in <span id="bold-p">IEEE format</span></li>
 
-                <h3>Skills Applied & Outcomes:</h3>
+                <h3> Skills Applied & Outcomes:</h3>
                 <li> Cadence schematic, layout, and simulations</li>
                 <li> Layout Vs. Schematic (LVS), Design Rule Check (DLC)</li>
 
                 <h3> Comments: </h3>
-                <p> I was in charge of sketching layouts on paper, debugging my teammate's designs until passing LVS and DLC, and writing the entire
-                    report. We made a few mistakes at the beginning but learned how to fix all of them by the end of the project.<!-- See
-                    <a href="#"
-                        onclick='window.open("../images/engineering/cmos_proj/VLSI_Yeh_Final_Report.pdf");return false;'>
-                        this link </a> for the project report. --> 
+                <p> I sketching and designing layouts on paper and in the software, debugging, and writing the
+                    report. We made a few mistakes at the beginning but managed to fix them by the end of the project.
                 </p>
                 <br>
 
@@ -126,8 +123,7 @@
                     <img src="../images/engineering/cmos_proj/big_chip_layout.jpg"
                         style="width: 99%; border: 2px solid rgba(0,0,0,0.3);">
                     <p> The 4x4 imager chip layout with column amplifier.</p>
-                </div>
-                
+                </div>     
                 </div>
             </div>
         </div>
@@ -143,24 +139,5 @@
             navLinks.style.left = "-200px";
         }
     </script>
-
-    <!-- JS for smooth page transition -->
-    <script>
-        var speed = 'normal';
-        $('html, body').hide();
-        $(document).ready(function () {
-            $('html, body').fadeIn(speed, function () {
-                $('a[href], button[href]').click(function (event) {
-                    var url = $(this).attr('href');
-                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
-                    event.preventDefault();
-                    $('html, body').fadeOut(speed, function () {
-                        window.location = url;
-                    });
-                });
-            });
-        });
-    </script>
 </body>
-
 </html>

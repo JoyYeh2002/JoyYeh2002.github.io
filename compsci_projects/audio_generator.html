@@ -73,16 +73,16 @@
 
                 <h3>Comments:</h3>
                 <p> I revisited concepts on sinusoidal waves in my reserach projects on animal control theory. It is interesting to see
-                    how simple mathematical equations create such variety in digital music. <br><span id="bold-p"> Last but not least, have some Rick Roll! </span>
+                    how simple mathematical equations create such variety in digital music. <br>
+                    <!-- <span id="bold-p"> Last but not least, have some Rick Roll! </span> -->
                 </p>
 
                 <audio controls style="padding-top: 15px; padding-bottom: 15px;">
                     <source src="../images/compsci/audio_proj/rick_roll_audio.wav" type="audio/wav">
-
                 </audio>
 
-                <h4>Image Credit: <a href="https://jhu-i.github.io/cs220-sp21/docs/assignments/midterm/" target="_blank"
-                        rel="noopener noreferrer"> SP21 Intermediate Programming</a></h4>
+                <!-- <h4>Image Credit: <a href="https://jhu-i.github.io/cs220-sp21/docs/assignments/midterm/" target="_blank"
+                        rel="noopener noreferrer"> SP21 Intermediate Programming</a></h4> -->
 
                 <div id="blank-space"></div>
             </div>
@@ -92,13 +92,15 @@
                 <!-- Prev and next buttons -->
                 <div class="button-box">
                     <a href="game_of_life.html" class="previous"> &laquo; Previous: Game of Life</a>
-                    <a href="movie_sentiments.html" class="next">Next: Movies &raquo;</a>
+                    <a href="https://github.com/JoyYeh2002/ML_Income_Binary_Classsification_Task" target="_blank"
+                    rel="noopener noreferrer" class="next"> Next: ML Income (GitHub) &raquo;</a>
+                    <!-- <a href="movie_sentiments.html" class="next">Next: Movies &raquo;</a> -->
                 </div>
 
                 <!-- Images -->
                 <div class="wiki-image-box">
                     <img src="../images/compsci/audio_proj/wave_illustration.png" style="width:80%;">
-                    <p> The Digital Wave Array with Sinusoids.</p>
+                    <p> The wave sinusoids.</p>
                 </div>
 
                 <div class="wiki-image-box">
@@ -118,24 +120,6 @@
         function hideMenu() {
             navLinks.style.left = "-200px";
         }
-    </script>
-
-    <!-- JS for smooth page transition -->
-    <script>
-        var speed = 'normal';
-        $('html, body').hide();
-        $(document).ready(function () {
-            $('html, body').fadeIn(speed, function () {
-                $('a[href], button[href]').click(function (event) {
-                    var url = $(this).attr('href');
-                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
-                    event.preventDefault();
-                    $('html, body').fadeOut(speed, function () {
-                        window.location = url;
-                    });
-                });
-            });
-        });
     </script>
 </body>
 

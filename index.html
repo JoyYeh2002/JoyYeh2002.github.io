@@ -1,3 +1,4 @@
+<!-- Index page cleaned up on 09.15.2023 -->
 <!DOCTYPE html>
 <html>
 
@@ -8,14 +9,12 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-LSPJBPLTJ3');
     </script>
     
-    <!-- The "viewport" meta tag makes the website responsive to window scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joy Yeh</title>
-    <!-- Refer to the style sheet -->
+    
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Generate and reference fonts from Google Fonts -->
@@ -37,7 +36,7 @@
             <div class="nav-links" id="navLinks">
                 <!-- Display the navigation bar titles and link them to the respective .html -->
                 <div class="top-container" , style="padding-left:30px; padding-top:10px" ;> <i class="fa fa-times"
-                        onclick="hideMenu()"></i></div> <!-- the closing icon-->
+                        onclick="hideMenu()"></i></div> 
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li>
@@ -67,19 +66,28 @@
         <!-- Self-intro/welcome section -->
         <section class="title-block">
             <h1>Welcome!</h1>
-            <p style="text-align: center;"> Hello there! My name is Huanying Yeh and I also go by <span
-                    id="bold-intro-text">Joy</span>. I study <span id="bold-intro-text">Electrical
-                    Engineering and Computer Science</span> at Johns Hopkins University, expecting to graduate in May
-                2024.<br>
+            <p style="text-align: center;"> 
+                Hello! My name is Huanying Yeh and I also go by <span id="bold-intro-text">Joy</span>. 
+                I study <span id="bold-intro-text">electrical engineering and computer science</span> 
+                at Johns Hopkins University, expecting to receive a <span id="bold-intro-text">
+                B.S./M.S. combined degree </span> in <span id="bold-intro-text">2025</span>.
                 <br>
-                <span id="bold-intro-text"> I love designing and
-                    creating</span> since I was little, and my college life is a dream come true! <br>
                 <br>
-                I want to <span id="bold-intro-text"> change the world with design and engineering </span> by building
-                affordable healthcare
-                technology, making new scientific discoveries, and more. <br>
+                <span id="bold-intro-text"> I loved designing and creating</span> since I was little, 
+                and my college life had been a dream come true! 
+                <br>
+                <br>
+                I want to <span id="bold-intro-text"> change the world with design and engineering. </span> 
+                I've contributed to <span id="bold-intro-text">academic research</span> (locomotion of electric fish), 
+                built <span id="bold-intro-text">sustainable energy infrastructure </span> (solar-powered mosquito trap), 
+                supported <span id="bold-intro-text">new discoveries in space </span>(Pathways internship at NASA GSFC), 
+                and applied techniques in <span id="bold-intro-text">signal</span> (wireless device algorithms) 
+                and <span id="bold-intro-text">image processing</span> (cardiac imaging).
+                I can't wait to explore more. 
+                <br>
                 <br>
                 Most recent update: September 2023 <br>
+
             </p>
 
             <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F8oUuMH5stlOWkTp2WCgHVc%2FCalendar-Version-01%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DRSwNGpQpi0wYRtlC-1" allowfullscreen></iframe>
@@ -173,8 +181,6 @@
     <!-- JavaScript for toggle menu -->
     <script>
         var navLinks = document.getElementById("navLinks");
-
-        /* These get called on click: <i class = "fa fa-times" onclick = "showMenu()"></i> */
         function showMenu() {
             navLinks.style.left = "0";
         }
@@ -206,9 +212,7 @@
     <!-- Java Script for smooth transition -->
     <script>
         var speed = 'slow';
-
         $('html, body').hide();
-
         $(document).ready(function () {
             $('html, body').fadeIn(speed, function () {
                 $('a[href], button[href]').click(function (event) {
